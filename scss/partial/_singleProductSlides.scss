@@ -1,0 +1,31 @@
+.elfriede-product-slides-section{
+    position: relative;
+    .elfriede-product-slides-wrap{
+        .elfriede-product-slider{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            justify-content: space-between;
+    // @include media-breakpoint-up(md) {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+    // @include media-breakpoint-up(sm) {
+    //     grid-template-columns: 1fr;
+    // }
+    .elfriede-product-slides{
+        img{
+            width: 100%;
+            min-width: 481px;
+        }
+    }
+        }
+    }
+    .elfriede-product-banner-btn{
+      .elfriede-primary-button{
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        max-width: 150px;
+      }
+    }
+}

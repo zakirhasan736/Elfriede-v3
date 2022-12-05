@@ -1,0 +1,46 @@
+.elfriede-our-team-section {
+  position: relative;
+  background: $gray-alt;
+  @include media-breakpoint-up(md) {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-top: 33px !important;
+    padding-bottom: 95px !important;
+  }
+  .elfriede-team-member-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    justify-content: space-between;
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 33px;
+  grid-row-gap: 62px;
+  }
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: 1fr;
+  grid-row-gap: 50px;
+  }
+    .elfriede-team-member-card {
+      .member-name-title {
+        font-family: $secondaryFont;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.4000000059604645px;
+        text-align: left;
+        color: $black;
+        margin-top: 11px;
+      }
+      .elfriede-team-member-img{
+  @include media-breakpoint-up(md) {
+        width: 100%;
+        height: 424px;
+        object-fit: cover;
+      }
+    }
+    }
+  }
+}

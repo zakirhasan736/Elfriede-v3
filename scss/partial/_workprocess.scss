@@ -1,0 +1,24 @@
+.elfriede-work-process-section{
+    @include media-breakpoint-up(md) {
+        padding-top: 85px;
+        .elfriede-work-process-wrap{
+            .elfriede-work-main-title{
+                padding-bottom: 100px;
+            }
+        }
+    }
+.elfriede-work-process-contbox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 105px;
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 46px;
+  }
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 100px;
+  }
+}
+}

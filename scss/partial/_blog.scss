@@ -1,0 +1,72 @@
+.elfriede--our-blog-section {
+  padding-top: 214px;
+  padding-bottom: 118px;
+  @include media-breakpoint-up(md) {
+    padding-top: 100px;
+    padding-bottom: 95px;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-top: 96px;
+    padding-bottom: 62px;
+  }
+}
+.elfriede-blog-contantbox {
+  display: grid;
+  grid-template-areas:
+    'cardOne cardTwo cardFour'
+    'cardOne cardThree cardFour';
+  grid-column-gap: 60px;
+  grid-row-gap: 30px; 
+  @include media-breakpoint-up(md) {
+    grid-template-areas:
+    'cardOne cardTwo'
+    'cardOne cardFour'
+    'cardThree cardFour';
+    grid-column-gap: 30px; 
+    grid-row-gap: 50px; 
+  }
+  @include media-breakpoint-up(sm) {
+    grid-template-areas:
+    'cardOne'
+    'cardTwo'
+    'cardThree'
+    'cardFour';
+  }
+
+  .elfriede-blog-cardbox {
+    &:nth-child(1) {
+      grid-area: cardOne; 
+    }
+    &:nth-child(2) {
+      grid-area: cardTwo;
+    }
+    &:nth-child(3) {
+      grid-area: cardThree;
+    }
+    &:nth-child(4) {
+      grid-area: cardFour;
+    }
+    text-align: center;
+
+    .elfriede-blog-button {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      .elfriede-secondary-button {
+        width: 180px;
+      }
+    }
+    .elfriede-blog-image{
+        width: 100%;
+    }
+  }
+  .elfriede-forward-blog_link {
+    .elfriede-primary-button {
+        height: 66px;
+        background: #F7F7F7;
+        border-radius: 49px;
+        gap: 7px;
+        border: 0;
+    }
+  }
+}

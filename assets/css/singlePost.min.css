@@ -1,0 +1,111 @@
+.elfriede-single-post-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+}
+.elfriede-single-post-section .elfriede-single-post-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant {
+  padding-top: 256px;
+  padding-bottom: 81px;
+}
+@media (max-width: 991px) {
+  .elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant {
+    padding-top: 227px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant {
+    padding-top: 169px;
+    padding-bottom: 20px;
+  }
+}
+.elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant .elfriede-banner-subtitle {
+  width: 100%;
+  max-width: 1093px;
+}
+@media (max-width: 991px) {
+  .elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant .elfriede-banner-subtitle {
+    margin-bottom: 38px !important;
+    max-width: 450px;
+    letter-spacing: 1.25px;
+  }
+}
+.elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant .elfriede-current-post-tags {
+  gap: 19px;
+}
+.elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant .elfriede-current-post-tags .elfriede-tags-item {
+  font-family: "Cabin", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.400000006px;
+  text-align: center;
+  color: #000000;
+}
+@media (max-width: 991px) {
+  .elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant .elfriede-blogs-img-box .elfriede-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant .elfriede-blogs-img-box .elfriede-current-post-tags {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .elfriede-single-post-section .elfriede-single-post-wrap .elfriede-main-contant .elfriede-single-post-image {
+    width: 100%;
+    height: 459px;
+  }
+}
+
+.elfriede-singlepost-wrap-cont {
+  display: grid;
+  grid-template-columns: 1fr 378px;
+  gap: 93px;
+}
+@media (max-width: 991px) {
+  .elfriede-singlepost-wrap-cont {
+    grid-template-columns: 1fr;
+    margin-bottom: 69px !important;
+    gap: 69px;
+  }
+}
+
+.elfriede-next-blogs-section {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .elfriede-next-blogs-section {
+    margin-bottom: 59px !important;
+  }
+}
+@media (max-width: 991px) {
+  .elfriede-next-blogs-section {
+    margin-bottom: 87px !important;
+  }
+}
+.elfriede-next-blogs-section .elfriede-next-blogs-wrap {
+  padding: 100px 82px 106px;
+  background: #F7F7F7;
+}
+@media (max-width: 991px) {
+  .elfriede-next-blogs-section .elfriede-next-blogs-wrap {
+    padding: 96px 118px 97px 53px;
+  }
+}
+@media (max-width: 991px) {
+  .elfriede-next-blogs-section .elfriede-next-blogs-wrap {
+    padding: 60px 35px 80px 37px;
+  }
+}
+.elfriede-next-blogs-section .elfriede-next-blogs-wrap .elfriede-next-blog-title {
+  max-width: 1013px;
+  width: 100%;
+}/*# sourceMappingURL=singlePost.min.css.map */

@@ -1,0 +1,21 @@
+// elfriede about page styles
+
+// base
+@import "base/color";
+@import "base/fontstyle";
+@import "base/grid";
+ 
+// partial
+@import "partial/aboutBanner"; 
+@import "partial/aboutSlides"; 
+@import "partial/ourTeam"; 
+@import "partial/accordion"; 
+
+// styles css here
+.elfriede-about-textcont{
+    .desc{
+        max-width: 858px;
+        width: 100%
+    }
+}
+

@@ -1,0 +1,204 @@
+.elfriede-priching-cardbox {
+  max-width: 424px;
+  padding-left: 64px;
+  padding-top: 140px;
+  padding-right: 64px;
+  padding-bottom: 52px;
+  width: 100%;
+  text-align: center;
+  background: $grayColor;
+  overflow: hidden;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .elfriede-priching-head {
+    margin-bottom: 24px;
+    text-align: center;
+    position: relative;
+    .seal-text {
+      font-family: $secondaryFont;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      color: #f6f6f6;
+      width: 100%;
+      display: block;
+      background: $primaryColor;
+      text-align: center;
+      transform: rotate(-45deg);
+      left: -123px;
+      top: -65px;
+      position: absolute;
+      @include media-breakpoint-up(md) {
+        left: -131px;
+        top: -34px;
+      }
+      @include media-breakpoint-up(sm) {
+        left: -86px;
+        top: -34px;
+      }
+    }
+    .elfriede-priching-iconbox {
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+      padding: 35px;
+      border: 1px solid $primaryColor;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      @include media-breakpoint-up(md) {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+  .elfriede-priching-offer {
+    li {
+      font-family: $secondaryFont;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
+    }
+  }
+  &.priching-card-one {
+    padding-bottom: 62px;
+    @include media-breakpoint-up(md) {
+      padding-top: 75px;
+      padding-bottom: 99px;
+    }
+    .elfriede-priching-offer {
+      li {
+        color: $mainGreen;
+        &:not(:first-child) {
+          color: #a1a1a1;
+        }
+      }
+    }
+    .elfriede-priching-body {
+      margin-bottom: 50px;
+    }
+    .elfriede-btn {
+      color: $black;
+      font-family: $secondaryFont;
+    }
+  }
+  &.priching-card-two {
+    padding-top: 170px;
+    @include media-breakpoint-up(md) {
+      padding-top: 87px;
+      padding-bottom: 81px;
+    }
+    .elfriede-priching-head {
+      margin-bottom: 29px;
+      text-align: center;
+      .elfriede-priching-iconbox {
+        width: 189px;
+        height: 189px;
+        border-radius: 100%;
+        padding: 48px;
+        border: 1px solid $primaryColor;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35px;
+        @include media-breakpoint-up(md) {
+          width: 100px;
+          height: 100px;
+          padding: 20px;
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+    padding-bottom: 108px;
+    .elfriede-priching-offer {
+      li {
+        color: $mainGreen;
+        &:not(:last-child) {
+          color: #a1a1a1;
+        }
+      }
+    }
+    .elfriede-priching-body {
+      margin-bottom: 53px;
+    }
+    .seal-text {
+      background: $mainGreen;
+      top: -100px;
+      &:empty {
+        display: none;
+      }
+
+      @include media-breakpoint-up(md) {
+        top: -16px;
+        left: -128px;
+      }
+      @include media-breakpoint-up(sm) {
+        top: -29px;
+        left: -87px;
+      }
+    }
+  }
+  &.priching-card-three {
+    padding-bottom: 52px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0px;
+      padding-top: 99px;
+      padding-bottom: 69px;
+    }
+    .elfriede-priching-offer {
+      li {
+        color: $mainGreen;
+      }
+    }
+    .elfriede-priching-body {
+      margin-bottom: 39px;
+    }
+    .elfriede-primary-button {
+      color: $black;
+      border-color: $black;
+    }
+  }
+  @include media-breakpoint-up(sm) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+.elfriede-priching-section {
+  @include media-breakpoint-up(md) {
+    padding-bottom: 180px !important;
+    padding-top: 100px !important;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 98px !important;
+    padding-top: 47px !important;
+  }
+}
+.elfriede-act-text-contbox{
+  .elfriede-act-form-title{
+font-family: $primaryFont;
+font-size: 28px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0px;
+text-align: center;
+color: $black;
+  }
+}

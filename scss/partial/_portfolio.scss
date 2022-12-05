@@ -1,0 +1,71 @@
+.elfriede-portfolio-section{
+    position: relative;
+    background: $gray-alt; 
+    @include media-breakpoint-up(md) {padding-top: 65px;padding-bottom: 56px;}
+    @include media-breakpoint-up(sm) {padding-top: 146px;padding-bottom: 108px;}
+
+    .elfriede-portfolio--content-wrap{
+        @include media-breakpoint-up(md) {padding-right: 0;}
+        .elfriede-portfolio--content{
+        @include media-breakpoint-up(md) {
+            .elfriede-portfolio-desc{
+                padding-right: 24px;
+            }
+        }
+        @include media-breakpoint-up(sm) {
+            .elfriede-portfolio-desc{
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+        }
+
+        @include media-breakpoint-up(sm) {
+            padding-right: 0;
+        }
+        .elfriede-portfolio--title{
+            @include media-breakpoint-up(sm) {
+                    padding-right: 30px;
+                    padding-left: 30px;
+            }
+        }
+        }
+    }
+    .elfriede-portfolio-button{
+        .elfriede-secondary-button{max-width: 15.9rem;}
+        @include media-breakpoint-up(sm) {padding-left: 30px;padding-right: 30px;}
+    }
+    .prallex-img{
+        width: 100%;
+        &.left-img{
+            padding-right: 25px;
+        @include media-breakpoint-up(md) {padding-right: 11px;}
+
+        }
+        &.right-img{
+            padding-left: 25px;
+        @include media-breakpoint-up(md) {padding-left: 11px;}
+
+        }
+    }
+    .elfriede-portfolio-img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        @include media-breakpoint-up(md) {
+            position: relative;
+            left: 0;
+            padding-left: 24px;
+        }
+        @include media-breakpoint-up(sm) {
+          margin-bottom: 60px;
+          padding-left: 0;
+        }
+    
+        }
+        .elfriede-portfolio--wrapper.elfriede-container{
+        @include media-breakpoint-up(sm) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        }
+    }

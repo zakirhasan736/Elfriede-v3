@@ -1,0 +1,16 @@
+.elfriede-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1512px;
+    padding-left: 90px;
+    padding-right: 90px;
+    @include media-breakpoint-up(md) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @include media-breakpoint-up(sm) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

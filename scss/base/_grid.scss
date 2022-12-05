@@ -1,0 +1,43 @@
+//mixin media query
+@mixin media-breakpoint-up($breakPoint) {
+    @if $breakPoint == maxwidthscreen {
+        @media (min-width: 1920px) { @content; }
+    }
+    @else if $breakPoint == iosmacpro {
+        @media (max-width: 1880px) { @content; }
+    }
+   @else if $breakPoint == macpro {
+        @media (max-width: 1680px) { @content; }
+    }
+   @else if $breakPoint == xl {
+        @media (max-width: 1500px) { @content; }
+    }
+   @else if $breakPoint == maciosbook {
+        @media (max-width: 1440px) { @content; }
+    }
+   @else if $breakPoint == maciosbookpro {
+        @media (max-width: 1280px) { @content; }
+    }
+    @else if $breakPoint == lg {
+        @media (max-width: 1199px) { @content; }
+    }
+    @else if $breakPoint == lgsquer {
+        @media (max-width: 1199px) { @content; }
+        @media (max-height: 600px) { @content; }
+    }
+    @else if $breakPoint == md {
+        @media (max-width: 991px) { @content; }
+    }
+    @else if $breakPoint == tab_device {
+        @media (max-width: 768px) { @content; }
+    }
+    @else if $breakPoint == sm {
+        @media (max-width: 767px) { @content; }
+    }
+    @else if $breakPoint == lsm {
+        @media (max-width: 375px) { @content; }
+    }
+    @else if $breakPoint == xsm {
+        @media (max-width: 320px) { @content; }
+    }
+}

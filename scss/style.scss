@@ -1,0 +1,40 @@
+// Bese style
+@import "base/besedstyled";
+@import "base/defoult";
+@import "base/fontstyle";
+@import "base/color";
+@import "base/inheritence";
+@import "base/utility";
+@import "base/animatestyled";
+@import "base/grid";
+
+// Golobal styles 
+@import "globals/container";
+@import "globals/buttons";
+@import "globals/headlines";
+@import "globals/images";
+
+// // Partial style 
+@import "partial/preloader";
+@import "partial/header"; 
+@import "partial/contact"; 
+@import "partial/clientslides"; 
+@import "partial/contactAct"; 
+@import "partial/pagination";  
+@import "partial/footer";  
+
+
+/* ------------------------------------------------------------------------------
+  1.  Global
+      1.1 Reset styles
+      1.2 Fonts
+      1.3 General
+  2.  Header
+  3.  Main
+      3.1 Home page
+      3.2 Blog page
+
+-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------
+  1. Global
+-------------------------------------------------------------------------------*/

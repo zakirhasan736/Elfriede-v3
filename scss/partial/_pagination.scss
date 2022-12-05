@@ -1,0 +1,33 @@
+.elfriede-pagination-wrapper {
+  .elfriede-pagination-list {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    @include media-breakpoint-up(md) {
+      justify-content: center;
+    }
+    .elfriede-pagination-list-item {
+      width: 60px;
+      height: 60px;
+      background: $lightGray;
+      transition: all 350ms ease 0s;
+      text-align: center;
+      line-height: 60px;
+      font-family: $secondaryFont;
+      font-size: 18px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      letter-spacing: 0.5px;
+      text-align: left;
+      color: $black;
+      &:hover,
+      &.active {
+        background: linear-gradient(0deg, #282c35, #282c35),
+          linear-gradient(0deg, #000000, #000000);
+        color: $white;
+      }
+    }
+  }
+}

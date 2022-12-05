@@ -1,0 +1,25 @@
+a{
+    &.elfriede-primary-button,
+    &.elfriede-secondary-button{
+        width: 100%;
+        padding: 12px 27px; 
+        text-align: center;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        background-color: $grayColor; 
+        border-radius: 49px;
+        border: 1px solid $mainGreen;
+        font-family: $secondaryFont;
+        font-style: $fontNormal;
+        font-weight: $fontMedium; 
+        font-size: $font-size-15;
+         line-height: 120%;
+         color: $mainGreen;
+     } 
+     &.elfriede-primary-button{
+      background: transparent;
+   }
+}
+

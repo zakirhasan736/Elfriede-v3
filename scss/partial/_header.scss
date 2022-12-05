@@ -1,0 +1,126 @@
+// elfriede header styles
+// ---------------------------------------------
+.elfriede-header-section {
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  position: absolute;
+  z-index: 999;
+  @include media-breakpoint-up(sm) {
+  &.single-product{
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    .elfriede-header-button{
+      .elfriede-secondary-button{
+        background: $white;
+        border-color: #FFFFFF;
+     }
+    }
+  }
+}
+}
+
+// elfriede top header styles
+
+.elfriede-top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .elfriede-navigation-bar{
+    cursor: pointer;
+  }
+  .elfriede-header-button{
+    .elfriede-secondary-button{
+      max-width: 203px; 
+   }
+  }
+}
+
+// elfriede sidebar header styles
+
+.elfriede-navigation-wrapper {
+    max-width: 347px;
+    width: 100%;
+    background: #F6F6F6;
+    box-shadow: 155px 370px 161px rgba(0, 0, 0, 0.03), 87px 208px 135px rgba(0, 0, 0, 0.09), 39px 92px 100px rgba(0, 0, 0, 0.15), 10px 23px 55px rgba(0, 0, 0, 0.17), 0px 0px 0px rgba(0, 0, 0, 0.17);
+    padding-bottom: 90px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    left: -100%;
+    transform: all 450ms ease 0s;
+&.info-open{
+  left: 0;
+}
+
+  .elfriede-sidebar-nav-head {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('/assets/image/menubar-shape-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 32px 33px 137px 0;
+    .elfriede-trigger-close {
+      max-width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $primaryColor;
+      gap: 25px;
+      border-radius: 30px;
+      background-color: $lightGray;
+      font-family: $secondaryFont;
+      font-style: $fontNormal;
+      font-weight: $fontMedium;
+      font-size: $font-size-15;
+      line-height: 120%;
+      padding: 9px 10px 8px 25px;
+    }
+  }
+
+  .elfriede-sidebar-nav {
+    padding: 45px 33px 147px 62px; 
+    .elfriede-navigation-nav {
+      ul {
+        li {
+            margin-bottom: 18px;
+            &:last-child{margin-bottom: 0;}
+          a {
+            font-family: $primaryFont;
+            font-style: $fontNormal;
+            font-weight: $fontMedium;
+            font-size: $font-size-16;
+            line-height: 120%;
+            cursor: pointer;
+            letter-spacing: 0.15px;
+          }
+        }
+      }
+    }
+  }
+  .elfriede-sidebar-nav-footer{
+    padding-left: 60px;
+    .elfriede-socials-widgets{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        li{
+           a{
+            width: 45px;
+            height: 45px;
+            border-radius: 50px;
+            border: 1px solid $primaryColor;
+            display: block;
+            line-height: 45px;
+            text-align: center;
+           }
+        }
+    }
+  }
+}
+
+// elfriede top header styles
+// elfriede top header styles

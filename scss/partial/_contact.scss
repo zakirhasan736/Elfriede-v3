@@ -1,0 +1,130 @@
+.elfriede-contact-section {
+  position: relative;
+  background: $gray-alt;
+  @include media-breakpoint-up(md) {
+    padding-top: 116px;
+    padding-bottom: 111px;
+  } 
+  @include media-breakpoint-up(sm) {
+    padding-top: 86px;
+  } 
+  .contact-details-titlebox{
+  @include media-breakpoint-up(sm) {
+    text-align: left !important;
+  }
+  }
+  .elfriede-contact-details {
+    @include media-breakpoint-up(md) {
+      padding-right: 0;
+      .contact-details-list {
+        max-width: 361px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .contact-button-box {
+      .elfriede-primary-button {
+        max-width: 187px;
+        width: 100%;
+        margin-top: 96px;
+      }
+    }
+  }
+  .contact-details-list {
+    .contact-detais-item {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      &:not(:first-child) {
+        padding-top: 35px;
+      }
+      &:not(:last-child) {
+        padding-bottom: 35px;
+        border-bottom: 1px solid #282c3580;
+      }
+      .details-text-box {
+        p.details-text {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.elfriede-contact-form {
+  .elfriede-contact-grid {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      display: block;
+    }
+    .elfriede-contact-form-box {
+      width: 100%;
+    }
+  }
+  .elfirede-contact-form {
+    .elfriede-contact-form-box {
+      &:not(:nth-child(3)) {
+        margin-bottom: 22px;
+      }
+      .elfriede-input-title {
+        font-family: $secondaryFont;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 10px;
+        display: block;
+      }
+      #elfirede-input-descfilde,
+      #elfriede-input-mailfilde,
+      #elfriede-input-textfilde {
+        width: 100%;
+        height: 64px;
+        background: #ffffff;
+        border: 0;
+        border-bottom: 1px solid #282c35;
+        font-family: $primaryFont;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.4000000059604645px;
+        text-align: left;
+        padding: 24px 26px;
+        transition: all 350ms ease 0s;
+        &:focus {
+          box-shadow: none;
+          outline: 0;
+          border-bottom: 1px solid $mainGreen;
+        }
+        &::placeholder {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0.4000000059604645px;
+          text-align: left;
+          color: #282c3580;
+        }
+      }
+      #elfirede-input-descfilde {
+        height: 250px;
+      }
+    }
+    .elfriede-contact-btn-box {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      .elfriede-primary-button {
+        max-width: 130px;
+        width: 100%;
+
+      }
+
+    }
+  }
+}

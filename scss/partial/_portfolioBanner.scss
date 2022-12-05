@@ -1,0 +1,32 @@
+// elfriede banner style css
+.elfriede-main-visual-section {
+    position: relative;
+    width: 100%;
+      height: 100%;
+      background: $white;
+      .elfriede-main-visual-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        .elfriede-main-contant {
+            padding-top: 160px;
+          padding-bottom: 0px;
+  @include media-breakpoint-up(md) {
+    padding-top: 227px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-top: 169px;
+  }
+          .elfriede-banner-title {
+            width: 100%;
+          }
+     .elfriede-subtitle{
+        max-width: 942px;
+        width: 100%;
+        letter-spacing: .5px;
+     }
+        }
+      }
+    }
+  

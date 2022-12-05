@@ -1,0 +1,110 @@
+.elfriede-main-visual-section {
+  position: relative;
+  padding-bottom: 66px;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+}
+.elfriede-main-visual-section .elfriede-main-visual-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+}
+.elfriede-main-visual-section .elfriede-main-visual-wrap .elfriede-main-contant {
+  padding-top: 170px;
+}
+.elfriede-main-visual-section .elfriede-main-visual-wrap .elfriede-main-contant .elfriede-banner-subtitle {
+  width: 100%;
+  max-width: 1093px;
+}
+
+.elfriede-product-slides-section {
+  position: relative;
+}
+.elfriede-product-slides-section .elfriede-product-slides-wrap .elfriede-product-slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-content: space-between;
+}
+.elfriede-product-slides-section .elfriede-product-slides-wrap .elfriede-product-slider .elfriede-product-slides img {
+  width: 100%;
+  min-width: 481px;
+}
+.elfriede-product-slides-section .elfriede-product-banner-btn .elfriede-primary-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  max-width: 150px;
+}
+
+.elfriede-product-details-wrap {
+  display: grid;
+  grid-template-columns: 1fr 391px;
+  gap: 80px;
+}
+@media (max-width: 991px) {
+  .elfriede-product-details-wrap {
+    display: block;
+  }
+}
+
+.shopping-form-box {
+  padding: 92px 152px 126px;
+  background: #F7F7F7;
+  margin-bottom: 13px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .shopping-form-box {
+    padding: 75px 148px 82px;
+  }
+}
+@media (max-width: 767px) {
+  .shopping-form-box {
+    padding: 75px 30px 82px;
+  }
+}
+
+.elfriede-delivery-info-box .elfriede-delivery-info-wrap {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .elfriede-delivery-info-box .elfriede-delivery-info-wrap {
+    display: block;
+  }
+}
+.elfriede-delivery-info-box .elfriede-delivery-info-wrap .elfriede-delivery-info-card {
+  padding: 66px 27px 25px 31px;
+  background-color: #F7F7F7;
+  width: 100%;
+}
+.elfriede-delivery-info-box .elfriede-delivery-info-wrap .elfriede-delivery-info-card .subtitle {
+  color: #000000;
+}
+.elfriede-delivery-info-box .elfriede-delivery-info-wrap .elfriede-delivery-info-card .desc {
+  color: #4E4A4A;
+  max-width: 220px;
+}
+.elfriede-delivery-info-box .elfriede-delivery-info-wrap .elfriede-delivery-info-card .elfried-delivery-icon-box {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .elfriede-delivery-info-box .elfriede-delivery-info-wrap .elfriede-delivery-info-card:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 991px) {
+  .elfriede-delivery-info-box {
+    margin-bottom: 0px !important;
+  }
+}
+
+.elfriede-suggested-product-box .elfried-product-suggetion-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+}/*# sourceMappingURL=single-product.min.css.map */

@@ -1,0 +1,291 @@
+.elfriede-main-visual-section {
+  position: relative;
+  height: 658px;
+  width: 100%;
+  background-image: url("/assets/image/home-banner-img.png");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  .elfriede-main-visual-section {
+    height: 808px;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-main-visual-section {
+    height: 643px;
+  }
+}
+.elfriede-main-visual-section .elfriede-container {
+  height: 100%;
+}
+.elfriede-main-visual-section .elfriede-container .elfriede-main-visual-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.elfriede-main-visual-section .elfriede-container .elfriede-main-visual-wrap .elfriede-main-contant {
+  padding-bottom: 181px;
+}
+@media (max-width: 991px) {
+  .elfriede-main-visual-section .elfriede-container .elfriede-main-visual-wrap .elfriede-main-contant {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-main-visual-section .elfriede-container .elfriede-main-visual-wrap .elfriede-main-contant {
+    padding-bottom: 72px;
+  }
+}
+.elfriede-main-visual-section .elfriede-container .elfriede-main-visual-wrap .elfriede-main-contant .elfriede-banner-title {
+  max-width: 1073px;
+  width: 100%;
+}
+
+.elfriede-singleitem-slidebox .elfriede-singleitem-slideitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: nowrap;
+}
+
+.elfriede-singleitem-contantbox {
+  max-width: 853px;
+  width: 100%;
+}
+.elfriede-singleitem-contantbox .desc:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.elfriede-singleitem-beyondbox {
+  position: relative;
+}
+.elfriede-singleitem-beyondbox::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48%;
+  height: 100%;
+  background: #e9e9e9;
+}
+.elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-cont {
+  position: relative;
+}
+.elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-cont::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 69%;
+  height: 100%;
+  background: #F6F6F6;
+}
+
+.elfriede-singleitem-beyond-left .elfried-beyond-bold-desc {
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.elfriede-singleitem-beyond-left .elfried-beyond-desc:not(:last-child) {
+  margin-bottom: 20px;
+}
+.elfriede-singleitem-beyond-left .elfried-beyond-btn .elfriede-primary-button {
+  max-width: 215px;
+}
+
+@media (max-width: 991px) {
+  .elfriede-singleitem-section {
+    padding-top: 93px;
+    padding-bottom: 0;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-contantbox {
+    padding-bottom: 54px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-slidebox {
+    padding-bottom: 54px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox {
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-cont {
+    padding-top: 39px;
+    padding-bottom: 50px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-left {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 991px) and (max-width: 767px) {
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-left {
+    padding-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-left .elfried-beyond-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+  }
+}
+@media (max-width: 991px) and (max-width: 991px) {
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-left .elfried-beyond-title {
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-bottom: 27px;
+  }
+}
+@media (max-width: 991px) {
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-right {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 991px) and (max-width: 767px) {
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-right {
+    padding-left: 0;
+  }
+}
+@media (max-width: 991px) and (max-width: 991px) {
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede--beyon-modalimg {
+    height: 447px;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) and (max-width: 767px) {
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede--beyon-modalimg {
+    height: 399px;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox {
+    padding-top: 56px;
+    padding-bottom: 0px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-cont {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-cont::before {
+    width: 100%;
+    height: calc(100% - 355px);
+    top: auto;
+    bottom: 0;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-cont .elfriede-container {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-cont .elfried-beyond-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-left {
+    padding-right: 0px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede-singleitem-beyond-right {
+    padding-left: 0px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox .elfriede--beyon-modalimg {
+    height: 399px;
+  }
+  .elfriede-singleitem-section .elfriede-singleitem-beyondbox::before {
+    width: 100%;
+    height: 442px;
+  }
+}
+
+@media (max-width: 991px) {
+  .elfriede-single-thread-section {
+    padding-top: 0;
+    padding-bottom: 145px;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-single-thread-section {
+    padding-bottom: 157px;
+  }
+}
+.elfriede-single-thread-section .elfriede-single-thread-wrap {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .elfriede-single-thread-section .elfriede-single-thread-wrap .elfriede-thread-modalimg {
+    height: 424px;
+  }
+  .elfriede-single-thread-section .elfriede-single-thread-wrap .elfriede-thread-modalimg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.elfriede-single-thread-section .elfriede-single-thread-wrap .elfriede-single-thread-contbox {
+  padding: 55px 65px 67px 88px;
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  background: #fff;
+}
+@media (max-width: 991px) {
+  .elfriede-single-thread-section .elfriede-single-thread-wrap .elfriede-single-thread-contbox {
+    right: 32px;
+    padding: 41px 27px 42px 74px;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-single-thread-section .elfriede-single-thread-wrap .elfriede-single-thread-contbox {
+    right: auto;
+    left: 44px;
+    padding: 28px 0px 30px 59px;
+  }
+}
+.elfriede-single-thread-section .elfriede-single-thread-wrap .elfriede-single-thread-contbox .elfriede-single-thread-title {
+  letter-spacing: 0.25px;
+  max-width: 428px;
+}
+@media (max-width: 991px) {
+  .elfriede-single-thread-section .elfriede-single-thread-wrap .elfriede-single-thread-contbox .elfriede-single-thread-title {
+    max-width: 308px;
+  }
+}
+.elfriede-single-thread-section .elfriede-single-thread-wrap .elfriede-single-thread-contbox .elfried-single-threadbtn {
+  font-family: "Cabin", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.400000006px;
+  text-align: left;
+  color: #000000;
+  border: 1px solid #282c35;
+  width: 94px;
+  height: 32px;
+  display: block;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 31px;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 0;
+  top: 83px;
+}
+@media (max-width: 991px) {
+  .elfriede-single-thread-section .elfriede-single-thread-wrap .elfriede-single-thread-contbox .elfried-single-threadbtn {
+    top: 55px;
+    width: 81px;
+    height: 30px;
+    line-height: 30px;
+  }
+}/*# sourceMappingURL=items-single.min.css.map */

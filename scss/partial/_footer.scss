@@ -1,0 +1,127 @@
+.elfriede-footer-section {
+  position: relative;
+  .elfriede-top-footer {
+    padding-top: 70px;
+    padding-bottom: 76px;
+  @include media-breakpoint-up(md) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-top: 62px;
+    padding-bottom: 68px;
+  }
+    background: $grayColor;
+    .elfriede-footer-top-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      @include media-breakpoint-up(sm) {
+        flex-direction: column;
+        gap: 46px;
+      }
+      .elfriede-top-desbox {
+        padding-right: 49px;
+        .elfriede-top-desc {
+          color: $primaryColor;
+          font-family: $primaryFont;
+        }
+      }
+      .elfriede-socials-widgets {
+        display: flex;
+        align-items: center;
+        li {
+          margin-right: 23px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            width: 53px;
+            height: 53px;
+            line-height: 50px;
+            border-radius: 50px;
+            border: 1px solid $primaryColor;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .elfriede--footer-title {
+    font-size: $font-size-13;
+    font-weight: $fontNormal;
+    line-height: $line-height-15p;
+    color: $black;
+    margin-bottom: 19px;
+    font-family: $secondaryFont;
+  }
+  .elfriede-footer-main-wrapper {
+    background-color: $extra-gray;
+
+  }
+  .elfriede-footer-main-wrap {
+    padding-bottom: 147px;
+    border-bottom: 1px solid;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 45px;
+  }
+    .elfriede-footer-descbox {
+      p {
+        font-size: $font-size-18;
+        font-weight: $fontNormal;
+        line-height: $line-height-21;
+        color: $primaryColor;
+        margin-bottom: 0px;
+        font-family: $secondaryFont;
+      }
+    }
+    .elfriede-footer-link-wrap {
+      .elfriede-links-cont {
+        display: flex;
+        align-items: center;
+        ul {
+          li {
+            a {
+              font-size: $font-size-15;
+              font-weight: $fontMedium;
+              line-height: $line-height-18;
+              color: $black;
+              margin-bottom: 19px;
+              font-family: $secondaryFont;
+            }
+            width: 50%;
+            float: left;
+            margin-bottom: 13px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .elfriedefooter-logobox {
+      padding-top: 90px;
+      padding-bottom: 59px;
+      text-align: center;
+    }
+  }
+  .elfriede-footer-copyright {
+    padding: 15px 0 17px;
+    p {
+      font-size: $font-size-8;
+      font-weight: $fontNormal;
+      line-height: $line-height-9p;
+      color: $primaryColor;
+      margin-bottom: 0px;
+      font-family: $secondaryFont;
+  @include media-breakpoint-up(md) {
+font-family: $secondaryFont;
+font-size: 8px;
+line-height: 10px;
+letter-spacing: 1.5px;
+  }
+    }
+  }
+}

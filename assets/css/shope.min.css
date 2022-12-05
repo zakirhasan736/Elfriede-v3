@@ -1,0 +1,177 @@
+.elfriede-main-visual-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+}
+.elfriede-main-visual-section .elfriede-main-visual-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.elfriede-main-visual-section .elfriede-main-visual-wrap .elfriede-main-contant {
+  padding-top: 130px;
+  padding-bottom: 0px;
+}
+@media (max-width: 991px) {
+  .elfriede-main-visual-section .elfriede-main-visual-wrap .elfriede-main-contant {
+    padding-top: 227px;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-main-visual-section .elfriede-main-visual-wrap .elfriede-main-contant {
+    padding-top: 169px;
+  }
+}
+.elfriede-main-visual-section .elfriede-main-visual-wrap .elfriede-main-contant .elfriede-banner-title {
+  width: 100%;
+  max-width: 1093px;
+}
+
+.elfriede-product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+@media (max-width: 991px) {
+  .elfriede-product-wrapper {
+    gap: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-product-wrapper {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+}
+.elfriede-product-wrapper .elfriede-feature-product-card {
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .elfriede-product-wrapper .elfriede-feature-product-card .elfriede-product-img {
+    width: 100%;
+    height: 267px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.elfriede-product-wrapper .elfriede-feature-product-card .elfriede-product-seal-text {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 7px 0;
+  position: absolute;
+  right: calc(-50% + 51px);
+  transform: rotate(-90deg);
+  top: 0;
+  bottom: 0;
+  height: 36px;
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .elfriede-product-wrapper .elfriede-feature-product-card .elfriede-product-seal-text {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.400000006px;
+  }
+}
+
+@media (max-width: 991px) {
+  .elfriede-feature-product-section {
+    padding-top: 59px !important;
+    padding-bottom: 59px !important;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-feature-product-section {
+    padding-top: 65px !important;
+    padding-bottom: 31px !important;
+  }
+}
+
+.elfriede-shope-product-section .elfriede-shope-wrapper-box {
+  display: grid;
+  grid-template-columns: 391px 1fr;
+  gap: 80px;
+  align-items: baseline;
+}
+@media (max-width: 991px) {
+  .elfriede-shope-product-section .elfriede-shope-wrapper-box {
+    display: block;
+  }
+  .elfriede-shope-product-section .elfriede-shope-wrapper-box .elfriede-shope-left-wrap {
+    margin-bottom: 50px;
+  }
+}
+.elfriede-shope-product-section .elfriede-shope-wrapper-box .elfriede-shope-right-wrap .elfriede-shope-products-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  row-gap: 55px;
+}
+@media (max-width: 991px) {
+  .elfriede-shope-product-section .elfriede-shope-wrapper-box .elfriede-shope-right-wrap .elfriede-shope-products-cont {
+    grid-column-gap: 33px;
+    grid-row-gap: 45px;
+    padding-bottom: 77px !important;
+  }
+  .elfriede-shope-product-section .elfriede-shope-wrapper-box .elfriede-shope-right-wrap .elfriede-shope-products-cont:nth-child(2) {
+    padding-bottom: 163px !important;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-shope-product-section .elfriede-shope-wrapper-box .elfriede-shope-right-wrap .elfriede-shope-products-cont {
+    grid-row-gap: 77px;
+    grid-column-gap: 0px;
+    grid-template-columns: 1fr;
+  }
+}
+.elfriede-shope-product-section .elfriede-shope-wrapper-box .elfriede-shope-right-wrap .elfriede-shope-products-cont .elfriede-shope-products .elfriede-product-image {
+  width: 100%;
+  height: 447px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pintext-middle-add {
+  padding: 39px 55px 40px 55px;
+  display: flex;
+  gap: 47px;
+  align-items: center;
+  background: #F6F6F6;
+}
+.pintext-middle-add .elfriede-add-text {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+@media (max-width: 767px) {
+  .pintext-middle-add .elfriede-add-text {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .pintext-middle-add {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .pintext-middle-add {
+    gap: 0px;
+    display: block;
+    text-align: center;
+  }
+}/*# sourceMappingURL=shope.min.css.map */

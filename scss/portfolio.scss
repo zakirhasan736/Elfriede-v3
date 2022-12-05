@@ -1,0 +1,31 @@
+// elfriede portfolio page styles
+
+// base
+@import "base/color";
+@import "base/fontstyle";
+@import "base/grid";
+ 
+// partial
+@import "partial/portfolioBanner"; 
+@import "partial/portfolioGallery"; 
+@import "partial/cta"; 
+
+// overwrite style some of
+.elfriede-contact-act-section{
+    padding-top: 0;
+    padding-bottom: 315px;
+    .elfriede-act-modal-box{
+        height: 508px;
+        background: $grayColor;
+
+    }
+ .elfriede-act-form-box {
+        top: 67px !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}

@@ -77,6 +77,34 @@
      object-fit: cover;
 }
 
+.elfriede-gallery-wrapper .elfriede-gallery-img {
+  position: relative;
+}
+.elfriede-gallery-wrapper .elfriede-gallery-img .elfriede-portfolio-info {
+  position: absolute;
+  padding: 22px 16px 22px 17px;
+  background: #F7F7F7;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -20px;
+  width: calc(100% - 80px);
+}
+@media (max-width: 767px) {
+  .elfriede-gallery-wrapper .elfriede-gallery-img .elfriede-portfolio-info {
+    width: calc(100% - 40px);
+  }
+}
+.elfriede-gallery-wrapper .elfriede-gallery-img .elfriede-portfolio-info .link-text {
+  font-family: "Cabin", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.400000006px;
+  text-decoration: underline !important;
+}
+
 .elfriede-cta-section {
   position: relative;
 }

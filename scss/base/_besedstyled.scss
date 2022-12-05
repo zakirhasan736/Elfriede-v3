@@ -364,7 +364,6 @@ a:focus,
 .button:focus {
 	text-decoration: none;
 	outline: none;
-	font-family: 'Montserrat', sans-serif;
 }
 a:focus,
 a:hover,
@@ -372,13 +371,12 @@ a:hover,
 .footer -menu li a:hover {
 	color:#282C35;
 	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
 }
 a,
 button {
-	color: #282C35;
+	color: #282C35; 
 	outline: medium none;
-	font-family: 'Montserrat', sans-serif;
+	font-family: $secondaryFont;
   font-size: 1.6rem;
 
 }

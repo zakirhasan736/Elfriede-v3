@@ -6,12 +6,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             justify-content: space-between;
-    // @include media-breakpoint-up(md) {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
-    // @include media-breakpoint-up(sm) {
-    //     grid-template-columns: 1fr;
-    // }
+
     .elfriede-product-slides{
         img{
             width: 100%;

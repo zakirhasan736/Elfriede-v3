@@ -14,21 +14,6 @@ load.to("#percent , #bar, .loader", {
   opacity: 0,
   zIndex: 1
 })
-load.to(".progress",{
-  duration: 10,
-  width: "0%"
-})
-load.from(".content", {
-  duration: .8,
-  opacity: 0,
-  ease: "Power4.out"
-}, "-=.5")
-load.from(".content h1", {
-  duration: .5,
-  y: 50,
-  skewY: 10,
-  opacity: 0
-},"-=1")
 
 var id, width = 1;
 function loading(){

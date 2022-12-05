@@ -1564,6 +1564,7 @@ figure figcaption {
 }
 .elfriede-navigation-wrapper .elfriede-sidebar-nav-head .elfriede-trigger-close {
   max-width: 130px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2046,4 +2047,4 @@ figure figcaption {
 -------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------
   1. Global
--------------------------------------------------------------------------------*//*# sourceMappingURL=style.min.css.map */
+-------------------------------------------------------------------------------*/

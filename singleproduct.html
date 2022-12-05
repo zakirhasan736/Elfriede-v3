@@ -17,6 +17,21 @@
     </head>
 
     <body>
+         <!-- =========================================================
+             ***  preloader screen section start 
+  ===============================================================-->
+    <div class="loader elfriede-preloader-screen">
+        <!-- loader header -->
+        <div class="elfriede-loader-header"><a href="#!"><img src="/assets/image/logo/Small-Logo.svg"
+                    width="170px" height="51px" alt="company-logo" class="elfriede-brand-logo"></a></div>
+         <!-- loader main box -->
+        <div class="progre elfriede-loader-mainpoint">
+            <div class="elfriede-loader-parcent" id="percent">0%</div>
+            <div id="bar" class="elfriede-loader-barbox">
+                <div id="barconfirm" class="elfriede-loader-bar"></div>
+            </div>
+        </div>
+    </div>
         <!-- =========================================================
              1.  header section start 
   ===============================================================-->
@@ -40,8 +55,8 @@
                     <div class="elfriede-navigation-wrapper">
                         <!-- sidebar nav header  -->
                         <div class="elfriede-sidebar-nav-head">
-                            <a href="/" class="elfriede-trigger-close"><span>CLOSE</span> <img
-                                    src="/assets/image/icon/close.svg" alt="trigger close button"></a>
+                            <div class="elfriede-trigger-close"><span>CLOSE</span> <img
+                                src="/assets/image/icon/close.svg" alt="trigger close button"></div>
                         </div>
                         <!-- navigation link items start here -->
                         <div class="elfriede-sidebar-nav">
@@ -442,6 +457,7 @@
   ===============================================================-->
         <!-- ===all css here=== -->
         <script src="assets/js/jquery-3.6.1.min.js"></script>
+        <script src="assets/Js/gsap.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
 

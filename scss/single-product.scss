@@ -1,76 +1,143 @@
 // elfriede single product page styles
 
 // base
-@import "base/color";
-@import "base/fontstyle";
-@import "base/grid";
- 
-// partial
-@import "partial/singleproductBanner"; 
-@import "partial/singleProductSlides"; 
+@import 'base/color';
+@import 'base/fontstyle';
+@import 'base/grid';
 
+// partial
+@import 'partial/singleproductBanner';
+@import 'partial/singleProductSlides';
 
 // styles css
-.elfriede-product-details-wrap{
+.elfriede-product-details-wrap {
+  display: grid;
+  grid-template-columns: 1fr 391px;
+  gap: 80px;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+.shopping-form-box {
+  padding: 92px 152px 126px;
+  background: #f7f7f7;
+  margin-bottom: 13px;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    padding: 75px 148px 82px;
+  }
+  @include media-breakpoint-up(sm) {
+    padding: 75px 30px 82px;
+  }
+}
+
+.elfriede-delivery-info-box {
+  .elfriede-delivery-info-wrap {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    @include media-breakpoint-up(sm) {
+      display: block;
+    }
+    .elfriede-delivery-info-card {
+      padding: 66px 27px 25px 31px;
+      background-color: $lightGray;
+      width: 100%;
+      .subtitle {
+        color: $black;
+      }
+      .desc {
+        color: #4e4a4a;
+        max-width: 220px;
+      }
+      .elfried-delivery-icon-box {
+        text-align: right;
+      }
+      @include media-breakpoint-up(sm) {
+        &:not(:last-child) {
+          margin-bottom: 23px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0px !important;
+  }
+}
+
+.elfriede-suggested-product-box {
+  .elfried-product-suggetion-list {
     display: grid;
-    grid-template-columns: 1fr 391px;
-    gap: 80px;
-    @include media-breakpoint-up(md) {
-        display: block;
-    }
-}
-.shopping-form-box{
-    padding: 92px 152px 126px;
-    background: #F7F7F7;
-    margin-bottom: 13px;
-    width: 100%;
-    @include media-breakpoint-up(md) {
-        padding: 75px 148px 82px;
-    } 
-    @include media-breakpoint-up(sm) {
-        padding: 75px 30px 82px;
-    } 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+  }
 }
 
-.elfriede-delivery-info-box{
-    .elfriede-delivery-info-wrap{
-        display: flex;
-        gap: 16px;
-        align-items: center;
-    @include media-breakpoint-up(sm) {
-        display: block;
-    }
-        .elfriede-delivery-info-card{
-            padding: 66px 27px 25px 31px;
-            background-color: $lightGray;
-            width: 100%;
-            .subtitle{
-                color: $black;
-            }
-            .desc{
-                color: #4E4A4A;
-                max-width: 220px;
-            }
-            .elfried-delivery-icon-box {
-                text-align: right;
-            }
-    @include media-breakpoint-up(sm) {
-        &:not(:last-child){
-            margin-bottom: 23px;
-        }
-    }
-        }
-    }
-    @include media-breakpoint-up(md) {
-        margin-bottom: 0px !important;
-    }
+.elfriede-product-type-box {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: baseline;
+    gap: 67px;
+  }
 }
 
-
-.elfriede-suggested-product-box{
-    .elfried-product-suggetion-list{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 45px;
+.elfriede-product-color-list {
+  gap: 11px;
+}
+.elfriede-product-color-list > li {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: #fff;
+  cursor: pointer;
+  &:nth-child(1) {
+    border: 2px solid #282c35;
+  }
+  &:nth-child(2) {
+    background: #34515e;
+  }
+  &:nth-child(3) {
+    background: #ffa800;
+  }
+  @include media-breakpoint-up(md) {
+    width: 30px;
+    height: 30px;
+  }
+}
+.elfriede-reviews-items {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    .elfriede-reviews-card {
+      margin-bottom: 0px !important;
     }
+  }
+  @include media-breakpoint-up(sm) {
+    display: block;
+    .elfriede-reviews-card {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+   
+  }
+}
+@include media-breakpoint-up(md) {
+
+.elfriede-desc-box {
+    .desc {
+      &:not(:first-child) {
+        display: none;
+      }
+       a {
+        font-family: $secondaryFont;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        color: #282C35;
+      }
+    }
+  }
 }

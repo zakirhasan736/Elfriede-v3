@@ -101,7 +101,6 @@
   display: grid;
   grid-template-columns: 391px 1fr;
   gap: 80px;
-  align-items: baseline;
 }
 @media (max-width: 991px) {
   .elfriede-shope-product-section .elfriede-shope-wrapper-box {
@@ -140,6 +139,121 @@
   height: 447px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.elfriede-category-box {
+  padding: 35px 37px;
+  position: relative;
+  background: #F7F7F7;
+}
+.elfriede-category-box .elfriede--list-items {
+  padding-left: 15px;
+}
+.elfriede-category-box .elfriede--list-items li {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  list-style: disclosure-closed !important;
+  color: #000000;
+}
+.elfriede-category-box .elfriede--list-items li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.elfriede-filter-box {
+  padding: 54px 41px 62px 37px;
+  position: relative;
+  background: #F7F7F7;
+}
+
+.elfriede-arrivel-box .new-arrivel-list {
+  padding-left: 30px;
+}
+.elfriede-arrivel-box .new-arrivel-list li {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  list-style: disclosure-closed !important;
+  color: #000000;
+}
+.elfriede-arrivel-box .new-arrivel-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.elfriede-updates-product .elfriede-product-availability-info li {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+.elfriede-updates-product .elfriede-product-availability-info li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.elfriede-range-slide-box .elfriede-progress-slide .elfriede-range-slide-box {
+  position: relative;
+}
+.elfriede-range-slide-box .elfriede-progress-slide .elfriede-range-slide-box .elfriede-progress-bar {
+  height: 1px;
+  width: 100%;
+  background-color: #282C35;
+}
+.elfriede-range-slide-box .elfriede-progress-slide .elfriede-range-slide-box .elfriede-progress-tab {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  display: block;
+  background-color: #282C35;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  cursor: pointer;
+}
+.elfriede-range-slide-box .elfriede-progress-slide .elfriede-range-slide-box .elfriede-progress-tab.tab-left {
+  left: 0;
+}
+.elfriede-range-slide-box .elfriede-progress-slide .elfriede-range-slide-box .elfriede-progress-tab.tab-right {
+  right: 0;
+  left: auto;
+}
+
+@media (max-width: 991px) {
+  .elfriede-shope-left-wrap {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+  }
+  .elfriede-shope-left-wrap .elfriede-filter-box,
+.elfriede-shope-left-wrap .elfriede-category-box {
+    width: 100%;
+    padding: 22px 25px 22px 28px;
+    margin-bottom: 0px !important;
+    cursor: pointer;
+  }
+  .elfriede-shope-left-wrap .elfriede-filter-box .elfriede-filter-title-box,
+.elfriede-shope-left-wrap .elfriede-filter-box .elfriede-cat-title-box,
+.elfriede-shope-left-wrap .elfriede-category-box .elfriede-filter-title-box,
+.elfriede-shope-left-wrap .elfriede-category-box .elfriede-cat-title-box {
+    margin-bottom: 0px !important;
+  }
+}
+@media (max-width: 767px) {
+  .elfriede-shope-left-wrap {
+    display: block;
+  }
+  .elfriede-shope-left-wrap .elfriede-category-box {
+    margin-bottom: 30px !important;
+  }
 }
 
 .pintext-middle-add {

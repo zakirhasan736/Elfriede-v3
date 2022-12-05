@@ -12,70 +12,10 @@
         <!-- Default Theme -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.min.css">
-<style>
-    /* .loader{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 50;
-    background: #f5e0bb;
-}
-#percent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    color: white;    
-    font-size: 150px;
-    font-weight: lighter;
-    font-style: italic;
-    mix-blend-mode: difference;
-}
-#bar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-}
-#barconfirm{
-    width: 0%;
-    height: 100vh;
-    background: #1b1b1b;
-}
-.main-page{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-}
-.content{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: #1b1b1b;
-    flex-direction: column;
-    color: white;
-    overflow: hidden;
-    z-index: 50;
-}
-.content h1{
-    font-size: 100px;
-    font-family: 'Monument';
-    text-transform: uppercase;
-    font-weight: lighter;
-} */
-</style>
+
     </head>
 
-    <body>
+    <body onload="move()">
         <div class="loader elfriede-preloader-screen">
             <!-- loader header -->
             <div class="elfriede-loader-header"><a href="/home"><img src="/assets/image/logo/Small-Logo.svg"
@@ -92,33 +32,33 @@
 
         <!-- ===all css here=== -->
         <script src="assets/js/jquery-3.6.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="assets/Js/gsap.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
 <script>
    const load = gsap.timeline({
     paused: "true"
 })
-load.to("#percent , #bar", {
-    duration: 20,
-    opacity: 1,
+load.to("#percent , #bar, .loader", {
+    duration: 1,
+    opacity: 0,
     zIndex: 1
 })
-// load.to(".progress",{
-//     duration: 10,
-//     width: "0%"
-// })
-// load.from(".content", {
-//     duration: .8,
-//     opacity: 0,
-//     ease: "Power4.out"
-// }, "-=.5")
-// load.from(".content h1", {
-//     duration: .5,
-//     y: 50,
-//     skewY: 10,
-//     opacity: 0
-// },"-=1")
+load.to(".progress",{
+    duration: 10,
+    width: "0%"
+})
+load.from(".content", {
+    duration: .8,
+    opacity: 0,
+    ease: "Power4.out"
+}, "-=.5")
+load.from(".content h1", {
+    duration: .5,
+    y: 50,
+    skewY: 10,
+    opacity: 0
+},"-=1")
 
 var id, width = 1;
 function loading(){

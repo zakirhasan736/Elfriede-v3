@@ -28,6 +28,9 @@
   gap: 24px;
   justify-content: space-between;
 }
+.elfriede-product-slides-section .elfriede-product-slides-wrap .elfriede-product-slider .elfriede-product-slides {
+  overflow: hidden;
+}
 .elfriede-product-slides-section .elfriede-product-slides-wrap .elfriede-product-slider .elfriede-product-slides img {
   width: 100%;
   min-width: 481px;

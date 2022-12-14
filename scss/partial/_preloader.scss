@@ -1,27 +1,20 @@
 
-.elfriede-preloader-screen {
-    position: fixed;
+.preloader {
+  position: relative;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
     left: 0;
     right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 32px 0 0;
     background: #fff;
     z-index: 99999;
+    &.hidden {
+      display: none !important;
+    }
   }
-  .elfriede-loader-mainpoint {
-      position: absolute;
-      bottom: -43px;
-      left: -2px;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-
-    .elfriede-loader-parcent {
+  .preloader-block {
+      .percent {
         font-size: 180px;
         line-height: 216px;
         letter-spacing: -1.5px;
@@ -29,17 +22,24 @@
         margin-bottom: 0;
         color: #282C35;
       }
-      .elfriede-loader-barbox{
-        width: 561px;
-        .elfriede-loader-bar {
-            width: 0%;
-            max-width: 561px;
-            height: 6px;
-            background: #282C35;
-            margin-left: 25px;
-          } 
-    }
-      
   }
-
+  .preloader-bar{
+    width: 561px;
+    position: relative;
+    .preloader-progress {
+        width: 0%;
+        max-width: 561px;
+        height: 6px;
+        background: #282C35;
+        margin-left: 25px;
+      } 
+}
+.preloader-wrapper{
+  position: absolute;
+  bottom: -43px;
+  left: -2px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
  

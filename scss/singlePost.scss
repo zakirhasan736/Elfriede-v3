@@ -144,14 +144,22 @@
           background-color: $lightGray;
           padding: 18px 14px;
           cursor: pointer;
+          transition: all 150ms ease 0s;
           a {
             font-family: $secondaryFont;
             font-size: 18px;
             font-weight: 400;
             line-height: 22px;
             color: $black;
+            transition: all 150ms ease 0s;
             @include media-breakpoint-up(md) {
              font-size: 16px;
+            }
+          }
+          &:hover{
+            background: $mainGreen;
+            a{
+              color: $white;
             }
           }
         }
@@ -280,16 +288,41 @@
   }
   .elfriede-next-blogs-wrap {
     padding: 100px 82px 106px;
+    z-index: 9;
+    position: relative;
+       &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        right: 0;
+        position: absolute;
+        top: 0;
+        background: $lightGray;
+        z-index: -1;
+        transition: all 350ms ease-in 0s;
+       }
+
     @include media-breakpoint-up(md) {
       padding: 96px 118px 97px 53px;
     }
     @include media-breakpoint-up(md) {
       padding: 60px 35px 80px 37px;
     }
-    background: $lightGray;
     .elfriede-next-blog-title {
       max-width: 1013px;
       width: 100%;
+      color: transparent;
+      -webkit-text-stroke: 1px $primaryColor;
+      transition: all 350ms ease-in 0s;
+
     }
+    &:hover{
+      &::before{
+        width: 0%;
+       }
+       .elfriede-next-blog-title {
+        color: $primaryColor;
+      }
+     }
   }
 }

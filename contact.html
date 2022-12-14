@@ -16,22 +16,26 @@
 
     </head>
 
-    <body>
-         <!-- =========================================================
+    <body class="dsn-effect-scroll dsn-ajax">
+        <main class="main-root">
+
+            <div id="dsn-scrollbar">
+        <!-- =========================================================
              ***  preloader screen section start 
-  ===============================================================-->
-    <div class="loader elfriede-preloader-screen">
-        <!-- loader header -->
-        <div class="elfriede-loader-header"><a href="#!"><img src="/assets/image/logo/Small-Logo.svg"
-                    width="170px" height="51px" alt="company-logo" class="elfriede-brand-logo"></a></div>
-         <!-- loader main box -->
-        <div class="progre elfriede-loader-mainpoint">
-            <div class="elfriede-loader-parcent" id="percent">0%</div>
-            <div id="bar" class="elfriede-loader-barbox">
-                <div id="barconfirm" class="elfriede-loader-bar"></div>
+         ===============================================================-->
+         <div class="preloader">
+            <div class="elfriede-loader-header d-flex justify-content-center"><a href="#!"><img
+                        src="/assets/image/logo/Small-Logo.svg" width="170px" height="51px" alt="company-logo"
+                        class="elfriede-brand-logo"></a></div>
+            <div class="preloader-wrapper">
+                <div class="preloader-block">
+                    <div class="percent">0</div>
+                </div>
+                <div class="preloader-bar">
+                    <div class="preloader-progress"></div>
+                </div>
             </div>
         </div>
-    </div>
         <!-- =========================================================
              1.  header section start 
   ===============================================================-->
@@ -45,7 +49,7 @@
                                 alt="trigger bar"></div>
                         <div class="elfriede-brand-logo"><a href="/" class="brand-logo"><img
                                     src="/assets/image/logo/Small-Logo.svg" alt="brand-logo"></a></div>
-                        <div class="elfriede-header-button"><a href="/" class="elfriede-secondary-button d-none d-md-block"><img
+                        <div class="elfriede-header-button"><a href="/" class="elfriede-secondary-button d-none d-md-block image-zoom effect-ajax" data-dsn="parallax"><img
                                     src="/assets/image/icon/arrow_outward.png" alt="arrow icons" class="arrow-icons">
                                 GET AN OFFER</a>
                         </div>
@@ -105,7 +109,7 @@
                 <div class="elfriede-container">
                     <div class="elfriede-main-visual-wrap">
                         <div class="elfriede-main-contant">
-                            <h1 class="elfriede-banner-title mb-0">We Can’t Wait to Hear From You.</h1>
+                            <h1 class="elfriede-banner-title mb-0 justify-content-start" data-dsn-animate="text">We Can’t Wait to Hear From You.</h1>
                         </div>
                     </div>
                 </div>
@@ -120,18 +124,18 @@
                                 alt="map image" class="elfriede-map-img"></div>
                         <div class="elfriede-location-details-box">
                             <div class="location-details-box details-box-one">
-                                <h4 class="details-title">New York Office</h4>
-                                <p class="sub-point">128 Allen Street</p>
-                                <p class="sub-point">allen@elfriede.com</p>
-                                <p class="sub-point">Work days, 9 - 17</p>
-                                <p class="sub-point">+44 333 333</p>
+                                <h4 class="details-title d-flex align-items-center justify-content-start flex-wrap" data-dsn-animate="text">New York Office</h4>
+                                <p class="sub-point" data-dsn-animate="up">128 Allen Street</p>
+                                <p class="sub-point" data-dsn-animate="up">allen@elfriede.com</p>
+                                <p class="sub-point" data-dsn-animate="up">Work days, 9 - 17</p>
+                                <p class="sub-point" data-dsn-animate="up">+44 333 333</p>
                             </div>
                             <div class="location-details-box">
-                                <h4 class="details-title">Chicago Office</h4>
-                                <p class="sub-point">128 Denver Street</p>
-                                <p class="sub-point">denver@elfriede.com</p>
-                                <p class="sub-point">Work days, 9 - 17</p>
-                                <p class="sub-point">+44 111 333</p>
+                                <h4 class="details-title d-flex align-items-center justify-content-start flex-wrap" data-dsn-animate="text">Chicago Office</h4>
+                                <p class="sub-point" data-dsn-animate="up">128 Denver Street</p>
+                                <p class="sub-point" data-dsn-animate="up">denver@elfriede.com</p>
+                                <p class="sub-point" data-dsn-animate="up">Work days, 9 - 17</p>
+                                <p class="sub-point" data-dsn-animate="up">+44 111 333</p>
                             </div>
                         </div>
                     </div>
@@ -146,7 +150,7 @@
                         <img class="elfriede-act-modal-img" src="/assets/image/bg-img-2.png" alt="action modal image">
                         <div class="elfriede-act-form-box text-center">
                             <div class="elfriede-act-text-contbox mb-35">
-                                <h3 class="elfriede-act-form-title mb-15">Have any questions?</h3>
+                                <h3 class="elfriede-act-form-title mb-15 d-flex align-items-center justify-content-center flex-wrap" data-dsn-animate="text">Have any questions?</h3>
                                 <p class="elfriede-act-form-subtitle mb-0">We’re here to help.</p>
                             </div>
                             <div class="elfriede-contact-form">
@@ -167,7 +171,7 @@
                                             placeholder="Write your message here..."></textarea>
                                     </div>
                                     <div class="elfriede-contact-btn-box">
-                                        <a href="/" class="elfriede-primary-button"><img
+                                        <a href="/" class="elfriede-primary-button image-zoom effect-ajax" data-dsn="parallax"><img
                                                 src="/assets/image/icon/arrow_outward-fill.png" alt="arrow icons"
                                                 class="arrow-icons">SEND</a>
                                     </div>
@@ -209,8 +213,6 @@
                     </div>
                 </div>
             </section>
-
-        </main>
 
         <!-- =========================================================
              Footer section start 
@@ -306,11 +308,15 @@
         <!-- =========================================================
               Footer section END
   ===============================================================-->
+</main>
+</div>
         <!-- ===all css here=== -->
-        <script src="assets/js/jquery-3.6.1.min.js"></script>
-        <script src="assets/Js/gsap.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="/assets/js/jquery-3.6.1.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/gsap.min.js"></script>
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/dsn-grid.js"></script>
+        <script src="/assets/js/custom.js"></script>
 
     </body>
 

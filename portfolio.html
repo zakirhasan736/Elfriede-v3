@@ -16,22 +16,26 @@
 
     </head>
 
-    <body>
-         <!-- =========================================================
+    <body class="dsn-effect-scroll dsn-ajax">
+        <main class="main-root">
+
+            <div id="dsn-scrollbar">
+        <!-- =========================================================
              ***  preloader screen section start 
-  ===============================================================-->
-    <div class="loader elfriede-preloader-screen">
-        <!-- loader header -->
-        <div class="elfriede-loader-header"><a href="#!"><img src="/assets/image/logo/Small-Logo.svg"
-                    width="170px" height="51px" alt="company-logo" class="elfriede-brand-logo"></a></div>
-         <!-- loader main box -->
-        <div class="progre elfriede-loader-mainpoint">
-            <div class="elfriede-loader-parcent" id="percent">0%</div>
-            <div id="bar" class="elfriede-loader-barbox">
-                <div id="barconfirm" class="elfriede-loader-bar"></div>
+         ===============================================================-->
+         <div class="preloader">
+            <div class="elfriede-loader-header d-flex justify-content-center"><a href="#!"><img
+                        src="/assets/image/logo/Small-Logo.svg" width="170px" height="51px" alt="company-logo"
+                        class="elfriede-brand-logo"></a></div>
+            <div class="preloader-wrapper">
+                <div class="preloader-block">
+                    <div class="percent">0</div>
+                </div>
+                <div class="preloader-bar">
+                    <div class="preloader-progress"></div>
+                </div>
             </div>
         </div>
-    </div>
         <!-- =========================================================
              1.  header section start 
   ===============================================================-->
@@ -46,7 +50,7 @@
                         <div class="elfriede-brand-logo"><a href="/" class="brand-logo"><img
                                     src="/assets/image/logo/Small-Logo.svg" alt="brand-logo"></a></div>
                         <div class="elfriede-header-button"><a href="/"
-                                class="elfriede-secondary-button d-none d-md-block"><img
+                                class="elfriede-secondary-button d-none d-md-block image-zoom effect-ajax" data-dsn="parallax"><img
                                     src="/assets/image/icon/arrow_outward.png" alt="arrow icons" class="arrow-icons">
                                 GET AN OFFER</a>
                         </div>
@@ -106,8 +110,8 @@
                 <div class="elfriede-container">
                     <div class="elfriede-main-visual-wrap">
                         <div class="elfriede-main-contant">
-                            <h1 class="elfriede-banner-title mb-15">Check Out Our Portfolio</h1>
-                            <p class="elfriede-subtitle subtitle">
+                            <h1 class="elfriede-banner-title mb-15 justify-content-start"  data-dsn-animate="text">Check Out Our Portfolio</h1>
+                            <p class="elfriede-subtitle subtitle" data-dsn-animate="up">
                                 Find our latest work and see why our clients trust us. A wonderful serenity has taken
                                 possession of my entire soul, like these sweet mornings of spring which I enjoy with my
                                 whole heart.
@@ -122,9 +126,9 @@
             <section class="elfriede-portfolio--section pt-80 pb-80">
                 <div class="elfriede-container">
                     <div class="elfriede-gallery-wrapper">
-                        <div class="elfriede-gallery-img">
+                        <div class="elfriede-gallery-img" data-dsn-animate="move">
                             <img src="/assets/image/portfolio/portfolio-img-1.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Garden of Babylon</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -132,7 +136,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-2.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Lotus Residence</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -140,7 +144,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-3.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Leean Buildings</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -148,7 +152,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-4.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Everyday Colors</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -156,7 +160,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-5.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Green Terraces</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -164,7 +168,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-6.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Green Terraces</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -180,13 +184,13 @@
                 <div class="elfriede-container">
                     <div class="elfriede-cta-wrapper pt-125 pb-135">
                         <div class="elfriede-cta-contant-box">
-                            <h3 class="title mb-45">Like what you see?</h3>
-                            <p class="desc mb-45">
+                            <h3 class="title mb-45 d-flex align-items-center justify-content-start flex-wrap"  data-dsn-animate="text">Like what you see?</h3>
+                            <p class="desc mb-45"  data-dsn-animate="up">
                                 A wonderful serenity has taken possession of my entire soul, like these sweet mornings
                                 of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence
                                 in this spot, which was created for the bliss of souls like mine.
                             </p>
-                            <a href="/" class="elfriede-primary-button mb-0"><img
+                            <a href="/" class="elfriede-primary-button mb-0 image-zoom effect-ajax" data-dsn="parallax"><img
                                     src="/assets/image/icon/arrow_outward-fill.png" alt="arrow icons"
                                     class="arrow-icons">CONTACT US</a>
                         </div>
@@ -201,7 +205,7 @@
                     <div class="elfriede-gallery-wrapper">
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-7.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Lazarus Project</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -209,7 +213,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-8.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">People and Architecture</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -217,7 +221,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-9.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Archways Project</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -225,7 +229,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-10.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Residential Buildings</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -233,7 +237,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-11.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Theatre House Sydeny</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -241,7 +245,7 @@
                         </div>
                         <div class="elfriede-gallery-img">
                             <img src="/assets/image/portfolio/portfolio-img-12.png" alt="gallery image"
-                                class="gallery-img">
+                                class="gallery-img  image-zoom" data-dsn="parallax">
                             <div class="elfriede-portfolio-info text-center d-lg-none d-block">
                                 <h5 class="mb-10">Residential Buildings</h5>
                                 <a href="/" class="link-text">Find out</a>
@@ -259,7 +263,7 @@
                         <div class="elfriede-act-contant-box">
                             <div class="elfriede-act-modal-box">
                                 <div class="elfriede-act-modal-contbox text-center d-block d-lg-none">
-                                    <h3 class="title mb-45">Your next project should be here. Drop us a message.</h3>
+                                    <h3 class="title mb-45 d-flex align-items-center justify-content-start flex-wrap"  data-dsn-animate="text">Your next project should be here. Drop us a message.</h3>
                                     <div class="elfriede-contact-btn-box">
                                         <a href="/" class="elfriede-primary-button"><img
                                                 src="/assets/image/icon/arrow_outward-fill.png" alt="arrow icons"
@@ -269,7 +273,7 @@
                             </div>
                             <d1iv class="elfriede-act-form-box text-center d-none d-lg-block">
                                 <div class="elfriede-act-text-contbox mb-30">
-                                    <h3 class="elfriede-act-form-title mb-0">Drop us a message</h3>
+                                    <h3 class="elfriede-act-form-title mb-0 d-flex align-items-center justify-content-center flex-wrap"  data-dsn-animate="text">Drop us a message</h3>
                                 </div>
                                 <div class="elfriede-contact-form">
                                     <form action="" class="elfirede-contact-form">
@@ -289,7 +293,7 @@
                                                 placeholder="Write your message here..."></textarea>
                                         </div>
                                         <div class="elfriede-contact-btn-box">
-                                            <a href="/" class="elfriede-primary-button"><img
+                                            <a href="/" class="elfriede-primary-button image-zoom effect-ajax" data-dsn="parallax"><img
                                                     src="/assets/image/icon/arrow_outward-fill.png" alt="arrow icons"
                                                     class="arrow-icons">SEND</a>
                                         </div>
@@ -300,8 +304,6 @@
                     </div>
                 </div>
             </section>
-
-        </main>
 
         <!-- =========================================================
              Footer section start 
@@ -397,11 +399,15 @@
         <!-- =========================================================
               Footer section END
   ===============================================================-->
+</main>
+</div>
         <!-- ===all css here=== -->
-        <script src="assets/js/jquery-3.6.1.min.js"></script>
-        <script src="assets/Js/gsap.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="/assets/js/jquery-3.6.1.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/gsap.min.js"></script>
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/dsn-grid.js"></script>
+        <script src="/assets/js/custom.js"></script>
 
     </body>
 

@@ -206,6 +206,28 @@
   }
 }
 
+.elfriede-singleitem-beyond-right {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.elfriede-singleitem-beyond-left {
+  position: relative;
+  z-index: 99;
+}
+
+.elfriede-singleitem-beyond-left:before {
+  content: "";
+  position: absolute;
+  width: 189px;
+  height: 2px;
+  right: -157px;
+  top: 30px;
+  background: #282C35;
+  z-index: 99999;
+}
+
 @media (max-width: 991px) {
   .elfriede-single-thread-section {
     padding-top: 0;
@@ -288,4 +310,10 @@
     height: 30px;
     line-height: 30px;
   }
+}
+
+.elfriede-thread-modalimg {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }

@@ -215,6 +215,7 @@ body {
   overflow-x: hidden;
   color: #000;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .img {
@@ -399,19 +400,19 @@ label {
 }
 
 *::-moz-selection {
-  background: #24324F;
+  background: #282C35;
   color: #fff;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #24324F;
+  background: #282C35;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #24324F;
+  background: #282C35;
   color: #fff;
   text-shadow: none;
 }
@@ -432,6 +433,474 @@ label {
   color: #EFEFEF;
   font-size: 1.4rem;
   opacity: 1;
+}
+
+span {
+  display: inline-block;
+  color: inherit;
+}
+
+[data-dsn-animate=animate] .dsn-wrapper {
+  overflow: hidden;
+  will-change: transform;
+  display: block;
+}
+
+[data-dsn-animate=animate] .dsn-wrapper .dsn-word-wrapper {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform;
+  transform: translateY(50%) rotate(15deg) scale(0.8);
+  transform-origin: top left;
+}
+
+[data-dsn-animate=animate] .dsn-word-wrapper {
+  transform: translateY(50%) rotate(15deg) !important;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper {
+  margin-right: 7px;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:last-child {
+  margin-right: 0;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper {
+  will-change: transform;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper .dsn-word-wrapper {
+  will-change: transform;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(0) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms, visibility 0.3s 0ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(1) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 236ms, visibility 0.3s 45ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(2) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 272ms, visibility 0.3s 90ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(3) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 308ms, visibility 0.3s 135ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(4) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 344ms, visibility 0.3s 180ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(5) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 380ms, visibility 0.3s 225ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(6) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 416ms, visibility 0.3s 270ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(7) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 452ms, visibility 0.3s 315ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(8) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 488ms, visibility 0.3s 360ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(9) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 524ms, visibility 0.3s 405ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(10) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 560ms, visibility 0.3s 450ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(11) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 596ms, visibility 0.3s 495ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(12) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 632ms, visibility 0.3s 540ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(13) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 668ms, visibility 0.3s 585ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(14) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 704ms, visibility 0.3s 630ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(15) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 740ms, visibility 0.3s 675ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(16) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 776ms, visibility 0.3s 720ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(17) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 812ms, visibility 0.3s 765ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(18) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 848ms, visibility 0.3s 810ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(19) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 884ms, visibility 0.3s 855ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(20) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 920ms, visibility 0.3s 900ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(21) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 956ms, visibility 0.3s 945ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(22) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 992ms, visibility 0.3s 990ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(23) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1028ms, visibility 0.3s 1035ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(24) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1064ms, visibility 0.3s 1080ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(25) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1100ms, visibility 0.3s 1125ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(26) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1136ms, visibility 0.3s 1170ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(27) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1172ms, visibility 0.3s 1215ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(28) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1208ms, visibility 0.3s 1260ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(29) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1244ms, visibility 0.3s 1305ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(30) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1280ms, visibility 0.3s 1350ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(31) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1316ms, visibility 0.3s 1395ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(32) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1352ms, visibility 0.3s 1440ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(33) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1388ms, visibility 0.3s 1485ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(34) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1424ms, visibility 0.3s 1530ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(35) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1460ms, visibility 0.3s 1575ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(36) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1496ms, visibility 0.3s 1620ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(37) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1532ms, visibility 0.3s 1665ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(38) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1568ms, visibility 0.3s 1710ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(39) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1604ms, visibility 0.3s 1755ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(40) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1640ms, visibility 0.3s 1800ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(41) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1676ms, visibility 0.3s 1845ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(42) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1712ms, visibility 0.3s 1890ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(43) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1748ms, visibility 0.3s 1935ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(44) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1784ms, visibility 0.3s 1980ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(45) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1820ms, visibility 0.3s 2025ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(46) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1856ms, visibility 0.3s 2070ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(47) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1892ms, visibility 0.3s 2115ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(48) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1928ms, visibility 0.3s 2160ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(49) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1964ms, visibility 0.3s 2205ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(50) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2000ms, visibility 0.3s 2250ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(51) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2036ms, visibility 0.3s 2295ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(52) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2072ms, visibility 0.3s 2340ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(53) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2108ms, visibility 0.3s 2385ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(54) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2144ms, visibility 0.3s 2430ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(55) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2180ms, visibility 0.3s 2475ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(56) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2216ms, visibility 0.3s 2520ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(57) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2252ms, visibility 0.3s 2565ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(58) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2288ms, visibility 0.3s 2610ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(59) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2324ms, visibility 0.3s 2655ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(60) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2360ms, visibility 0.3s 2700ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(61) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2396ms, visibility 0.3s 2745ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(62) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2432ms, visibility 0.3s 2790ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(63) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2468ms, visibility 0.3s 2835ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(64) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2504ms, visibility 0.3s 2880ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(65) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2540ms, visibility 0.3s 2925ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(66) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2576ms, visibility 0.3s 2970ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(67) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2612ms, visibility 0.3s 3015ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(68) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2648ms, visibility 0.3s 3060ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(69) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2684ms, visibility 0.3s 3105ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(70) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2720ms, visibility 0.3s 3150ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(71) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2756ms, visibility 0.3s 3195ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(72) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2792ms, visibility 0.3s 3240ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(73) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2828ms, visibility 0.3s 3285ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(74) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2864ms, visibility 0.3s 3330ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(75) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2900ms, visibility 0.3s 3375ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(76) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2936ms, visibility 0.3s 3420ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(77) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2972ms, visibility 0.3s 3465ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(78) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3008ms, visibility 0.3s 3510ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(79) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3044ms, visibility 0.3s 3555ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(80) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3080ms, visibility 0.3s 3600ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(81) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3116ms, visibility 0.3s 3645ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(82) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3152ms, visibility 0.3s 3690ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(83) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3188ms, visibility 0.3s 3735ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(84) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3224ms, visibility 0.3s 3780ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(85) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3260ms, visibility 0.3s 3825ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(86) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3296ms, visibility 0.3s 3870ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(87) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3332ms, visibility 0.3s 3915ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(88) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3368ms, visibility 0.3s 3960ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(89) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3404ms, visibility 0.3s 4005ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(90) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3440ms, visibility 0.3s 4050ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(91) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3476ms, visibility 0.3s 4095ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(92) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3512ms, visibility 0.3s 4140ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(93) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3548ms, visibility 0.3s 4185ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(94) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3584ms, visibility 0.3s 4230ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(95) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3620ms, visibility 0.3s 4275ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(96) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3656ms, visibility 0.3s 4320ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(97) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3692ms, visibility 0.3s 4365ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(98) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3728ms, visibility 0.3s 4410ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(99) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3764ms, visibility 0.3s 4455ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-wrapper:nth-of-type(100) .dsn-word-wrapper {
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3800ms, visibility 0.3s 4500ms;
+}
+
+.dsn-active[data-dsn-animate=animate] .dsn-word-wrapper {
+  transform-origin: top left;
+  transition-property: all !important;
+  transform: none !important;
+}
+
+[data-dsn-animate=up] {
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, transform;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+.dsn-active[data-dsn-animate=up] {
+  transform: none;
+  opacity: 1;
+  visibility: visible;
 }
 
 .elfriede-main-visual-section {
@@ -534,4 +1003,8 @@ label {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+.elfriede-blogs-img-box {
+  overflow: hidden;
+  margin-bottom: 35px;
 }

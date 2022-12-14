@@ -42,6 +42,9 @@
 .elfriede-main-visual-section .elfriede-container .elfriede-main-visual-wrap .elfriede-main-contant .elfriede-banner-title {
   max-width: 1073px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .elfriede-main-visual-section .elfriede-container .elfriede-main-visual-wrap .elfriede-main-contant .elfriede-banner-button .elfriede-primary-button {
   color: #282C35;
@@ -259,6 +262,19 @@
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.prallex-image-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.prallex-image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .elfriede--our-blog-section {

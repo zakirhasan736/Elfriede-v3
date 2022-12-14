@@ -16,22 +16,26 @@
 
     </head>
 
-    <body>
-         <!-- =========================================================
+    <body class="dsn-effect-scroll dsn-ajax">
+        <main class="main-root">
+
+            <div id="dsn-scrollbar">
+        <!-- =========================================================
              ***  preloader screen section start 
-  ===============================================================-->
-    <div class="loader elfriede-preloader-screen">
-        <!-- loader header -->
-        <div class="elfriede-loader-header"><a href="#!"><img src="/assets/image/logo/Small-Logo.svg"
-                    width="170px" height="51px" alt="company-logo" class="elfriede-brand-logo"></a></div>
-         <!-- loader main box -->
-        <div class="progre elfriede-loader-mainpoint">
-            <div class="elfriede-loader-parcent" id="percent">0%</div>
-            <div id="bar" class="elfriede-loader-barbox">
-                <div id="barconfirm" class="elfriede-loader-bar"></div>
+         ===============================================================-->
+         <div class="preloader">
+            <div class="elfriede-loader-header d-flex justify-content-center"><a href="#!"><img
+                        src="/assets/image/logo/Small-Logo.svg" width="170px" height="51px" alt="company-logo"
+                        class="elfriede-brand-logo"></a></div>
+            <div class="preloader-wrapper">
+                <div class="preloader-block">
+                    <div class="percent">0</div>
+                </div>
+                <div class="preloader-bar">
+                    <div class="preloader-progress"></div>
+                </div>
             </div>
         </div>
-    </div>
         <!-- =========================================================
              1.  header section start 
   ===============================================================-->
@@ -45,7 +49,7 @@
                                 alt="trigger bar"></div>
                         <div class="elfriede-brand-logo"><a href="/" class="brand-logo"><img
                                     src="/assets/image/logo/Small-Logo.svg" alt="brand-logo"></a></div>
-                        <div class="elfriede-header-button"><a href="/" class="elfriede-secondary-button d-none d-md-block"><img
+                        <div class="elfriede-header-button"><a href="/" class="elfriede-secondary-button d-none d-md-block image-zoom effect-ajax" data-dsn="parallax"><img
                                     src="/assets/image/icon/arrow_outward.png" alt="arrow icons" class="arrow-icons">
                                 GET AN OFFER</a>
                         </div>
@@ -106,7 +110,7 @@
                     <div class="elfriede-container">
                         <div class="elfriede-main-contant">
                             <p class="subtitle">Blog & More</p>
-                            <h1 class="elfriede-banner-title mb-0">Latest News</h1>
+                            <h1 class="elfriede-banner-title text-left justify-content-start mb-0"  data-dsn-animate="text">Latest News</h1>
                         </div>
                     </div>
                 </div>
@@ -119,49 +123,55 @@
                     <div class="elfriede-blogs-wrapper pt-140 pb-140">
 
                         <div class="elfriede-blogs-itembox mb-110">
-                            <img src="/assets/image/blog/blog-large-img.png" alt="blogs image" class="blogs-image">
+                            <div class="elfriede-blogs-img-box" data-dsn-grid="move-up">
+                                <img src="/assets/image/blog/blog-large-img.png" alt="blogs image" class="blogs-image image-zoom" data-dsn="parallax"  data-dsn-y="30%">
+                            </div>
                             <div class="elfriede-blogs-textbox">
                                 <p class="subtitle">Sustainability</p>
-                                <h2 class="elfriede-blogs-title">Nature, the Force that Ever Was</h2>
-                                <p class="elfriede-blogs-desc">
+                                <h2 class="elfriede-blogs-title d-flex align-items-center flex-wrap" data-dsn-animate="text">Nature, the Force that Ever Was</h2>
+                                <p class="elfriede-blogs-desc" data-dsn-animate="up">
                                     In a world that is becoming more and more conscious of its impact on the
                                     environment, finding ways to preserve resources while also creating beautiful spaces
                                     is critical. Architecture can be a powerful force for change—but it's not always
                                     easy to find a balance between aesthetics and sustainability.
                                 </p>
-                                <a href="/" class="elfriede-primary-button"><img src="/assets/image/icon/arrow_outward-fill.png"
+                                <a href="/" class="elfriede-primary-button image-zoom effect-ajax" data-dsn="parallax"><img src="/assets/image/icon/arrow_outward-fill.png"
                                     alt="arrow icons" class="arrow-icons"> READ MORED</a>
                             </div>
                         </div>
 
                         <div class="elfriede-blogs-itembox mb-110">
-                            <img src="/assets/image/blog/blog-large-img2.png" alt="blogs image" class="blogs-image">
+                            <div class="elfriede-blogs-img-box" data-dsn-grid="move-up">
+                                <img src="/assets/image/blog/blog-large-img2.png" alt="blogs image" class="blogs-image image-zoom" data-dsn="parallax"  data-dsn-y="30%">
+                            </div>
                             <div class="elfriede-blogs-textbox">
                                 <p class="subtitle">Sustainability</p>
-                                <h2 class="elfriede-blogs-title">Nature, the Force that Ever Was</h2>
-                                <p class="elfriede-blogs-desc">
+                                <h2 class="elfriede-blogs-title d-flex align-items-center flex-wrap" data-dsn-animate="text">Nature, the Force that Ever Was</h2>
+                                <p class="elfriede-blogs-desc" data-dsn-animate="up">
                                     In a world that is becoming more and more conscious of its impact on the
                                     environment, finding ways to preserve resources while also creating beautiful spaces
                                     is critical. Architecture can be a powerful force for change—but it's not always
                                     easy to find a balance between aesthetics and sustainability.
                                 </p>
-                                <a href="/" class="elfriede-primary-button"><img src="/assets/image/icon/arrow_outward-fill.png"
+                                <a href="/" class="elfriede-primary-button image-zoom effect-ajax" data-dsn="parallax"><img src="/assets/image/icon/arrow_outward-fill.png"
                                     alt="arrow icons" class="arrow-icons"> READ MORED</a>
                             </div>
                         </div>
 
                         <div class="elfriede-blogs-itembox mb-110">
-                            <img src="/assets/image/blog/blog-large-img3.png" alt="blogs image" class="blogs-image">
+                            <div class="elfriede-blogs-img-box" data-dsn-grid="move-up">
+                                <img src="/assets/image/blog/blog-large-img3.png" alt="blogs image" class="blogs-image image-zoom" data-dsn="parallax"  data-dsn-y="30%">
+                            </div>
                             <div class="elfriede-blogs-textbox">
                                 <p class="subtitle">Sustainability</p>
-                                <h2 class="elfriede-blogs-title">Nature, the Force that Ever Was</h2>
-                                <p class="elfriede-blogs-desc">
+                                <h2 class="elfriede-blogs-title d-flex align-items-center flex-wrap" data-dsn-animate="text">Nature, the Force that Ever Was</h2>
+                                <p class="elfriede-blogs-desc" data-dsn-animate="up">
                                     In a world that is becoming more and more conscious of its impact on the
                                     environment, finding ways to preserve resources while also creating beautiful spaces
                                     is critical. Architecture can be a powerful force for change—but it's not always
                                     easy to find a balance between aesthetics and sustainability.
                                 </p>
-                                <a href="/" class="elfriede-primary-button"><img src="/assets/image/icon/arrow_outward-fill.png"
+                                <a href="/" class="elfriede-primary-button image-zoom effect-ajax" data-dsn="parallax"><img src="/assets/image/icon/arrow_outward-fill.png"
                                     alt="arrow icons" class="arrow-icons"> READ MORED</a>
                             </div>
                         </div>
@@ -169,7 +179,6 @@
                     </div>
                 </div>
             </section>
-        </main>
 
         <!-- =========================================================
              Footer section start 
@@ -265,11 +274,15 @@
         <!-- =========================================================
               Footer section END
   ===============================================================-->
+</main>
+</div>
         <!-- ===all css here=== -->
-        <script src="assets/js/jquery-3.6.1.min.js"></script>
-        <script src="assets/Js/gsap.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="/assets/js/jquery-3.6.1.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/gsap.min.js"></script>
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/dsn-grid.js"></script>
+        <script src="/assets/js/custom.js"></script>
 
     </body>
 

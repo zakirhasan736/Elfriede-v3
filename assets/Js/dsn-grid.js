@@ -2,32 +2,7 @@ var $ = jQuery,
     wind = jQuery(window),
     body = jQuery("body"),
     dsnGrid = {
-        backgroundPosition: function (e, n, t) {
-            var o, i, a, s, r;
-            return e instanceof jQuery == !1 && (e = jQuery(e)), t = this.getUndefinedVal(t, {}), o = this.getUndefinedVal(t.sizeX, "105%"), i = this.getUndefinedVal(t.sizeY, "105%"), s = this.getUndefinedVal(t.left, "-5%"), r = this.getUndefinedVal(t.top, "-5%"), a = this.getUndefinedVal(t.move, 100), e.css({
-                width: o,
-                height: i,
-                left: s,
-                top: r,
-                backgroundPositionX: "calc(50% - " + -2 * a + "px)",
-                backgroundPositionY: "calc(50% - " + -2 * a + "px)"
-            }), n = this.getUndefinedVal(n, 1), e.parent().on("mousemove", function (o) {
-                if (void 0 !== t.dataActive && jQuery(this).find(e).hasClass(t.dataActive)) return !1;
-                var i = o.clientX / jQuery(this).width() - .5,
-                    s = o.clientY / jQuery(this).height() - .5;
-                TweenLite.to(jQuery(this).find(e), n, {
-                    transformPerspective: 100,
-                    x: a * i + a + " ",
-                    y: a * s + a + ""
-                }), void 0 !== t.onEnter && t.onEnter(jQuery(this), o)
-            }).on("mouseleave", function (o) {
-                TweenMax.to(jQuery(this).find(e), n, {
-                    x: a,
-                    y: a,
-                    ease: Back.easeOut.config(4)
-                }), void 0 !== t.onLeave && t.onLeave(jQuery(this), o)
-            }), dsnGrid
-        },
+
         parallaxIt: function (e, n, t, o) {
             if (!(n.length <= 0)) {
                 var i = n[0].getBoundingClientRect(),
@@ -93,23 +68,7 @@ var $ = jQuery,
         getUndefinedVal: function (e, n) {
             return void 0 === e ? n : e
         },
-        mouseMove: function (e, n, t) {
-            jQuery(window);
-            var o = jQuery("body");
-            if (dsnGrid.getUndefinedVal(o.data("dsn-mousemove"), !1) && void 0 !== e && !(e.length <= 0) && null !== e) {
-                o.addClass("dsn-mousemove"), e instanceof jQuery == !1 && (e = jQuery(e));
-                var i = e,
-                    a = !1;
-                o.on("mousemove", function (e) {
-                    TweenLite.to(i, .5, {
-                        left: e.pageX,
-                        top: e.pageY
-                    }) /*i.css({left:e.pageX,top:e.pageY})*/ , void 0 !== n && void 0 !== n.onUpdate && n.onUpdate(e, e.pageX, e.pageY, i), void 0 !== n && void 0 !== n.onComplete && (a = !0, dsnGrid.endAnimate(i, function (e) {
-                        a && n.onComplete(e, i), a = !1
-                    }))
-                })
-            }
-        },
+
         endAnimate: function (e, n) {
             void 0 !== n && null !== n && e.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function (e) {
                 n(e)
@@ -164,48 +123,14 @@ var $ = jQuery,
                 }, d);
             return l
         },
-        embedVideo: function (e) {
-            jQuery("[data-dsn-video]").each(function (e) {
-                var n = jQuery(this),
-                    t = dsnGrid.removeAttr(n, "data-dsn-video");
-                n.on("click", function () {
-                    n.addClass("dsn-video"), n.html('<div class="dsn-iframe-player">' + t + "</div>"), dsnGrid.scrollTop(n, 1600, -100)
-                })
-            })
-        },
+
         removeAttr: function (e, n) {
             if (void 0 !== e && void 0 !== n) {
                 var t = e.attr(n);
                 return void 0 !== t && e.removeAttr(n), t
             }
         },
-        moveIcon: function (e, n) {
-            e.on("mousemove", function (t) {
-                var o = "top .15s ease-out,left .15s ease-out";
-                n.css({
-                    "-webkit-transition": o,
-                    "-moz-transition": o,
-                    "-ms-transition": o,
-                    "-o-transition": o,
-                    transition: o,
-                    "pointer-events": "none"
-                });
-                var i = t.pageX,
-                    a = t.pageY - jQuery(this).offset().top;
-                a > 0 && a < jQuery(this).height() && jQuery(this).offset().left < i && i < e.width() ? n.css({
-                    left: i,
-                    top: a
-                }) : TweenMax.to(n, .5, {
-                    left: "50%",
-                    top: "50%"
-                })
-            }).on("mouseleave", function () {
-                TweenMax.to(n, .5, {
-                    left: "50%",
-                    top: "50%"
-                })
-            })
-        },
+
         parallaxMoveElemnt: function (e, n, t, o, i) {
             var a = e,
                 s = e;

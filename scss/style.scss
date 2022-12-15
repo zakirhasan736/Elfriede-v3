@@ -77,3 +77,32 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+// slick dots styles css
+.slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -30px;
+  margin-top: 45px;
+  gap: 20px;
+  li{
+    button{
+      text-indent: -1000px !important;
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+      border-radius: 50px;
+      box-shadow: none;
+      outline: 0;
+      border: 0;
+      background-color: $white;
+    }
+    &.slick-active{
+      button{
+        background: $primaryColor;
+      }
+    }
+   }
+}

@@ -2258,9 +2258,6 @@ figure figcaption {
   }
 }
 .elfriede-client-section .elfriede-client-slider-box .elfriede-client-slides-box {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
   gap: 93px;
 }
 @media (max-width: 991px) {
@@ -2269,6 +2266,14 @@ figure figcaption {
   }
   .elfriede-client-section .elfriede-client-slider-box .elfriede-client-slides-box .elfriede-client-slide-items img {
     width: 204px;
+  }
+}
+.elfriede-client-section .elfriede-client-slider-box .elfriede-client-slides-box .elfriede-client-slide-items {
+  margin: 0 45px;
+}
+@media (max-width: 991px) {
+  .elfriede-client-section .elfriede-client-slider-box .elfriede-client-slides-box .elfriede-client-slide-items {
+    margin: 0 33px;
   }
 }
 
@@ -2337,7 +2342,7 @@ figure figcaption {
 }
 .elfriede-contact-act-section .elfriede-act-brand-slidesbox .elfriede-client-section .elfriede-client-slider-box .elfriede-client-slides-box {
   position: relative;
-  right: 60%;
+  right: 700px;
 }
 .elfriede-contact-act-section .elfriede-act-brand-slidesbox .elfriede-client-section .elfriede-gaving-text {
   margin-top: 50px;
@@ -2558,4 +2563,28 @@ figure figcaption {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -30px;
+  margin-top: 45px;
+  gap: 20px;
+}
+.slick-dots li button {
+  text-indent: -1000px !important;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+  background-color: #FFFFFF;
+}
+.slick-dots li.slick-active button {
+  background: #282C35;
 }

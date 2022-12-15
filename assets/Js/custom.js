@@ -1,50 +1,3 @@
-function SliderProject() {
-    $(".slider-project .swiper-container").each(function (e) {
-        new Swiper(this, {
-            slidesPerView: "auto",
-            spaceBetween: 60,
-            navigation: {
-                nextEl: $(this).parents(".slider-project").find(".slider-button-next"),
-                prevEl: $(this).parents(".slider-project").find(".slider-button-prev")
-            },
-            pagination: {
-                el: $(this).parents(".slider-project").find(".swiper-pagination"),
-                type: "fraction"
-            }
-        })
-    })
-}
-
-// function data_overlay() {
-//     $("[data-overlay-color]").each(function (e) {
-//         var t = $(this),
-//             n = dsnGrid.removeAttr(t, "data-overlay-color");
-//         t.addClass("dsn-overlay-" + e), $("body").append("<style>.dsn-overlay-" + e + "[data-overlay]:before{background: " + n + ";}</style>")
-//     })
-// }
-
-// function background() {
-//     $(".cover-bg, section , [data-image-src]").each(function () {
-//         var e = $(this).attr("data-image-src");
-//         void 0 !== e && !1 !== e && $(this).css("background-image", "url(" + e + ")")
-//     })
-// }
-
-function slick_client(e) {
-    var t = $(".client-curs");
-    t.length > 0 && (t.slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: !0,
-        infinite: !0,
-        nextArrow: '<i class="fas fa-angle-right"></i>',
-        prevArrow: '<i class="fas fa-angle-left"></i>',
-        cssEase: "cubic-bezier(.9, .03, .41, .49)",
-        speed: 700
-    }), e.width() > 991 && (dsnGrid.parallaxMoveElemnt(t.find(".fas.fa-angle-right"), 25), dsnGrid.parallaxMoveElemnt(t.find(".fas.fa-angle-left"), 25)))
-}
-
-
 ! function (e) {
     "use strict";
 
@@ -127,10 +80,8 @@ function slick_client(e) {
         }
     }
     const i = e(window),
-        o = e("body"),
-        s = {
-            animateTextAjax: '.headefr-fexid .project-title .title-text-header .cat ,[data-dsn-animate="ajax"] , footer, .next-project , .root-project'
-        };
+        o = e("body");
+
     (navigator.userAgent.match(/Edge/i) || navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/MSIE 9/i)) && e(".cursor").css("display", "none"),
         function () {
             var t = e(".preloader"),
@@ -193,18 +144,6 @@ function slick_client(e) {
                             scale: e
                         }, 0)
                     }
-                                
-                    var c = new ScrollMagic.Scene({
-                        triggerElement: n,
-                        triggerHook: 0,
-                        duration: "100%"
-                    }).setTween(d).addTo(t);
-                    let u = a.find("video");
-                    return (u.length > 0 || o.hasClass("v-light")) && (c.on("enter", function () {
-                        u.length > 0 && u.get(0).play(), o.hasClass("v-light") && !e(n).hasClass("header-hero-2") && o.removeClass("menu-light")
-                    }), c.on("leave", function () {
-                        u.length > 0 && u.get(0).pause(), o.hasClass("v-light") && !e(n).hasClass("header-hero-2") && o.addClass("menu-light")
-                    })), c
                 },
                 nextProject: function () {
                     let n = e("#dsn-next-parallax-img"),
@@ -230,8 +169,6 @@ function slick_client(e) {
                         }, 0)).addTo(t);
                     r.getListener(function (e) {
                         !1 !== s && s.refresh(), !1 !== l && l.refresh()
-                    }), !1 !== l && o.hasClass("v-light") && l.on("progress", function (e) {
-                        e.progress > .8 ? o.removeClass("menu-light") : o.addClass("menu-light")
                     })
                 },
                 parallaxImg: function () {
@@ -325,23 +262,7 @@ function slick_client(e) {
                         })
                     })
                 },
-                headerBlog: function () {
-                    const n = e('[data-dsn-header="blog"]');
-                    if (!(n.length <= 0 || i.width() < 992)) {
-                        var a = new ScrollMagic.Scene({
-                            triggerElement: ".header-single-post",
-                            triggerHook: 0,
-                            duration: "100%"
-                        }).setTween(TweenMax.fromTo(n, 1, {
-                            width: "100%"
-                        }, {
-                            width: "80%"
-                        })).addTo(t);
-                        r.getListener(function () {
-                            a.refresh()
-                        })
-                    }
-                },
+    
                 allInt: function () {
                     this.clearControl();
                     let e = this.headerProject();
@@ -357,6 +278,213 @@ function slick_client(e) {
         })
     })
 
+    // testimonials slider
+
+    $('.elfriede-testimonials-slide-box').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        // nextArrow: '<i class="fas fa-angle-right"></i>',
+        // prevArrow: '<i class="fas fa-angle-left"></i>',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        cssEase: "cubic-bezier(.9, .03, .41, .49)",
+        speed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+         
+        ]
+      });
+
+// client slider
+$('.elfriede-client-slides-box').slick({
+    dots:false,
+    arrows: false,
+    infinite:true,
+    centerMode: true,
+    variableWidth: true,
+    centerPadding: '130px',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "cubic-bezier(.9, .03, .41, .49)",
+    speed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite:true,
+          dots:false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4
+        }
+      }
+    ]
+  });
+
+  // single items slider
+$('.elfriede-singleitem-slideitem').slick({
+    dots:false,
+    arrows: false,
+    infinite:true,
+    centerMode: true,
+    variableWidth: true,
+    centerPadding: '80px',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "cubic-bezier(.9, .03, .41, .49)",
+    speed: 2000,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite:true,
+          dots:false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+    ]
+  });
+
+   // single items slider
+$('.elfriede-slides-item').slick({
+    dots:false,
+    arrows: false,
+    infinite:true,
+    centerMode: true,
+    // variableWidth: true,
+    centerPadding: '180px',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "cubic-bezier(.9, .03, .41, .49)",
+    speed: 2000,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite:true,
+          dots:false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+    ]
+  });
+
+   // single product slider
+$('.elfriede-product-slider').slick({
+    dots:false,
+    arrows: true,
+    infinite:true,
+    centerMode: true,
+    // variableWidth: true,
+    centerPadding: '0px',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "cubic-bezier(.9, .03, .41, .49)",
+    nextArrow: '<span class="icon-right"><i class="fa-solid fa-angle-right"></i></span>',
+    prevArrow: '<span class="icon-left"><i class="fa-solid fa-angle-left"></i></span>' ,
+    speed: 2000,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite:true,
+          dots:false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+    ]
+  });
 }(jQuery);
 
 $(document).ready(function() {

@@ -22,11 +22,8 @@
 .elfriede-product-slides-section {
   position: relative;
 }
-.elfriede-product-slides-section .elfriede-product-slides-wrap .elfriede-product-slider {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  justify-content: space-between;
+.elfriede-product-slides-section .elfriede-product-slides-wrap .elfriede-product-slider li {
+  margin: 0 12px;
 }
 .elfriede-product-slides-section .elfriede-product-slides-wrap .elfriede-product-slider .elfriede-product-slides {
   overflow: hidden;
@@ -176,6 +173,47 @@
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0.5px;
-    color: #282C35;
+    color: #282c35;
   }
+}
+.icon-left.slick-arrow {
+  width: 0;
+  height: 0;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-left: 80px solid #FFFFFF;
+  left: 0;
+}
+
+.icon-right.slick-arrow {
+  width: 0;
+  height: 0;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-right: 80px solid #FFFFFF;
+  right: 0;
+}
+
+.slick-arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  top: 47%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.slick-arrow .svg-inline--fa {
+  font-size: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.icon-left.slick-arrow .svg-inline--fa.fa-angle-left {
+  left: -55px;
+}
+
+.icon-right.slick-arrow .svg-inline--fa.fa-angle-right {
+  right: -55px;
 }

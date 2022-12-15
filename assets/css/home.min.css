@@ -385,7 +385,7 @@
 }
 .elfriede-testimonials-section .elfriede-testimonials-wrapper {
   position: relative;
-  max-width: 706px;
+  max-width: 750px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -418,6 +418,8 @@
   position: relative;
   top: 64px;
   border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 991px) {
   .elfriede-testimonials-section .elfriede-testimonials-wrapper .elfriede-user-img {
@@ -428,10 +430,15 @@
 .elfriede-testimonials-section .elfriede-testimonials-wrapper .elfriede-testi-quote {
   position: absolute;
   top: -96px;
-  right: -76px;
+  right: 0px;
 }
 @media (max-width: 991px) {
   .elfriede-testimonials-section .elfriede-testimonials-wrapper .elfriede-testi-user-box {
     margin-top: 40px;
   }
+}
+.elfriede-testimonials-section .elfriede-testimonials-wrapper .elfriede-testi-slide-card {
+  position: relative;
+  margin-top: 45px;
+  padding-right: 76px;
 }

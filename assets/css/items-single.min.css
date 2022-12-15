@@ -44,12 +44,8 @@
   width: 100%;
 }
 
-.elfriede-singleitem-slidebox .elfriede-singleitem-slideitem {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-  flex-wrap: nowrap;
+.elfriede-singleitem-slidebox .elfriede-singleitem-slideitem li {
+  margin: 0 12px 0 13px;
 }
 
 .elfriede-singleitem-contantbox {

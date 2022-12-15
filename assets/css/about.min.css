@@ -39,12 +39,14 @@
   letter-spacing: 0.5px;
 }
 
-.elfriede-slides-item {
-  display: flex;
-  gap: 25px;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
+.elfriede-slides-item li {
+  margin: 0 12px 0 13px;
+}
+.elfriede-slides-item li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 991px) {
   .elfriede-slides-item .elfriede-slides-item .elfriede-slides-imglist img {

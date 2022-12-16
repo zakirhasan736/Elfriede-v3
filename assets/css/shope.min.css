@@ -189,7 +189,6 @@
   text-align: left;
   list-style: disclosure-closed !important;
   color: #000000;
-  display: block;
 }
 @media (max-width: 991px) {
   .elf-category-box input:checked + .elf--list-items {

@@ -1,35 +1,35 @@
-.elfriede-main-visual-section {
+.elf-main-visual-section {
   position: relative;
   padding: 270px 90px 81px;
 }
 @media (max-width: 991px) {
-  .elfriede-main-visual-section {
+  .elf-main-visual-section {
     padding: 230px 0 120px;
   }
 }
 @media (max-width: 767px) {
-  .elfriede-main-visual-section {
+  .elf-main-visual-section {
     padding: 178px 0 160px;
   }
 }
 @media (max-width: 991px) {
-  .elfriede-main-visual-section .elfriede-main-contant .elfriede-banner-title {
+  .elf-main-visual-section .elf-main-contant .elf-banner-title {
     margin-bottom: 10px !important;
   }
 }
 @media (max-width: 767px) {
-  .elfriede-main-visual-section .elfriede-main-contant .elfriede-banner-title {
+  .elf-main-visual-section .elf-main-contant .elf-banner-title {
     margin-bottom: 6px !important;
   }
 }
-.elfriede-main-visual-section .elfriede-main-contant .desc {
+.elf-main-visual-section .elf-main-contant .desc {
   max-width: 586px;
   width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.elfriede-main-visual-section .elfriede-main-contant .elfriede-primary-button {
+.elf-main-visual-section .elf-main-contant .elf-primary-button {
   max-width: 257px;
   width: 100%;
   color: #000000;
@@ -37,7 +37,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.elfriede-main-visual-section .elfriede-main-contant .elfriede-secondary-button {
+.elf-main-visual-section .elf-main-contant .elf-secondary-button {
   max-width: 188px;
   height: 49px;
   color: #134302;

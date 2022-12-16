@@ -1,7 +1,7 @@
 var $ = jQuery,
     wind = jQuery(window),
     body = jQuery("body"),
-    dsnGrid = {
+    elfInt = {
 
         parallaxIt: function (e, n, t, o) {
             if (!(n.length <= 0)) {
@@ -19,11 +19,11 @@ var $ = jQuery,
         scaleIt: function (e, n, t) {
             if (void 0 === n) return !1;
             var o = 0;
-            o = body.hasClass("dsn-effect-scroll") ? e.scrollTop : e.scrollTop();
+            o = body.hasClass("elf-int-scroll") ? e.scrollTop : e.scrollTop();
             var i, a, s;
             s = this.getUndefinedVal(t.plus, 0), i = this.getUndefinedVal(t.position, !1);
             var r = n.offset();
-            a = void 0 === r || body.hasClass("dsn-effect-scroll") ? 0 : r.top, i && (a -= o);
+            a = void 0 === r || body.hasClass("elf-int-scroll") ? 0 : r.top, i && (a -= o);
             return o / (n.height() + a + s)
         },
         scrollerIt: function (e, n, t) {
@@ -51,7 +51,7 @@ var $ = jQuery,
             if (void 0 !== e) {
                 var o = e.offset(),
                     i = void 0 === o ? 0 : o.top;
-                n = dsnGrid.getUndefinedVal(n, 2), t = dsnGrid.getUndefinedVal(t, 0);
+                n = elfInt.getUndefinedVal(n, 2), t = elfInt.getUndefinedVal(t, 0);
                 var a = (e.innerHeight() + i + t) / 2;
                 e.css({
                     marginBottom: a / n * -1
@@ -59,7 +59,7 @@ var $ = jQuery,
             }
         },
         scrollTop: function (e, n, t, o) {
-            n = dsnGrid.getUndefinedVal(n, 500), t = dsnGrid.getUndefinedVal(t, 0);
+            n = elfInt.getUndefinedVal(n, 500), t = elfInt.getUndefinedVal(t, 0);
             var i = 0;
             "number" == typeof e ? i = e : (e instanceof jQuery == !1 && (e = jQuery(e)), void 0 !== (i = e.offset()) && (i = i.top)), jQuery("html, body").animate({
                 scrollTop: i + t
@@ -74,11 +74,7 @@ var $ = jQuery,
                 n(e)
             })
         },
-        mouseWheel: function (e, n, t) {
-            e.bind("mousewheel DOMMouseScroll", function (e) {
-                e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0 ? void 0 !== t && t(e) : void 0 !== n && n(e)
-            })
-        },
+
         numberText: function (e) {
             return e < 10 && e > 0 ? "0" + e : e
         },
@@ -86,7 +82,7 @@ var $ = jQuery,
             var t = e.html().trim(),
                 o = "";
             e.html("");
-            for (var i = 0; i < t.length; i++) 0 === i && (o += '<div class="dsn-word-wrapper">'), " " !== t.charAt(i) ? o += '<span class="dsn-chars-wrapper">' + t.charAt(i) + "</span>" : o += "</div>" + t.charAt(i) + '<div class="dsn-word-wrapper">';
+            for (var i = 0; i < t.length; i++) 0 === i && (o += '<div class="elf-word-box">'), " " !== t.charAt(i) ? o += '<span class="elf-chars-box">' + t.charAt(i) + "</span>" : o += "</div>" + t.charAt(i) + '<div class="elf-word-box">';
             o += "</div>", n.append(o)
         },
         randomObjectArray: function (e, n) {
@@ -101,11 +97,11 @@ var $ = jQuery,
             e.html("");
             for (var a = 0; a < o.length; a++)
                 if (o[a].length > 0) {
-                    if (i += '<span class="dsn-wrapper">', t) {
-                        i += '<span class="dsn-word-wrapper">';
-                        for (var s = 0; s < o[a].length; s++) i += '<span class="dsn-chars-wrapper">' + o[a].charAt(s) + "</span>";
+                    if (i += '<span class="elf-box">', t) {
+                        i += '<span class="elf-word-box">';
+                        for (var s = 0; s < o[a].length; s++) i += '<span class="elf-chars-box">' + o[a].charAt(s) + "</span>";
                         i += "</span>"
-                    } else i += '<span class="dsn-word-wrapper">' + o[a] + "</span>";
+                    } else i += '<span class="elf-word-box">' + o[a] + "</span>";
                     i += "</span>"
                 } n.append(i)
         },
@@ -152,7 +148,7 @@ var $ = jQuery,
                     };
                     i && (n.scale = "1.03"), TweenMax.to([s, r], .3, n)
                 }).on("mousemove", function (e) {
-                    dsnGrid.parallaxIt(e, s, n), dsnGrid.parallaxIt(e, r, 2 * n), void 0 !== o && dsnGrid.parallaxIt(e, o, -5, .5)
+                    elfInt.parallaxIt(e, s, n), elfInt.parallaxIt(e, r, 2 * n), void 0 !== o && elfInt.parallaxIt(e, o, -5, .5)
                 })
             }
         },
@@ -162,7 +158,7 @@ var $ = jQuery,
             t = void 0 === t ? .5 : parseFloat(t), n = void 0 === n ? 20 : parseFloat(n), i = void 0 !== i && i;
             var r = a.html(),
                 d = $('<div class="icon-circle"></div>'),
-                l = $('<div class="dsn-grid-parallax">' + r + "</div>");
+                l = $('<div class="elf-int-parallax">' + r + "</div>");
             a.html(""), a.append(d), a.append(l), a.on("mouseleave", function (e) {
                 TweenMax.to(a, t, {
                     scale: 1
@@ -183,7 +179,7 @@ var $ = jQuery,
                     scale: 1.2
                 })
             }).on("mousemove", function (e) {
-                s.parallaxIt(e, l, n), dsnGrid.parallaxIt(e, d, n)
+                s.parallaxIt(e, l, n), elfInt.parallaxIt(e, d, n)
             })
         },
         elementHover: function (e, n, t) {
@@ -212,27 +208,16 @@ var $ = jQuery,
                 })
             }(n = this.convertToJQuery(n)).each(function () {
                 let e = $(this);
-                dsnGrid.convertTextWord(e, e), void 0 !== t && e.attr(t, "animate"), void 0 !== o && e.removeClass(o), e.addClass("dsn-has-animate-text")
+                elfInt.convertTextWord(e, e), void 0 !== t && e.attr(t, "animate"), void 0 !== o && e.removeClass(o), e.addClass("elf-has-anim-text")
             });
-            const a = "dsn-animate";
+            const a = "elf-anim";
             var s = 0,
                 r = null;
             e.getListener(function (e) {
                 s = void 0 === e.offset ? wind.scrollTop() : 0, r && clearTimeout(r), r = setTimeout(i, 10)
             })
         },
-        imageLoad: function () {
-            const e = $('[data-dsn-loader="div"]');
-            e.each(function () {
-                $(this).append('<div class="wait-loader"><div class="loader-inner"><div class="loader-circle"><div class="loader-layer"></div></div></div></div>')
-            });
-            e.imagesLoaded({
-                background: ".dsn-img-org"
-            }).progress(function (e, n) {
-                let t = $(n.element).parents('[data-dsn-loader="div"]');
-                t.length > 0 && (t.addClass("dsn-img-loader-done dsn-animate"), t.attr("data-dsn-loader", "divFinshed"))
-            })
-        },
+
         getBoundingClientRect: function (e) {
             const n = e.getBoundingClientRect();
             return {
@@ -246,33 +231,5 @@ var $ = jQuery,
                 y: n.y
             }
         },
-        progressCircle: function (e) {
-            const n = $('[data-dsn-grid="progress-circle"]'),
-                t = this.removeAttr(n, "data-dsn-grid-stroke");
-            var o = void 0 === t ? "" : 'stroke="' + t + '"';
-            n.css({
-                position: "fixed",
-                right: "-60px",
-                bottom: "60px",
-                width: "52px",
-                height: "52px",
-                "z-index": "99999999"
-            }), n.append('<svg class="dsn-progress-circle-up" width="100%" height="100%" ' + o + ' viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet" fill="none">\n        <path class="dsn-progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition:  stroke-dashoffset 300ms linear 0s;stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 309;"></path>    </svg>');
-            var i = wind;
-            e.isScroller(!0) && (i = e.getScrollbar()), e.getListener(function (e) {
-                let t = 0,
-                    o = $(document).height() - wind.height();
-                void 0 === e.offset ? t = wind.scrollTop() : (t = e.offset.y, o = $(document).height() - i.getSize().content.height + 100), t > 70 ? (TweenMax.to(n, 1, {
-                    ease: Back.easeOut.config(4),
-                    right: 60
-                }), n.find(".dsn-progress-path").css("stroke-dashoffset", 300 - Math.round(300 * t / o) + "%")) : TweenMax.to(n, 1, {
-                    ease: Back.easeIn.config(4),
-                    right: -60
-                })
-            }), n.on("click", function () {
-                e.isScroller(!0) ? i.scrollTo(0, 0, 600) : $("body,html").animate({
-                    scrollTop: 0
-                }, 300)
-            })
-        }
+
     };

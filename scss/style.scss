@@ -39,39 +39,39 @@
   1. Global
 -------------------------------------------------------------------------------*/
 
-.dsn-effect-scroll:not(.dsn-mobile) #dsn-scrollbar, .sidebar-single, .dsn-work-scrollbar {
+.elf-int-scroll:not(.elf-mobile) #elf-scrollbar, .sidebar-single, .elf-work-scrollbar {
   overflow: hidden;
   height: 100vh;
 }
 
-.dsn-effect-scroll:not(.dsn-mobile) #dsn-scrollbar .scrollbar-track, .sidebar-single .scrollbar-track, .dsn-work-scrollbar .scrollbar-track {
+.elf-int-scroll:not(.elf-mobile) #elf-scrollbar .scrollbar-track, .sidebar-single .scrollbar-track, .elf-work-scrollbar .scrollbar-track {
   background: none;
   width: 5px;
 }
 
-.dsn-effect-scroll:not(.dsn-mobile) #dsn-scrollbar .scrollbar-track .scrollbar-thumb, .sidebar-single .scrollbar-track .scrollbar-thumb, .dsn-work-scrollbar .scrollbar-track .scrollbar-thumb {
+.elf-int-scroll:not(.elf-mobile) #elf-scrollbar .scrollbar-track .scrollbar-thumb, .sidebar-single .scrollbar-track .scrollbar-thumb, .elf-work-scrollbar .scrollbar-track .scrollbar-thumb {
   background: #424242;
   width: 5px;
 }
 
-.admin-bar.dsn-effect-scroll:not(.dsn-mobile) #dsn-scrollbar, .sidebar-single, .dsn-work-scrollbar {
+.admin-bar.elf-int-scroll:not(.elf-mobile) #elf-scrollbar, .sidebar-single, .elf-work-scrollbar {
   height: calc(100vh - 46px);
 }
 
 @media screen and (min-width: 783px) {
-  .admin-bar.dsn-effect-scroll:not(.dsn-mobile) #dsn-scrollbar, .sidebar-single, .dsn-work-scrollbar {
+  .admin-bar.elf-int-scroll:not(.elf-mobile) #elf-scrollbar, .sidebar-single, .elf-work-scrollbar {
     height: calc(100vh - 32px);
   }
 }
 
-.locked-scroll #dsn-scrollbar {
+.locked-scroll #elf-scrollbar {
   background-color: #000;
 }
 .main-scroll-wrapper{
   position: relative;
   z-index: 99;
 }
-.elfriede-banner-title{
+.elf-banner-title{
   display: flex;
   align-items: center;
   justify-content: center;

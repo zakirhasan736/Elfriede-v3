@@ -4,7 +4,7 @@
 
     function a() {
         const t = window.Scrollbar;
-        var a = document.querySelector("#dsn-scrollbar");
+        var a = document.querySelector("#elf-scrollbar");
         return {
             isMobile: function () {
                 return !!(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || navigator.userAgent.match(/Edge/i) || navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/MSIE 9/i))
@@ -13,9 +13,9 @@
                 return !!(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || navigator.userAgent.match(/Edge/i) || navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/MSIE 9/i) || i.width() <= 991)
             },
             isScroller: function (e) {
-                e && (a = document.querySelector("#dsn-scrollbar"));
-                let t = !o.hasClass("dsn-effect-scroll") || this.isMobile() || null === a;
-                return t && e && o.addClass("dsn-mobile"), !t
+                e && (a = document.querySelector("#elf-scrollbar"));
+                let t = !o.hasClass("elf-int-scroll") || this.isMobile() || null === a;
+                return t && e && o.addClass("elf-mobile"), !t
             },
             locked: function () {
                 if (o.addClass("locked-scroll"), this.isScroller()) {
@@ -24,7 +24,7 @@
                 }
             },
             unlocked: function () {
-                o.removeClass("locked-scroll"), this.start(), n(), l.allInt(), dsnGrid.progressCircle(r)
+                o.removeClass("locked-scroll"), this.start(), n(), l.allInt(), elfInt.progressCircle(r)
             },
             getScrollbar: function (e) {
                 return void 0 === e ? t.get(a) : t.get(document.querySelector(e))
@@ -36,7 +36,7 @@
                 }
             },
             start: function () {
-                if (dsnGrid.scrollTop(0, 1), e(".scroll-to").on("click", function (t) {
+                if (elfInt.scrollTop(0, 1), e(".scroll-to").on("click", function (t) {
                         t.preventDefault();
                         let n = i;
                         r.isScroller(!0) && (n = r.getScrollbar()), TweenLite.to(n, 1.5, {
@@ -47,36 +47,10 @@
                 let n = .05;
                 this.isMobiles() && (n = .02), t.init(a, {
                     damping: n
-                }), this.workScroll()
-            },
-            sliderScroll: function () {
-                t.init(document.querySelector(".slider .main-slider .slider-nav-list"), {
-                    damping: .05
                 })
+               
             },
-            menuScroll: function () {
-                t.init(document.querySelector(".nav__content"), {
-                    damping: .05
-                })
-            },
-            commentScroll: function () {
-                const e = document.querySelector(".comment-modal .comment-modal-container");
-                null !== e && t.init(e, {
-                    damping: .05
-                })
-            },
-            sidebarScroll: function () {
-                const e = document.querySelector(".dsn-sidebar .sidebar-single");
-                null !== e && t.init(e, {
-                    damping: .05
-                })
-            },
-            workScroll: function () {
-                const e = document.querySelector(".dsn-all-work .dsn-work-scrollbar");
-                null !== e && t.init(e, {
-                    damping: .05
-                })
-            }
+           
         }
     }
     const i = e(window),
@@ -89,7 +63,7 @@
                 a = n.find(".percent"),
                 r = t.find(".preloader-bar"),
                 l = r.find(".preloader-progress"),
-                u = dsnGrid.pageLoad(0, 100, 300, function (e) {
+                u = elfInt.pageLoad(0, 100, 300, function (e) {
                     a.text(e), l.css("width", e + "%")
                 });
             i.on("load", function () {
@@ -115,8 +89,8 @@
     var r = a(),
         l = function () {
             var t = new ScrollMagic.Controller;
-            const n = '[data-dsn-header="project"]',
-                a = '[data-dsn-footer="project"]';
+            const n = '[data-elf-header="project"]',
+                a = '[data-elf-footer="project"]';
             return {
                 clearControl: function () {
                     t = new ScrollMagic.Controller
@@ -126,12 +100,12 @@
                 },
                 headerProject: function () {
                     if (e(n).length <= 0) return !1;
-                    let a = e("#dsn-hero-parallax-img"),
-                        i = e("#dsn-hero-parallax-title"),
-                        s = e("#dsn-hero-parallax-fill-title"),
+                    let a = e("#elf-hero-parallax-img"),
+                        i = e("#elf-hero-parallax-title"),
+                        s = e("#elf-hero-parallax-fill-title"),
                         r = e("#descover-holder"),
                         l = 1.2;
-                    a.hasClass("parallax-move-element") && dsnGrid.parallaxMoveElemnt({
+                    a.hasClass("parallax-move-element") && elfInt.parallaxMoveElemnt({
                         target: e(n),
                         element: a.find(".cover-bg")
                     }, 5, 1);
@@ -146,8 +120,8 @@
                     }
                 },
                 nextProject: function () {
-                    let n = e("#dsn-next-parallax-img"),
-                        i = e("#dsn-next-parallax-title"),
+                    let n = e("#elf-next-parallax-img"),
+                        i = e("#elf-next-parallax-title"),
                         s = !(n.length <= 0) && new ScrollMagic.Scene({
                             triggerElement: a,
                             triggerHook: 1,
@@ -172,24 +146,24 @@
                     })
                 },
                 parallaxImg: function () {
-                    e('[data-dsn-grid="move-up"]').each(function () {
+                    e('[data-elf-int="move-up"]').each(function () {
                         let n = e(this);
-                        n.attr("data-dsn-grid", "moveUp");
+                        n.attr("data-elf-int", "moveUp");
                         let a = n.find("img:not(.hidden) , video"),
-                            i = dsnGrid.getUndefinedVal(n.data("dsn-triggerhook"), 1),
-                            o = dsnGrid.getUndefinedVal(n.data("dsn-duration"), 1 !== i ? "100%" : "200%");
+                            i = elfInt.getUndefinedVal(n.data("elf-triggerhook"), 1),
+                            o = elfInt.getUndefinedVal(n.data("elf-duration"), 1 !== i ? "100%" : "200%");
                         if (a.length > 0) {
                             var s;
                             if (a.hasClass("has-top-bottom")) {
-                                let e = dsnGrid.getUndefinedVal(a.data("dsn-move"), "15%");
+                                let e = elfInt.getUndefinedVal(a.data("elf-move"), "15%");
                                 s = TweenMax.to(a, .8, {
                                     force3D: !0,
                                     y: e,
                                     ease: Power0.easeNone
                                 })
                             } else {
-                                let e = dsnGrid.getUndefinedVal(a.data("dsn-y"), "10%"),
-                                    t = dsnGrid.getUndefinedVal(a.data("dsn-scale"), 1.1);
+                                let e = elfInt.getUndefinedVal(a.data("elf-y"), "10%"),
+                                    t = elfInt.getUndefinedVal(a.data("elf-scale"), 1.1);
                                 1 !== i ? (a.css("top", 0), s = TweenMax.to(a, 2, {
                                     force3D: !0,
                                     scale: t,
@@ -213,14 +187,13 @@
                     })
                 },
                 moveSection: function () {
-                    e('[data-dsn-grid="move-section"]').each(function () {
+                    e('[data-elf-int="move-section"]').each(function () {
                         let n = e(this);
-                        n.removeAttr("data-dsn-grid"), n.addClass("dsn-move-section");
-                        let a = dsnGrid.getUndefinedVal(n.data("dsn-move"), -100),
-                            o = dsnGrid.getUndefinedVal(n.data("dsn-triggerhook"), 1),
-                            s = dsnGrid.getUndefinedVal(n.data("dsn-opacity"), n.css("opacity")),
-                            l = dsnGrid.getUndefinedVal(n.data("dsn-duration"), "150%");
-                        if ("tablet" === n.data("dsn-responsive") && i.width() < 992) return;
+                        n.removeAttr("data-elf-int"), n.addClass("elf-move-section");
+                        let a = elfInt.getUndefinedVal(n.data("elf-move"), -100),
+                            o = elfInt.getUndefinedVal(n.data("elf-triggerhook"), 1),
+                            s = elfInt.getUndefinedVal(n.data("elf-opacity"), n.css("opacity")),
+                            l = elfInt.getUndefinedVal(n.data("elf-duration"), "150%");
                         let d = TweenMax.to(n, 2, {
                             y: a,
                             autoAlpha: s,
@@ -237,26 +210,26 @@
                     })
                 },
                 parallaxImgHover: function () {
-                    const t = e('[data-dsn="parallax"]');
-                    0 === t.length || i.width() < 992 || t.each(function () {
+                    const t = e('[data-elf="parallax"]');
+                    0 === t.length || t.each(function () {
                         var t = e(this),
-                            n = (dsnGrid.removeAttr(t, "data-dsn"), dsnGrid.removeAttr(t, "data-dsn-speed")),
-                            a = dsnGrid.removeAttr(t, "data-dsn-move"),
+                            n = (elfInt.removeAttr(t, "data-elf"), elfInt.removeAttr(t, "data-elf-speed")),
+                            a = elfInt.removeAttr(t, "data-elf-move"),
                             i = !1;
-                        t.hasClass("image-zoom") && (i = !0), dsnGrid.parallaxMoveElemnt(t, a, n, void 0, i)
+                        t.hasClass("zoom-up") && (i = !0), elfInt.parallaxMoveElemnt(t, a, n, void 0, i)
                     })
                 },
 
                 animateText: function () {
-                    e('[data-dsn-animate="text"] , [data-dsn-animate="up"]').each(function () {
+                    e('[data-elf-anim="text"] , [data-elf-anim="up"]').each(function () {
                         let n = e(this),
                             a = 1;
-                        "text" === n.data("dsn-animate") ? (dsnGrid.convertTextWord(n, n), n.attr("data-dsn-animate", "animate")) : a = .8;
+                        "text" === n.data("elf-anim") ? (elfInt.convertTextWord(n, n), n.attr("data-elf-anim", "animate")) : a = .8;
                         var i = new ScrollMagic.Scene({
                             triggerElement: this,
                             reverse: !1,
                             triggerHook: a
-                        }).setClassToggle(this, "dsn-active").addTo(t);
+                        }).setClassToggle(this, "elf-active").addTo(t);
                         r.getListener(function () {
                             i.refresh()
                         })
@@ -280,7 +253,7 @@
 
     // testimonials slider
 
-    $('.elfriede-testimonials-slide-box').slick({
+    $('.elf-testimonials-slide-box').slick({
         dots: true,
         arrows: false,
         infinite: false,
@@ -319,7 +292,7 @@
       });
 
 // client slider
-$('.elfriede-client-slides-box').slick({
+$('.elf-client-slides-box').slick({
     dots:false,
     arrows: false,
     infinite:true,
@@ -360,7 +333,7 @@ $('.elfriede-client-slides-box').slick({
   });
 
   // single items slider
-$('.elfriede-singleitem-slideitem').slick({
+$('.elf-singleitem-slideitem').slick({
     dots:false,
     arrows: false,
     infinite:true,
@@ -409,7 +382,7 @@ $('.elfriede-singleitem-slideitem').slick({
   });
 
    // about slider box
-$('.elfriede-slides-item').slick({
+$('.elf-slides-item').slick({
     dots:false,
     arrows: false,
     infinite:true,
@@ -458,7 +431,7 @@ $('.elfriede-slides-item').slick({
   });
 
    // single product slider
-$('.elfriede-product-slider').slick({
+$('.elf-product-slider').slick({
     dots:false,
     arrows: true,
     infinite:true,
@@ -502,13 +475,38 @@ $('.elfriede-product-slider').slick({
 }(jQuery);
 
 $(document).ready(function() {
-    $('.elfriede-navigation-bar').on('click', function(){
-        $('.elfriede-navigation-wrapper').addClass('info-open');
+    $('.elf-navigation-bar').on('click', function(){
+        $('.elf-navigation-wrapper').addClass('info-open');
       })
-      $('.elfriede-trigger-close').on('click', function(){
-        $('.elfriede-navigation-wrapper').removeClass('info-open');
+      $('.elf-trigger-close').on('click', function(){
+        $('.elf-navigation-wrapper').removeClass('info-open');
       })
-      
+
+    var $cat_elf   = $('.elf-category-box');
+    var $cat_trigger   = $('.elf-category-box');
+    var active   = 'active'; // class
+    // menu active close
+    $cat_trigger.on( 'click', function() {
+      if ( ! $cat_elf.hasClass( active ) ) {
+        $cat_elf.addClass( active );
+      } else {
+        $cat_elf.removeClass( active );
+      }
+    });
+ 
+    
+    var $filter_elf   = $('.elf-filter-box');
+    var $filter_trigger   = $('.elf-filter-box');
+    var active   = 'active'; // class
+    // menu active close
+    $filter_trigger.on( 'click', function() {
+      if ( ! $filter_elf.hasClass( active ) ) {
+        $filter_elf.addClass( active );
+      } else {
+        $filter_elf.removeClass( active );
+      }
+    });
+      // ===================
 
     var buttonFilters = {};
     var buttonFilter = '*';

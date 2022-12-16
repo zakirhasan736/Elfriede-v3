@@ -1,6 +1,6 @@
-.elfriede-footer-section {
+.elf-footer-section {
   position: relative;
-  .elfriede-top-footer {
+  .elf-top-footer {
     padding-top: 70px;
     padding-bottom: 76px;
   @include media-breakpoint-up(md) {
@@ -12,7 +12,7 @@
     padding-bottom: 68px;
   }
     background: $grayColor;
-    .elfriede-footer-top-wrap {
+    .elf-footer-top-wrap {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -21,14 +21,14 @@
         flex-direction: column;
         gap: 46px;
       }
-      .elfriede-top-desbox {
+      .elf-top-desbox {
         padding-right: 49px;
-        .elfriede-top-desc {
+        .elf-top-desc {
           color: $primaryColor;
           font-family: $primaryFont;
         }
       }
-      .elfriede-socials-widgets {
+      .elf-socials-widgets {
         display: flex;
         align-items: center;
         li {
@@ -49,7 +49,7 @@
       }
     }
   }
-  .elfriede--footer-title {
+  .elf--footer-title {
     font-size: $font-size-13;
     font-weight: $fontNormal;
     line-height: $line-height-15p;
@@ -57,17 +57,17 @@
     margin-bottom: 19px;
     font-family: $secondaryFont;
   }
-  .elfriede-footer-main-wrapper {
+  .elf-footer-main-wrapper {
     background-color: $extra-gray;
 
   }
-  .elfriede-footer-main-wrap {
+  .elf-footer-main-wrap {
     padding-bottom: 147px;
     border-bottom: 1px solid;
   @include media-breakpoint-up(md) {
     padding-bottom: 45px;
   }
-    .elfriede-footer-descbox {
+    .elf-footer-descbox {
       p {
         font-size: $font-size-18;
         font-weight: $fontNormal;
@@ -77,8 +77,8 @@
         font-family: $secondaryFont;
       }
     }
-    .elfriede-footer-link-wrap {
-      .elfriede-links-cont {
+    .elf-footer-link-wrap {
+      .elf-links-cont {
         display: flex;
         align-items: center;
         ul {
@@ -107,7 +107,7 @@
       text-align: center;
     }
   }
-  .elfriede-footer-copyright {
+  .elf-footer-copyright {
     padding: 15px 0 17px;
     p {
       font-size: $font-size-8;

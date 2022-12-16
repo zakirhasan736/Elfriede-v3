@@ -1,12 +1,12 @@
-.elfriede-pagination-wrapper {
-  .elfriede-pagination-list {
+.elf-pagination-wrapper {
+  .elf-pagination-list {
     display: flex;
     align-items: center;
     gap: 31px;
     @include media-breakpoint-up(md) {
       justify-content: center;
     }
-    .elfriede-pagination-list-item {
+    .elf-pagination-list-item {
       width: 60px;
       height: 60px;
       background: $lightGray;

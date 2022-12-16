@@ -10,7 +10,7 @@
 @import 'partial/single-product/singleProductSlides';
 
 // styles css
-.elfriede-product-details-wrap {
+.elf-product-details-wrap {
   display: grid;
   grid-template-columns: 1fr 391px;
   gap: 80px;
@@ -31,15 +31,15 @@
   }
 }
 
-.elfriede-delivery-info-box {
-  .elfriede-delivery-info-wrap {
+.elf-delivery-info-box {
+  .elf-delivery-info-wrap {
     display: flex;
     gap: 16px;
     align-items: center;
     @include media-breakpoint-up(sm) {
       display: block;
     }
-    .elfriede-delivery-info-card {
+    .elf-delivery-info-card {
       padding: 66px 27px 25px 31px;
       background-color: $lightGray;
       width: 100%;
@@ -65,7 +65,7 @@
   }
 }
 
-.elfriede-suggested-product-box {
+.elf-suggested-product-box {
   .elfried-product-suggetion-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -73,7 +73,7 @@
   }
 }
 
-.elfriede-product-type-box {
+.elf-product-type-box {
   @include media-breakpoint-up(md) {
     display: flex;
     align-items: baseline;
@@ -81,10 +81,10 @@
   }
 }
 
-.elfriede-product-color-list {
+.elf-product-color-list {
   gap: 11px;
 }
-.elfriede-product-color-list > li {
+.elf-product-color-list > li {
   width: 50px;
   height: 50px;
   display: block;
@@ -104,18 +104,18 @@
     height: 30px;
   }
 }
-.elfriede-reviews-items {
+.elf-reviews-items {
   @include media-breakpoint-up(md) {
     display: flex;
     align-items: baseline;
     gap: 30px;
-    .elfriede-reviews-card {
+    .elf-reviews-card {
       margin-bottom: 0px !important;
     }
   }
   @include media-breakpoint-up(sm) {
     display: block;
-    .elfriede-reviews-card {
+    .elf-reviews-card {
       &:nth-child(2) {
         display: none;
       }
@@ -123,7 +123,7 @@
   }
 }
 @include media-breakpoint-up(md) {
-  .elfriede-desc-box {
+  .elf-desc-box {
     .desc {
       &:not(:first-child) {
         display: none;

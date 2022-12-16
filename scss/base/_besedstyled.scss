@@ -355,10 +355,8 @@ html{
 }
 a,
 .button {
-	-webkit-transition: all 0.3s ease-out 0s;
 	-moz-transition: all 0.3s ease-out 0s;
 	-ms-transition: all 0.3s ease-out 0s;
-	-o-transition: all 0.3s ease-out 0s;
 	transition: all 0.3s ease-out 0s;
 }
 a:focus,
@@ -542,898 +540,671 @@ span{
 
 // variable data set styles
 
-[data-dsn-animate="animate"] .dsn-wrapper {
+[data-elf-anim="animate"] .elf-box {
     overflow: hidden;
     will-change: transform;
     display: block;
   }
   
-  [data-dsn-animate="animate"] .dsn-wrapper .dsn-word-wrapper {
+  [data-elf-anim="animate"] .elf-box .elf-word-box {
     opacity: 0;
     visibility: hidden;
     will-change: transform;
-    -webkit-transform: translateY(50%) rotate(15deg) scale(0.8);
-    -ms-transform: translateY(50%) rotate(15deg) scale(0.8);
     transform: translateY(50%) rotate(15deg) scale(0.8);
     -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
     transform-origin: top left;
   }
   
-  [data-dsn-animate="animate"] .dsn-word-wrapper {
-    -webkit-transform: translateY(50%) rotate(15deg) !important;
-    -ms-transform: translateY(50%) rotate(15deg) !important;
+  [data-elf-anim="animate"] .elf-word-box {
     transform: translateY(50%) rotate(15deg) !important;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper {
+  .elf-active[data-elf-anim="animate"] .elf-box {
     margin-right: 7px;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:last-child {
+  .elf-active[data-elf-anim="animate"] .elf-box:last-child {
     margin-right: 0;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper {
+  .elf-active[data-elf-anim="animate"] .elf-box {
     will-change: transform;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper .dsn-word-wrapper {
+  .elf-active[data-elf-anim="animate"] .elf-box .elf-word-box {
     will-change: transform;
     opacity: 1;
     visibility: visible;
-    -webkit-transform: none;
-    -ms-transform: none;
     transform: none;
-    -webkit-transition: -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(0) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms, visibility 0.3s 0ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(0) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms, visibility 0.3s 0ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms, visibility 0.3s 0ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms, visibility 0.3s 0ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms, visibility 0.3s 0ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(1) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 236ms, visibility 0.3s 45ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(1) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 236ms, visibility 0.3s 45ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 236ms, visibility 0.3s 45ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 236ms, visibility 0.3s 45ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 236ms, visibility 0.3s 45ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(2) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 272ms, visibility 0.3s 90ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(2) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 272ms, visibility 0.3s 90ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 272ms, visibility 0.3s 90ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 272ms, visibility 0.3s 90ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 272ms, visibility 0.3s 90ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(3) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 308ms, visibility 0.3s 135ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(3) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 308ms, visibility 0.3s 135ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 308ms, visibility 0.3s 135ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 308ms, visibility 0.3s 135ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 308ms, visibility 0.3s 135ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(4) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 344ms, visibility 0.3s 180ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(4) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 344ms, visibility 0.3s 180ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 344ms, visibility 0.3s 180ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 344ms, visibility 0.3s 180ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 344ms, visibility 0.3s 180ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(5) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 380ms, visibility 0.3s 225ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(5) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 380ms, visibility 0.3s 225ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 380ms, visibility 0.3s 225ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 380ms, visibility 0.3s 225ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 380ms, visibility 0.3s 225ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(6) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 416ms, visibility 0.3s 270ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(6) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 416ms, visibility 0.3s 270ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 416ms, visibility 0.3s 270ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 416ms, visibility 0.3s 270ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 416ms, visibility 0.3s 270ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(7) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 452ms, visibility 0.3s 315ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(7) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 452ms, visibility 0.3s 315ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 452ms, visibility 0.3s 315ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 452ms, visibility 0.3s 315ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 452ms, visibility 0.3s 315ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(8) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 488ms, visibility 0.3s 360ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(8) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 488ms, visibility 0.3s 360ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 488ms, visibility 0.3s 360ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 488ms, visibility 0.3s 360ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 488ms, visibility 0.3s 360ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(9) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 524ms, visibility 0.3s 405ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(9) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 524ms, visibility 0.3s 405ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 524ms, visibility 0.3s 405ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 524ms, visibility 0.3s 405ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 524ms, visibility 0.3s 405ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(10) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 560ms, visibility 0.3s 450ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(10) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 560ms, visibility 0.3s 450ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 560ms, visibility 0.3s 450ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 560ms, visibility 0.3s 450ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 560ms, visibility 0.3s 450ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(11) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 596ms, visibility 0.3s 495ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(11) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 596ms, visibility 0.3s 495ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 596ms, visibility 0.3s 495ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 596ms, visibility 0.3s 495ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 596ms, visibility 0.3s 495ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(12) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 632ms, visibility 0.3s 540ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(12) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 632ms, visibility 0.3s 540ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 632ms, visibility 0.3s 540ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 632ms, visibility 0.3s 540ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 632ms, visibility 0.3s 540ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(13) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 668ms, visibility 0.3s 585ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(13) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 668ms, visibility 0.3s 585ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 668ms, visibility 0.3s 585ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 668ms, visibility 0.3s 585ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 668ms, visibility 0.3s 585ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(14) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 704ms, visibility 0.3s 630ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(14) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 704ms, visibility 0.3s 630ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 704ms, visibility 0.3s 630ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 704ms, visibility 0.3s 630ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 704ms, visibility 0.3s 630ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(15) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 740ms, visibility 0.3s 675ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(15) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 740ms, visibility 0.3s 675ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 740ms, visibility 0.3s 675ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 740ms, visibility 0.3s 675ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 740ms, visibility 0.3s 675ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(16) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 776ms, visibility 0.3s 720ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(16) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 776ms, visibility 0.3s 720ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 776ms, visibility 0.3s 720ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 776ms, visibility 0.3s 720ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 776ms, visibility 0.3s 720ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(17) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 812ms, visibility 0.3s 765ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(17) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 812ms, visibility 0.3s 765ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 812ms, visibility 0.3s 765ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 812ms, visibility 0.3s 765ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 812ms, visibility 0.3s 765ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(18) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 848ms, visibility 0.3s 810ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(18) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 848ms, visibility 0.3s 810ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 848ms, visibility 0.3s 810ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 848ms, visibility 0.3s 810ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 848ms, visibility 0.3s 810ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(19) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 884ms, visibility 0.3s 855ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(19) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 884ms, visibility 0.3s 855ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 884ms, visibility 0.3s 855ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 884ms, visibility 0.3s 855ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 884ms, visibility 0.3s 855ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(20) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 920ms, visibility 0.3s 900ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(20) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 920ms, visibility 0.3s 900ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 920ms, visibility 0.3s 900ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 920ms, visibility 0.3s 900ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 920ms, visibility 0.3s 900ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(21) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 956ms, visibility 0.3s 945ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(21) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 956ms, visibility 0.3s 945ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 956ms, visibility 0.3s 945ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 956ms, visibility 0.3s 945ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 956ms, visibility 0.3s 945ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(22) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 992ms, visibility 0.3s 990ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(22) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 992ms, visibility 0.3s 990ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 992ms, visibility 0.3s 990ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 992ms, visibility 0.3s 990ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 992ms, visibility 0.3s 990ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(23) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1028ms, visibility 0.3s 1035ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(23) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1028ms, visibility 0.3s 1035ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1028ms, visibility 0.3s 1035ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1028ms, visibility 0.3s 1035ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1028ms, visibility 0.3s 1035ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(24) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1064ms, visibility 0.3s 1080ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(24) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1064ms, visibility 0.3s 1080ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1064ms, visibility 0.3s 1080ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1064ms, visibility 0.3s 1080ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1064ms, visibility 0.3s 1080ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(25) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1100ms, visibility 0.3s 1125ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(25) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1100ms, visibility 0.3s 1125ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1100ms, visibility 0.3s 1125ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1100ms, visibility 0.3s 1125ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1100ms, visibility 0.3s 1125ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(26) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1136ms, visibility 0.3s 1170ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(26) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1136ms, visibility 0.3s 1170ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1136ms, visibility 0.3s 1170ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1136ms, visibility 0.3s 1170ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1136ms, visibility 0.3s 1170ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(27) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1172ms, visibility 0.3s 1215ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(27) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1172ms, visibility 0.3s 1215ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1172ms, visibility 0.3s 1215ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1172ms, visibility 0.3s 1215ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1172ms, visibility 0.3s 1215ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(28) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1208ms, visibility 0.3s 1260ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(28) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1208ms, visibility 0.3s 1260ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1208ms, visibility 0.3s 1260ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1208ms, visibility 0.3s 1260ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1208ms, visibility 0.3s 1260ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(29) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1244ms, visibility 0.3s 1305ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(29) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1244ms, visibility 0.3s 1305ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1244ms, visibility 0.3s 1305ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1244ms, visibility 0.3s 1305ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1244ms, visibility 0.3s 1305ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(30) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1280ms, visibility 0.3s 1350ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(30) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1280ms, visibility 0.3s 1350ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1280ms, visibility 0.3s 1350ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1280ms, visibility 0.3s 1350ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1280ms, visibility 0.3s 1350ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(31) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1316ms, visibility 0.3s 1395ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(31) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1316ms, visibility 0.3s 1395ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1316ms, visibility 0.3s 1395ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1316ms, visibility 0.3s 1395ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1316ms, visibility 0.3s 1395ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(32) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1352ms, visibility 0.3s 1440ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(32) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1352ms, visibility 0.3s 1440ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1352ms, visibility 0.3s 1440ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1352ms, visibility 0.3s 1440ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1352ms, visibility 0.3s 1440ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(33) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1388ms, visibility 0.3s 1485ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(33) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1388ms, visibility 0.3s 1485ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1388ms, visibility 0.3s 1485ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1388ms, visibility 0.3s 1485ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1388ms, visibility 0.3s 1485ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(34) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1424ms, visibility 0.3s 1530ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(34) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1424ms, visibility 0.3s 1530ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1424ms, visibility 0.3s 1530ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1424ms, visibility 0.3s 1530ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1424ms, visibility 0.3s 1530ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(35) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1460ms, visibility 0.3s 1575ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(35) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1460ms, visibility 0.3s 1575ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1460ms, visibility 0.3s 1575ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1460ms, visibility 0.3s 1575ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1460ms, visibility 0.3s 1575ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(36) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1496ms, visibility 0.3s 1620ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(36) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1496ms, visibility 0.3s 1620ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1496ms, visibility 0.3s 1620ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1496ms, visibility 0.3s 1620ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1496ms, visibility 0.3s 1620ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(37) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1532ms, visibility 0.3s 1665ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(37) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1532ms, visibility 0.3s 1665ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1532ms, visibility 0.3s 1665ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1532ms, visibility 0.3s 1665ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1532ms, visibility 0.3s 1665ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(38) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1568ms, visibility 0.3s 1710ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(38) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1568ms, visibility 0.3s 1710ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1568ms, visibility 0.3s 1710ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1568ms, visibility 0.3s 1710ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1568ms, visibility 0.3s 1710ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(39) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1604ms, visibility 0.3s 1755ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(39) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1604ms, visibility 0.3s 1755ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1604ms, visibility 0.3s 1755ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1604ms, visibility 0.3s 1755ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1604ms, visibility 0.3s 1755ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(40) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1640ms, visibility 0.3s 1800ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(40) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1640ms, visibility 0.3s 1800ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1640ms, visibility 0.3s 1800ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1640ms, visibility 0.3s 1800ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1640ms, visibility 0.3s 1800ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(41) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1676ms, visibility 0.3s 1845ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(41) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1676ms, visibility 0.3s 1845ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1676ms, visibility 0.3s 1845ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1676ms, visibility 0.3s 1845ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1676ms, visibility 0.3s 1845ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(42) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1712ms, visibility 0.3s 1890ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(42) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1712ms, visibility 0.3s 1890ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1712ms, visibility 0.3s 1890ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1712ms, visibility 0.3s 1890ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1712ms, visibility 0.3s 1890ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(43) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1748ms, visibility 0.3s 1935ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(43) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1748ms, visibility 0.3s 1935ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1748ms, visibility 0.3s 1935ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1748ms, visibility 0.3s 1935ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1748ms, visibility 0.3s 1935ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(44) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1784ms, visibility 0.3s 1980ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(44) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1784ms, visibility 0.3s 1980ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1784ms, visibility 0.3s 1980ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1784ms, visibility 0.3s 1980ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1784ms, visibility 0.3s 1980ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(45) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1820ms, visibility 0.3s 2025ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(45) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1820ms, visibility 0.3s 2025ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1820ms, visibility 0.3s 2025ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1820ms, visibility 0.3s 2025ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1820ms, visibility 0.3s 2025ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(46) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1856ms, visibility 0.3s 2070ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(46) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1856ms, visibility 0.3s 2070ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1856ms, visibility 0.3s 2070ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1856ms, visibility 0.3s 2070ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1856ms, visibility 0.3s 2070ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(47) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1892ms, visibility 0.3s 2115ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(47) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1892ms, visibility 0.3s 2115ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1892ms, visibility 0.3s 2115ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1892ms, visibility 0.3s 2115ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1892ms, visibility 0.3s 2115ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(48) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1928ms, visibility 0.3s 2160ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(48) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1928ms, visibility 0.3s 2160ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1928ms, visibility 0.3s 2160ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1928ms, visibility 0.3s 2160ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1928ms, visibility 0.3s 2160ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(49) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1964ms, visibility 0.3s 2205ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(49) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1964ms, visibility 0.3s 2205ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1964ms, visibility 0.3s 2205ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1964ms, visibility 0.3s 2205ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1964ms, visibility 0.3s 2205ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(50) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2000ms, visibility 0.3s 2250ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(50) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2000ms, visibility 0.3s 2250ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2000ms, visibility 0.3s 2250ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2000ms, visibility 0.3s 2250ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2000ms, visibility 0.3s 2250ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(51) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2036ms, visibility 0.3s 2295ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(51) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2036ms, visibility 0.3s 2295ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2036ms, visibility 0.3s 2295ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2036ms, visibility 0.3s 2295ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2036ms, visibility 0.3s 2295ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(52) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2072ms, visibility 0.3s 2340ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(52) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2072ms, visibility 0.3s 2340ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2072ms, visibility 0.3s 2340ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2072ms, visibility 0.3s 2340ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2072ms, visibility 0.3s 2340ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(53) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2108ms, visibility 0.3s 2385ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(53) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2108ms, visibility 0.3s 2385ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2108ms, visibility 0.3s 2385ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2108ms, visibility 0.3s 2385ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2108ms, visibility 0.3s 2385ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(54) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2144ms, visibility 0.3s 2430ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(54) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2144ms, visibility 0.3s 2430ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2144ms, visibility 0.3s 2430ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2144ms, visibility 0.3s 2430ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2144ms, visibility 0.3s 2430ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(55) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2180ms, visibility 0.3s 2475ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(55) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2180ms, visibility 0.3s 2475ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2180ms, visibility 0.3s 2475ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2180ms, visibility 0.3s 2475ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2180ms, visibility 0.3s 2475ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(56) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2216ms, visibility 0.3s 2520ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(56) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2216ms, visibility 0.3s 2520ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2216ms, visibility 0.3s 2520ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2216ms, visibility 0.3s 2520ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2216ms, visibility 0.3s 2520ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(57) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2252ms, visibility 0.3s 2565ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(57) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2252ms, visibility 0.3s 2565ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2252ms, visibility 0.3s 2565ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2252ms, visibility 0.3s 2565ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2252ms, visibility 0.3s 2565ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(58) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2288ms, visibility 0.3s 2610ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(58) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2288ms, visibility 0.3s 2610ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2288ms, visibility 0.3s 2610ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2288ms, visibility 0.3s 2610ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2288ms, visibility 0.3s 2610ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(59) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2324ms, visibility 0.3s 2655ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(59) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2324ms, visibility 0.3s 2655ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2324ms, visibility 0.3s 2655ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2324ms, visibility 0.3s 2655ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2324ms, visibility 0.3s 2655ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(60) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2360ms, visibility 0.3s 2700ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(60) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2360ms, visibility 0.3s 2700ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2360ms, visibility 0.3s 2700ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2360ms, visibility 0.3s 2700ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2360ms, visibility 0.3s 2700ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(61) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2396ms, visibility 0.3s 2745ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(61) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2396ms, visibility 0.3s 2745ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2396ms, visibility 0.3s 2745ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2396ms, visibility 0.3s 2745ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2396ms, visibility 0.3s 2745ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(62) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2432ms, visibility 0.3s 2790ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(62) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2432ms, visibility 0.3s 2790ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2432ms, visibility 0.3s 2790ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2432ms, visibility 0.3s 2790ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2432ms, visibility 0.3s 2790ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(63) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2468ms, visibility 0.3s 2835ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(63) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2468ms, visibility 0.3s 2835ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2468ms, visibility 0.3s 2835ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2468ms, visibility 0.3s 2835ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2468ms, visibility 0.3s 2835ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(64) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2504ms, visibility 0.3s 2880ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(64) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2504ms, visibility 0.3s 2880ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2504ms, visibility 0.3s 2880ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2504ms, visibility 0.3s 2880ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2504ms, visibility 0.3s 2880ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(65) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2540ms, visibility 0.3s 2925ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(65) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2540ms, visibility 0.3s 2925ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2540ms, visibility 0.3s 2925ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2540ms, visibility 0.3s 2925ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2540ms, visibility 0.3s 2925ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(66) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2576ms, visibility 0.3s 2970ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(66) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2576ms, visibility 0.3s 2970ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2576ms, visibility 0.3s 2970ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2576ms, visibility 0.3s 2970ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2576ms, visibility 0.3s 2970ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(67) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2612ms, visibility 0.3s 3015ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(67) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2612ms, visibility 0.3s 3015ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2612ms, visibility 0.3s 3015ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2612ms, visibility 0.3s 3015ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2612ms, visibility 0.3s 3015ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(68) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2648ms, visibility 0.3s 3060ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(68) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2648ms, visibility 0.3s 3060ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2648ms, visibility 0.3s 3060ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2648ms, visibility 0.3s 3060ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2648ms, visibility 0.3s 3060ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(69) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2684ms, visibility 0.3s 3105ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(69) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2684ms, visibility 0.3s 3105ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2684ms, visibility 0.3s 3105ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2684ms, visibility 0.3s 3105ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2684ms, visibility 0.3s 3105ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(70) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2720ms, visibility 0.3s 3150ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(70) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2720ms, visibility 0.3s 3150ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2720ms, visibility 0.3s 3150ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2720ms, visibility 0.3s 3150ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2720ms, visibility 0.3s 3150ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(71) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2756ms, visibility 0.3s 3195ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(71) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2756ms, visibility 0.3s 3195ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2756ms, visibility 0.3s 3195ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2756ms, visibility 0.3s 3195ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2756ms, visibility 0.3s 3195ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(72) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2792ms, visibility 0.3s 3240ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(72) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2792ms, visibility 0.3s 3240ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2792ms, visibility 0.3s 3240ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2792ms, visibility 0.3s 3240ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2792ms, visibility 0.3s 3240ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(73) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2828ms, visibility 0.3s 3285ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(73) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2828ms, visibility 0.3s 3285ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2828ms, visibility 0.3s 3285ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2828ms, visibility 0.3s 3285ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2828ms, visibility 0.3s 3285ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(74) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2864ms, visibility 0.3s 3330ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(74) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2864ms, visibility 0.3s 3330ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2864ms, visibility 0.3s 3330ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2864ms, visibility 0.3s 3330ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2864ms, visibility 0.3s 3330ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(75) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2900ms, visibility 0.3s 3375ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(75) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2900ms, visibility 0.3s 3375ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2900ms, visibility 0.3s 3375ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2900ms, visibility 0.3s 3375ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2900ms, visibility 0.3s 3375ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(76) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2936ms, visibility 0.3s 3420ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(76) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2936ms, visibility 0.3s 3420ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2936ms, visibility 0.3s 3420ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2936ms, visibility 0.3s 3420ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2936ms, visibility 0.3s 3420ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(77) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2972ms, visibility 0.3s 3465ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(77) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2972ms, visibility 0.3s 3465ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2972ms, visibility 0.3s 3465ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2972ms, visibility 0.3s 3465ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2972ms, visibility 0.3s 3465ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(78) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3008ms, visibility 0.3s 3510ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(78) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3008ms, visibility 0.3s 3510ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3008ms, visibility 0.3s 3510ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3008ms, visibility 0.3s 3510ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3008ms, visibility 0.3s 3510ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(79) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3044ms, visibility 0.3s 3555ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(79) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3044ms, visibility 0.3s 3555ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3044ms, visibility 0.3s 3555ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3044ms, visibility 0.3s 3555ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3044ms, visibility 0.3s 3555ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(80) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3080ms, visibility 0.3s 3600ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(80) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3080ms, visibility 0.3s 3600ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3080ms, visibility 0.3s 3600ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3080ms, visibility 0.3s 3600ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3080ms, visibility 0.3s 3600ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(81) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3116ms, visibility 0.3s 3645ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(81) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3116ms, visibility 0.3s 3645ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3116ms, visibility 0.3s 3645ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3116ms, visibility 0.3s 3645ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3116ms, visibility 0.3s 3645ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(82) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3152ms, visibility 0.3s 3690ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(82) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3152ms, visibility 0.3s 3690ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3152ms, visibility 0.3s 3690ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3152ms, visibility 0.3s 3690ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3152ms, visibility 0.3s 3690ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(83) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3188ms, visibility 0.3s 3735ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(83) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3188ms, visibility 0.3s 3735ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3188ms, visibility 0.3s 3735ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3188ms, visibility 0.3s 3735ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3188ms, visibility 0.3s 3735ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(84) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3224ms, visibility 0.3s 3780ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(84) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3224ms, visibility 0.3s 3780ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3224ms, visibility 0.3s 3780ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3224ms, visibility 0.3s 3780ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3224ms, visibility 0.3s 3780ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(85) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3260ms, visibility 0.3s 3825ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(85) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3260ms, visibility 0.3s 3825ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3260ms, visibility 0.3s 3825ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3260ms, visibility 0.3s 3825ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3260ms, visibility 0.3s 3825ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(86) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3296ms, visibility 0.3s 3870ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(86) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3296ms, visibility 0.3s 3870ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3296ms, visibility 0.3s 3870ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3296ms, visibility 0.3s 3870ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3296ms, visibility 0.3s 3870ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(87) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3332ms, visibility 0.3s 3915ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(87) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3332ms, visibility 0.3s 3915ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3332ms, visibility 0.3s 3915ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3332ms, visibility 0.3s 3915ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3332ms, visibility 0.3s 3915ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(88) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3368ms, visibility 0.3s 3960ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(88) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3368ms, visibility 0.3s 3960ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3368ms, visibility 0.3s 3960ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3368ms, visibility 0.3s 3960ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3368ms, visibility 0.3s 3960ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(89) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3404ms, visibility 0.3s 4005ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(89) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3404ms, visibility 0.3s 4005ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3404ms, visibility 0.3s 4005ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3404ms, visibility 0.3s 4005ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3404ms, visibility 0.3s 4005ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(90) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3440ms, visibility 0.3s 4050ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(90) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3440ms, visibility 0.3s 4050ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3440ms, visibility 0.3s 4050ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3440ms, visibility 0.3s 4050ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3440ms, visibility 0.3s 4050ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(91) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3476ms, visibility 0.3s 4095ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(91) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3476ms, visibility 0.3s 4095ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3476ms, visibility 0.3s 4095ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3476ms, visibility 0.3s 4095ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3476ms, visibility 0.3s 4095ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(92) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3512ms, visibility 0.3s 4140ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(92) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3512ms, visibility 0.3s 4140ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3512ms, visibility 0.3s 4140ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3512ms, visibility 0.3s 4140ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3512ms, visibility 0.3s 4140ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(93) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3548ms, visibility 0.3s 4185ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(93) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3548ms, visibility 0.3s 4185ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3548ms, visibility 0.3s 4185ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3548ms, visibility 0.3s 4185ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3548ms, visibility 0.3s 4185ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(94) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3584ms, visibility 0.3s 4230ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(94) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3584ms, visibility 0.3s 4230ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3584ms, visibility 0.3s 4230ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3584ms, visibility 0.3s 4230ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3584ms, visibility 0.3s 4230ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(95) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3620ms, visibility 0.3s 4275ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(95) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3620ms, visibility 0.3s 4275ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3620ms, visibility 0.3s 4275ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3620ms, visibility 0.3s 4275ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3620ms, visibility 0.3s 4275ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(96) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3656ms, visibility 0.3s 4320ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(96) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3656ms, visibility 0.3s 4320ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3656ms, visibility 0.3s 4320ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3656ms, visibility 0.3s 4320ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3656ms, visibility 0.3s 4320ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(97) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3692ms, visibility 0.3s 4365ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(97) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3692ms, visibility 0.3s 4365ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3692ms, visibility 0.3s 4365ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3692ms, visibility 0.3s 4365ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3692ms, visibility 0.3s 4365ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(98) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3728ms, visibility 0.3s 4410ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(98) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3728ms, visibility 0.3s 4410ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3728ms, visibility 0.3s 4410ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3728ms, visibility 0.3s 4410ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3728ms, visibility 0.3s 4410ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(99) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3764ms, visibility 0.3s 4455ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(99) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3764ms, visibility 0.3s 4455ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3764ms, visibility 0.3s 4455ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3764ms, visibility 0.3s 4455ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3764ms, visibility 0.3s 4455ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-wrapper:nth-of-type(100) .dsn-word-wrapper {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3800ms, visibility 0.3s 4500ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms;
+  .elf-active[data-elf-anim="animate"] .elf-box:nth-of-type(100) .elf-word-box {
     transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3800ms, visibility 0.3s 4500ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms;
-    -o-transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3800ms, visibility 0.3s 4500ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3800ms, visibility 0.3s 4500ms;
     transition: transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3800ms, visibility 0.3s 4500ms, -webkit-transform .9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms;
   }
   
-  .dsn-active[data-dsn-animate="animate"] .dsn-word-wrapper {
-    -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
+  .elf-active[data-elf-anim="animate"] .elf-word-box {
     transform-origin: top left;
-    -webkit-transition-property: all !important;
-    -o-transition-property: all !important;
     transition-property: all !important;
-    -webkit-transform: none !important;
-    -ms-transform: none !important;
     transform: none !important;
   }
   
-  [data-dsn-animate="up"] {
-    -webkit-transform: translateY(30px);
-    -ms-transform: translateY(30px);
+  [data-elf-anim="up"] {
     transform: translateY(30px);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition-property: opacity, -webkit-transform;
     transition-property: opacity, -webkit-transform;
-    -o-transition-property: opacity, transform;
     transition-property: opacity, transform;
     transition-property: opacity, transform, -webkit-transform;
-    -webkit-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
   
-  .dsn-active[data-dsn-animate="up"] {
-    -webkit-transform: none;
-    -ms-transform: none;
+  .elf-active[data-elf-anim="up"] {
     transform: none;
     opacity: 1;
     visibility: visible;

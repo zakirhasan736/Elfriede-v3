@@ -10,23 +10,23 @@
 // styles css
 
 // elfriede single post banner style css
-.elfriede-single-post-section {
+.elf-single-post-section {
   position: relative;
   width: 100%;
   height: 100%;
   background: $white;
-  .elfriede-single-post-wrap {
+  .elf-single-post-wrap {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
     @include media-breakpoint-up(md) {
-      .elfriede-container {
+      .elf-container {
         padding-left: 30px;
         padding-right: 30px;
       }
     }
-    .elfriede-main-contant {
+    .elf-main-contant {
       padding-top: 256px;
       padding-bottom: 81px;
       @include media-breakpoint-up(md) {
@@ -37,7 +37,7 @@
         padding-top: 169px;
         padding-bottom: 20px;
       }
-      .elfriede-banner-subtitle {
+      .elf-banner-subtitle {
         width: 100%;
         max-width: 1093px;
         @include media-breakpoint-up(md) {
@@ -49,9 +49,9 @@
           max-width: 240px;
         }
       }
-      .elfriede-current-post-tags {
+      .elf-current-post-tags {
         gap: 19px;
-        .elfriede-tags-item {
+        .elf-tags-item {
           font-family: $secondaryFont;
           font-size: 13px;
           font-weight: 400;
@@ -61,18 +61,18 @@
           color: $black;
         }
       }
-      .elfriede-blogs-img-box {
+      .elf-blogs-img-box {
         @include media-breakpoint-up(md) {
-          .elfriede-container {
+          .elf-container {
             padding-left: 0;
             padding-right: 0;
           }
-          .elfriede-current-post-tags {
+          .elf-current-post-tags {
             padding-left: 30px;
           }
         }
       }
-      .elfriede-single-post-image {
+      .elf-single-post-image {
         @include media-breakpoint-up(md) {
           width: 100%;
           height: 459px;
@@ -81,7 +81,7 @@
     }
   }
 }
-.elfriede-singlepost-wrap-cont {
+.elf-singlepost-wrap-cont {
   display: grid;
   grid-template-areas:
     'LeftAlign RightAlign'
@@ -101,7 +101,7 @@
   @include media-breakpoint-up(sm) {
     margin-bottom: 149px !important;
   }
-  .elfriede-post-left-wrap {
+  .elf-post-left-wrap {
     @include media-breakpoint-up(md) {
       margin-bottom: 69px;
     }
@@ -112,26 +112,26 @@
       grid-area: LeftAlign;
     }
   }
-  .elfriede-post-right-wrap {
+  .elf-post-right-wrap {
     &:nth-child(2) {
       grid-area: RightAlign;
     }
   }
-  .elfriede-next-blogs-section {
+  .elf-next-blogs-section {
     &:nth-child(3) {
       grid-area: NextPostAlign;
     }
   }
-  .elfriede-post-right-wrap {
+  .elf-post-right-wrap {
     max-width: 378px;
     width: 100%;
-    .elfriede-post-tags-box {
+    .elf-post-tags-box {
       margin-bottom: 60px;
     @include media-breakpoint-up(md) {
       margin-bottom: 0;
     }
       position: relative;
-      .elfriede-post-tags-list {
+      .elf-post-tags-list {
         display: flex;
         flex-wrap: wrap;
         column-gap: 5px;
@@ -165,7 +165,7 @@
         }
       }
 
-      .elfriede-posted-titlebox {
+      .elf-posted-titlebox {
         width: 265px;
         border-left: 1px solid #000;
         border-bottom: 1px solid #000;
@@ -186,7 +186,7 @@
         }
       }
 
-      .elfriede-posted-titlebox .subtitle {
+      .elf-posted-titlebox .subtitle {
         padding: 3px 20px 3px 23px;
         background: #282c35;
         color: #fff;
@@ -199,31 +199,31 @@
       display: grid;
       grid-template-areas: 'suggestedArea tagsArea';
       gap: 70px;
-      .elfriede-post-tags-box {
+      .elf-post-tags-box {
         grid-area: tagsArea;
       }
-      .elfriede-suggested-blogs-box {
+      .elf-suggested-blogs-box {
         grid-area: suggestedArea;
       }
     }
     @include media-breakpoint-up(sm) {
       display: block;
-      .elfriede-post-tags-box {
+      .elf-post-tags-box {
        margin-bottom: 60px;
       }
     }
   }
 }
-.elfriede-suggested-blogs-box {
+.elf-suggested-blogs-box {
   margin-top: 30px;
   position: relative;
   @include media-breakpoint-up(md) {
     margin-top: 0;
   }
-  .elfriede-blogs-items-wrap {
+  .elf-blogs-items-wrap {
     padding-top: 30px;
     padding-right: 60px;
-    .elfriede-suggested-blogs-item {
+    .elf-suggested-blogs-item {
       &:not(:last-child) {
         padding-bottom: 22px;
         border-bottom: 1px solid $black;
@@ -247,10 +247,10 @@
           }
         }
       }
-      .elfriede-sugs-title{cursor: pointer;}
+      .elf-sugs-title{cursor: pointer;}
     }
   }
-  .elfriede-posted-titlebox {
+  .elf-posted-titlebox {
     width: 480px;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -278,7 +278,7 @@
     }
   }
 }
-.elfriede-next-blogs-section {
+.elf-next-blogs-section {
   position: relative;
   @include media-breakpoint-up(md) {
     margin-bottom: 59px !important;
@@ -286,7 +286,7 @@
   @include media-breakpoint-up(sm) {
     margin-bottom: 70px !important;
   }
-  .elfriede-next-blogs-wrap {
+  .elf-next-blogs-wrap {
     padding: 100px 82px 106px;
     z-index: 9;
     position: relative;
@@ -308,7 +308,7 @@
     @include media-breakpoint-up(md) {
       padding: 60px 35px 80px 37px;
     }
-    .elfriede-next-blog-title {
+    .elf-next-blog-title {
       max-width: 1013px;
       width: 100%;
       color: transparent;
@@ -320,7 +320,7 @@
       &::before{
         width: 0%;
        }
-       .elfriede-next-blog-title {
+       .elf-next-blog-title {
         color: $primaryColor;
       }
      }

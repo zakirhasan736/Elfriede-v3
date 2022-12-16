@@ -1,6 +1,6 @@
 // elfriede header styles
 // ---------------------------------------------
-.elfriede-header-section {
+.elf-header-section {
   width: 100%;
   left: 0;
   top: 0;
@@ -10,8 +10,8 @@
   @include media-breakpoint-up(sm) {
   &.single-product{
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    .elfriede-header-button{
-      .elfriede-secondary-button{
+    .elf-header-button{
+      .elf-secondary-button{
         background: $white;
         border-color: #FFFFFF;
      }
@@ -22,15 +22,15 @@
 
 // elfriede top header styles
 
-.elfriede-top-header {
+.elf-top-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .elfriede-navigation-bar{
+  .elf-navigation-bar{
     cursor: pointer;
   }
-  .elfriede-header-button{
-    .elfriede-secondary-button{
+  .elf-header-button{
+    .elf-secondary-button{
       max-width: 203px; 
    }
   }
@@ -38,7 +38,7 @@
 
 // elfriede sidebar header styles
 
-.elfriede-navigation-wrapper {
+.elf-navigation-wrapper {
     max-width: 347px;
     width: 100%;
     background: #F6F6F6;
@@ -55,7 +55,7 @@
   left: 0;
 }
 
-  .elfriede-sidebar-nav-head {
+  .elf-sidebar-nav-head {
     display: flex;
     justify-content: flex-end;
     background-image: url('/assets/image/menubar-shape-img.png');
@@ -63,7 +63,7 @@
     background-position: center;
     background-size: cover;
     padding: 32px 33px 137px 0;
-    .elfriede-trigger-close {
+    .elf-trigger-close {
       max-width: 130px;
       cursor: pointer;
       display: flex;
@@ -82,9 +82,9 @@
     }
   }
 
-  .elfriede-sidebar-nav {
+  .elf-sidebar-nav {
     padding: 45px 33px 147px 62px; 
-    .elfriede-navigation-nav {
+    .elf-navigation-nav {
       ul {
         li {
             margin-bottom: 18px;
@@ -102,9 +102,9 @@
       }
     }
   }
-  .elfriede-sidebar-nav-footer{
+  .elf-sidebar-nav-footer{
     padding-left: 60px;
-    .elfriede-socials-widgets{
+    .elf-socials-widgets{
         display: flex;
         align-items: center;
         gap: 16px;

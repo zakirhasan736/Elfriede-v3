@@ -1,4 +1,4 @@
-.elfriede-contact-section {
+.elf-contact-section {
   position: relative;
   background: $gray-alt;
   @include media-breakpoint-up(md) {
@@ -13,7 +13,7 @@
     text-align: left !important;
   }
   }
-  .elfriede-contact-details {
+  .elf-contact-details {
     @include media-breakpoint-up(md) {
       padding-right: 0;
       .contact-details-list {
@@ -25,7 +25,7 @@
     }
 
     .contact-button-box {
-      .elfriede-primary-button {
+      .elf-primary-button {
         max-width: 187px;
         width: 100%;
         margin-top: 96px;
@@ -52,8 +52,8 @@
     }
   }
 }
-.elfriede-contact-form {
-  .elfriede-contact-grid {
+.elf-contact-form {
+  .elf-contact-grid {
     display: flex;
     gap: 26px;
     align-items: center;
@@ -61,16 +61,16 @@
     @include media-breakpoint-up(sm) {
       display: block;
     }
-    .elfriede-contact-form-box {
+    .elf-contact-form-box {
       width: 100%;
     }
   }
   .elfirede-contact-form {
-    .elfriede-contact-form-box {
+    .elf-contact-form-box {
       &:not(:nth-child(3)) {
         margin-bottom: 22px;
       }
-      .elfriede-input-title {
+      .elf-input-title {
         font-family: $secondaryFont;
         font-size: 1.8rem;
         font-weight: 400;
@@ -82,8 +82,8 @@
         display: block;
       }
       #elfirede-input-descfilde,
-      #elfriede-input-mailfilde,
-      #elfriede-input-textfilde {
+      #elf-input-mailfilde,
+      #elf-input-textfilde {
         width: 100%;
         height: 64px;
         background: #ffffff;
@@ -115,11 +115,11 @@
         height: 250px;
       }
     }
-    .elfriede-contact-btn-box {
+    .elf-contact-btn-box {
       display: flex;
       justify-content: center;
       margin-top: 40px;
-      .elfriede-primary-button {
+      .elf-primary-button {
         max-width: 155px;
         width: 100%;
 

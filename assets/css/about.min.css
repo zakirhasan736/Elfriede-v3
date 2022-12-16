@@ -130,7 +130,10 @@
 
 .elfriede-accordion-item {
   position: relative;
-  border-top: 1px solid #000000;
+  border-top: 1px solid #000000 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
   padding: 27px 32px 28px;
 }
 .elfriede-accordion-item:last-child {
@@ -147,6 +150,25 @@
   letter-spacing: 0.150000006px;
   text-align: left;
   color: #000000;
+  padding: 0 !important;
+}
+.elfriede-accordion-item .elfriede-accotdion-question .elfriede-question-title:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.elfriede-accordion-item .elfriede-accotdion-question .elfriede-question-title.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.elfriede-accordion-item .elfriede-accotdion-question .elfriede-question-title.accordion-button::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: url("/assets/image/icon/arrow-down.png");
+  background-repeat: no-repeat;
 }
 @media (max-width: 991px) {
   .elfriede-accordion-item .elfriede-accotdion-question .elfriede-question-title {

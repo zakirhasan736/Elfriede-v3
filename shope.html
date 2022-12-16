@@ -11,6 +11,7 @@
         <!-- ===all css here=== -->
         <!-- Default Theme -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-slider.min.css">
         <link rel="stylesheet" href="assets/css/style.min.css">
         <link rel="stylesheet" href="assets/css/shope.min.css">
 
@@ -20,192 +21,217 @@
         <main class="main-root">
 
             <div id="dsn-scrollbar">
-        <!-- =========================================================
+                <!-- =========================================================
              ***  preloader screen section start 
          ===============================================================-->
-         <div class="preloader">
-            <div class="elfriede-loader-header d-flex justify-content-center"><a href="#!"><img
-                        src="/assets/image/logo/Small-Logo.svg" width="170px" height="51px" alt="company-logo"
-                        class="elfriede-brand-logo"></a></div>
-            <div class="preloader-wrapper">
-                <div class="preloader-block">
-                    <div class="percent">0</div>
+                <div class="preloader">
+                    <div class="elfriede-loader-header d-flex justify-content-center"><a href="#!"><img
+                                src="/assets/image/logo/Small-Logo.svg" width="170px" height="51px" alt="company-logo"
+                                class="elfriede-brand-logo"></a></div>
+                    <div class="preloader-wrapper">
+                        <div class="preloader-block">
+                            <div class="percent">0</div>
+                        </div>
+                        <div class="preloader-bar">
+                            <div class="preloader-progress"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="preloader-bar">
-                    <div class="preloader-progress"></div>
-                </div>
-            </div>
-        </div>
-        <!-- =========================================================
+                <!-- =========================================================
              1.  header section start 
   ===============================================================-->
-        <header class="elfriede-header-section pt-30">
-            <div class="elfriede-container">
-                <div class="elfriede-header-wrapper">
-                    <!-- site top header -->
+                <header class="elfriede-header-section pt-30">
+                    <div class="elfriede-container">
+                        <div class="elfriede-header-wrapper">
+                            <!-- site top header -->
 
-                    <div class="elfriede-top-header">
-                        <div class="elfriede-navigation-bar"><img src="/assets/image/logo/Hamburger.svg"
-                                alt="trigger bar"></div>
-                        <div class="elfriede-brand-logo"><a href="/" class="brand-logo"><img
-                                    src="/assets/image/logo/Small-Logo.svg" alt="brand-logo"></a></div>
-                        <div class="elfriede-header-button"><a href="/"
-                                class="elfriede-secondary-button d-none d-md-block image-zoom effect-ajax" data-dsn="parallax"><img
-                                    src="/assets/image/icon/arrow_outward.png" alt="arrow icons" class="arrow-icons">
-                                GET AN OFFER</a>
+                            <div class="elfriede-top-header">
+                                <div class="elfriede-navigation-bar"><img src="/assets/image/logo/Hamburger.svg"
+                                        alt="trigger bar"></div>
+                                <div class="elfriede-brand-logo"><a href="/" class="brand-logo"><img
+                                            src="/assets/image/logo/Small-Logo.svg" alt="brand-logo"></a></div>
+                                <div class="elfriede-header-button"><a href="/"
+                                        class="elfriede-secondary-button d-none d-md-block image-zoom effect-ajax"
+                                        data-dsn="parallax"><img src="/assets/image/icon/arrow_outward.png"
+                                            alt="arrow icons" class="arrow-icons">
+                                        GET AN OFFER</a>
+                                </div>
+                            </div>
+
+                            <!-- sidebar nav start hear -->
+                            <div class="elfriede-navigation-wrapper">
+                                <!-- sidebar nav header  -->
+                                <div class="elfriede-sidebar-nav-head">
+                                    <div class="elfriede-trigger-close"><span>CLOSE</span> <img
+                                            src="/assets/image/icon/close.svg" alt="trigger close button"></div>
+                                </div>
+                                <!-- navigation link items start here -->
+                                <div class="elfriede-sidebar-nav">
+                                    <nav class="elfriede-navigation-nav">
+                                        <ul class="elfriede-nav-list">
+                                            <li class="elfriede-nav--items"><a href="/">Home</a></li>
+                                            <li class="elfriede-nav--items"><a href="/about.html">About Us</a></li>
+                                            <li class="elfriede-nav--items"><a href="/portfolio.html">Portfolio</a></li>
+                                            <li class="elfriede-nav--items"><a href="/singleitem.html">Item Single</a>
+                                            </li>
+                                            <li class="elfriede-nav--items"><a href="/contact.html">Contact Us</a></li>
+                                            <li class="elfriede-nav--items"><a href="/priching.html">Pricing</a></li>
+                                            <li class="elfriede-nav--items"><a href="/blogs.html">Blog</a></li>
+                                            <li class="elfriede-nav--items"><a href="/single-post.html">Single Post</a>
+                                            </li>
+                                            <li class="elfriede-nav--items"><a href="/shope.html">Shop</a></li>
+                                            <li class="elfriede-nav--items"><a href="/singleproduct.html">Shop Item</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="elfriede-sidebar-nav-footer">
+                                    <ul class="elfriede-socials-widgets">
+                                        <li class="elfriede-link-items"><a href="/" class="socials-link"><img
+                                                    src="/assets/image/icon/socials/facebook.png" width="8.12px"
+                                                    height="15px" alt="socials icon" class="socials-icons"></a></li>
+                                        <li class="elfriede-link-items"><a href="/" class="socials-link"><img
+                                                    src="/assets/image/icon/socials/instagrame.png" width="16.39px"
+                                                    height="16.38px" alt="socials icon" class="socials-icons"></a></li>
+                                        <li class="elfriede-link-items"><a href="/" class="socials-link"><img
+                                                    src="/assets/image/icon/socials/twitter.png" width="15.31px"
+                                                    height="12.62px" alt="socials icon" class="socials-icons"></a></li>
+                                        <li class="elfriede-link-items"><a href="/" class="socials-link"><img
+                                                    src="/assets/image/icon/socials/linkedine.png" width="16.39px"
+                                                    height="16.39px" alt="socials icon" class="socials-icons"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </header>
 
-                    <!-- sidebar nav start hear -->
-                    <div class="elfriede-navigation-wrapper">
-                        <!-- sidebar nav header  -->
-                        <div class="elfriede-sidebar-nav-head">
-                            <div class="elfriede-trigger-close"><span>CLOSE</span> <img
-                                src="/assets/image/icon/close.svg" alt="trigger close button"></div>
-                        </div>
-                        <!-- navigation link items start here -->
-                        <div class="elfriede-sidebar-nav">
-                            <nav class="elfriede-navigation-nav">
-                                <ul class="elfriede-nav-list">
-                                    <li class="elfriede-nav--items"><a href="/">Home</a></li>
-                                    <li class="elfriede-nav--items"><a href="/about.html">About Us</a></li>
-                                    <li class="elfriede-nav--items"><a href="/portfolio.html">Portfolio</a></li>
-                                    <li class="elfriede-nav--items"><a href="/singleitem.html">Item Single</a></li>
-                                    <li class="elfriede-nav--items"><a href="/contact.html">Contact Us</a></li>
-                                    <li class="elfriede-nav--items"><a href="/priching.html">Pricing</a></li>
-                                    <li class="elfriede-nav--items"><a href="/blogs.html">Blog</a></li>
-                                    <li class="elfriede-nav--items"><a href="/single-post.html">Single Post</a></li>
-                                    <li class="elfriede-nav--items"><a href="/shope.html">Shop</a></li>
-                                    <li class="elfriede-nav--items"><a href="/singleproduct.html">Shop Item</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="elfriede-sidebar-nav-footer">
-                            <ul class="elfriede-socials-widgets">
-                                <li class="elfriede-link-items"><a href="/" class="socials-link"><img
-                                            src="/assets/image/icon/socials/facebook.png" width="8.12px" height="15px"
-                                            alt="socials icon" class="socials-icons"></a></li>
-                                <li class="elfriede-link-items"><a href="/" class="socials-link"><img
-                                            src="/assets/image/icon/socials/instagrame.png" width="16.39px"
-                                            height="16.38px" alt="socials icon" class="socials-icons"></a></li>
-                                <li class="elfriede-link-items"><a href="/" class="socials-link"><img
-                                            src="/assets/image/icon/socials/twitter.png" width="15.31px"
-                                            height="12.62px" alt="socials icon" class="socials-icons"></a></li>
-                                <li class="elfriede-link-items"><a href="/" class="socials-link"><img
-                                            src="/assets/image/icon/socials/linkedine.png" width="16.39px"
-                                            height="16.39px" alt="socials icon" class="socials-icons"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+                <main class="elfriede-main-wrapperbox">
 
-        <main class="elfriede-main-wrapperbox">
-
-            <!-- =========================================================
+                    <!-- =========================================================
              2.  mainVisual home section start 
              ===============================================================-->
-            <section class="elfriede-main-visual-section">
-                <div class="elfriede-container">
-                    <div class="elfriede-main-visual-wrap">
-                        <div class="elfriede-main-contant">
-                            <h1 class="elfriede-banner-title mb-0 justify-content-start"  data-dsn-animate="text">Shop what you love</h1>
+                    <section class="elfriede-main-visual-section">
+                        <div class="elfriede-container">
+                            <div class="elfriede-main-visual-wrap">
+                                <div class="elfriede-main-contant">
+                                    <h1 class="elfriede-banner-title mb-0 justify-content-start"
+                                        data-dsn-animate="text">Shop what you love</h1>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <!-- =========================================================
+                    </section>
+                    <!-- =========================================================
              Feature product section start 
          ===============================================================-->
-            <section class="elfriede-feature-product-section pt-65 pb-105">
-                <div class="elfriede-container">
-                    <div class="elfriede-product-wrapper">
-                        <!-- =========== -->
-                        <div class="elfriede-feature-product-card">
-                            <img src="/assets/image/product/feature-product-1.png" alt="product image"
-                                class="elfriede-product-img image-zoom effect-ajax" data-dsn="parallax">
-                            <h6 class="elfriede-product-seal-text">SUSTAINABLE BEAUTY - SALE</h6>
+                    <section class="elfriede-feature-product-section pt-65 pb-105">
+                        <div class="elfriede-container">
+                            <div class="elfriede-product-wrapper">
+                                <!-- =========== -->
+                                <div class="elfriede-feature-product-card">
+                                    <img src="/assets/image/product/feature-product-1.png" alt="product image"
+                                        class="elfriede-product-img image-zoom effect-ajax" data-dsn="parallax">
+                                    <h6 class="elfriede-product-seal-text">SUSTAINABLE BEAUTY - SALE</h6>
+                                </div>
+                                <!-- ============= -->
+                                <div class="elfriede-feature-product-card">
+                                    <img src="/assets/image/product/feature-product-2.png" alt="product image"
+                                        class="elfriede-product-img image-zoom effect-ajax" data-dsn="parallax">
+                                    <h6 class="elfriede-product-seal-text">BOOKS ON SUSTAINABILITY</h6>
+                                </div>
+                                <!-- ============= -->
+                            </div>
                         </div>
-                        <!-- ============= -->
-                        <div class="elfriede-feature-product-card">
-                            <img src="/assets/image/product/feature-product-2.png" alt="product image"
-                                class="elfriede-product-img image-zoom effect-ajax" data-dsn="parallax">
-                            <h6 class="elfriede-product-seal-text">BOOKS ON SUSTAINABILITY</h6>
-                        </div>
-                        <!-- ============= -->
-                    </div>
-                </div>
-            </section>
-            <!-- =========================================================
+                    </section>
+                    <!-- =========================================================
              Shope Product section start 
          ===============================================================-->
-            <section class="elfriede-shope-product-section pb-160">
-                <div class="elfriede-container">
-                    <div class="elfriede-shope-wrapper-box">
-                        <div class="elfriede-shope-left-wrap">
+                    <section class="elfriede-shope-product-section pb-160">
+                        <div class="elfriede-container">
+                            <div class="elfriede-shope-wrapper-box">
+                                <div class="elfriede-shope-left-wrap">
 
-                            <div class="elfriede-category-box mb-50">
-                                <div
-                                    class="elfriede-cat-title-box mb-30 d-flex justify-content-between align-items-center">
-                                    <h5 class="">Categories</h5>
-                                    <img src="/assets/image/icon/arrow-down.png" alt="arrow down icons"
-                                        class="d-block d-lg-none arrow-down-icons">
-                                </div>
-                                <ul class="elfriede--list-items d-none d-lg-block">
-                                    <li>T-shirts</li>
-                                    <li>Accessories</li>
-                                    <li>Notepads and writing kits</li>
-                                    <li>Tech utilities</li>
-                                </ul>
-                            </div>
-
-                            <div class="elfriede-filter-box">
-                                <div
-                                    class="elfriede-filter-title-box mb-30 d-flex justify-content-between align-items-center">
-                                    <h5 class="">Filters</h5>
-                                    <img src="/assets/image/icon/arrow-down.png" alt="arrow down icons"
-                                        class="d-block d-lg-none arrow-down-icons">
-                                </div>
-                                <div class="elfriede-filter-wrapper-box d-none d-lg-block">
-                                    <div class="elfriede-range-slide-box mb-35">
-                                        <div class="elfriede-progress-slide mb-35">
-                                            <p class="body-text mb-20">Price</p>
-                                            <div class="elfriede-range-slide-box">
-                                                <div class="elfriede-progress-tab tab-left"></div>
-                                                <div class="elfriede-progress-bar"></div>
-                                                <div class="elfriede-progress-tab tab-right"></div>
+                                    <div class="filters filter-section">
+                                        <div class="elfriede-category-box mb-50">
+                                            <div
+                                                class="elfriede-cat-title-box mb-30 d-flex justify-content-between align-items-center">
+                                                <h5 class="">Categories</h5>
+                                                <img src="/assets/image/icon/arrow-down.png" alt="arrow down icons"
+                                                    class="d-block d-lg-none arrow-down-icons">
+                                            </div>
+                                            <div class="btn-group elfriede--list-items" data-filter-group="color">
+                                                <li><span class="btn btn-sm btn-default btn-filter is-checked"
+                                                        data-filter="">All</span></li>
+                                                <li><span class="btn btn-sm btn-default btn-filter"
+                                                        data-filter=".red">T-shirts</span></li>
+                                                <li><span class="btn btn-sm btn-default btn-filter"
+                                                        data-filter=".blue">Accessories</span></li>
+                                                <li><span class="btn btn-sm btn-default btn-filter"
+                                                        data-filter=".yellow">Notepads and writing kits</span></li>
+                                                <li><span class="btn btn-sm btn-default btn-filter"
+                                                        data-filter=".yellow">Tech utilities</span></li>
                                             </div>
                                         </div>
-                                        <div class="elfriede-progress-slide">
-                                            <p class="body-text mb-20">Star rating</p>
-                                            <div class="elfriede-range-slide-box">
-                                                <div class="elfriede-progress-tab tab-left"></div>
-                                                <div class="elfriede-progress-bar"></div>
-                                                <div class="elfriede-progress-tab tab-right"></div>
+                                        <div class="elfriede-filter-box">
+                                            <div
+                                                class="elfriede-filter-title-box mb-30 d-flex justify-content-between align-items-center">
+                                                <h5 class="">Filters</h5>
+                                                <img src="/assets/image/icon/arrow-down.png" alt="arrow down icons"
+                                                    class="d-block d-lg-none arrow-down-icons">
+                                            </div>
+                                            <div class="elfriede-filter-wrapper-box  d-none d-lg-block">
+                                                <div class="elfriede-range-slide-box mb-35">
+                                                    <div class="elfriede-progress-slide mb-35">
+                                                        <p class="body-text mb-20">Price</p>
+                                                        <div class="bootstrap-slider">
+                                                            <!-- <span class="filter-label">Height Range: <span class="filter-selection"></span> </span> -->
+                                                            <input id="filter-price" type="text"
+                                                                class="bootstrap-slider" value="" data-slider-step="1"
+                                                                data-filter-group="price">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="elfriede-progress-slide mb-35">
+                                                        <p class="body-text mb-20">Star rating</p>
+                                                        <div class="bootstrap-slider">
+                                                            <!-- <span class="filter-label">Weight Range: <span class="filter-selection"></span></span> -->
+                                                            <input id="filter-star" type="text"
+                                                                class="bootstrap-slider" value=""
+                                                                data-filter-group="star">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elfriede-arrivel-box mb-35">
+                                                    <p class="body-text mb-20">New Arrivals</p>
+                                                    <div class="btn-group new-arrivel-list"
+                                                        data-filter-group="last-days">
+                                                        <li><span class="btn btn-sm btn-default btn-filter is-checked"
+                                                                data-filter="">All</span></li>
+                                                        <li><span class="btn btn-sm btn-default btn-filter"
+                                                                data-filter=".round">Latest 30 days</span></li>
+                                                        <li><span class="btn btn-sm btn-default btn-filter"
+                                                                data-filter=".square">Latest 90 days</span></li>
+                                                    </div>
+                                                </div>
+
+                                                <div class="elfriede-updates-product mb-35">
+                                                    <p class="body-text mb-20">Availability</p>
+                                                    <div class="btn-group elfriede-product-availability-info"
+                                                        data-filter-group="stock">
+                                                        <li><span class="btn btn-sm btn-default btn-filter"
+                                                                data-filter=".square"> <span class="checkmark"></span>
+                                                                In stock</span></li>
+
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="elfriede-arrivel-box mb-35">
-                                        <p class="body-text mb-20">New Arrivals</p>
-                                        <ul class="new-arrivel-list">
-                                            <li>Latest 30 days</li>
-                                            <li>Latest 90 days</li>
-                                        </ul>
-                                    </div>
-                                    <div class="elfriede-updates-product">
-                                        <p class="body-text mb-20">Availability</p>
-                                        <ul class="elfriede-product-availability-info">
-                                            <li><input type="checkbox" name="check-mark"> In stock</li>
-                                        </ul>
-                                    </div>
                                 </div>
-
-                            </div>
-                        </div>
-                        <div class="elfriede-shope-right-wrap">
-                            <div class="elfriede-shope-products-cont pb-60">
+                                <div class="elfriede-shope-right-wrap">
+                                    <!-- <div class="elfriede-shope-products-cont pb-60">
                                 <div class="elfriede-shope-products">
                                     <img src="/assets/image/product/product-img-1.png" alt="product image"
                                         class="elfriede-product-image  image-zoom effect-ajax" data-dsn="parallax">
@@ -222,152 +248,189 @@
                                     <img src="/assets/image/product/product-img-4.png" alt="product image"
                                         class="elfriede-product-image  image-zoom effect-ajax" data-dsn="parallax">
                                 </div>
-                            </div>
+                            </div> -->
+                                    <!-- ================= -->
+                                    <div class="grid">
+                                        <div class="item small round red" data-price="1000" data-star="2">
+                                            <img src="/assets/image/product/product-img-1.png" alt="product image"
+                                                class="elfriede-product-image  image-zoom effect-ajax"
+                                                data-dsn="parallax">
+                                        </div>
+                                        <div class="item small round blue" data-price="5000" data-star="5">
+                                            <img src="/assets/image/product/product-img-2.png" alt="product image"
+                                                class="elfriede-product-image  image-zoom effect-ajax"
+                                                data-dsn="parallax">
+                                        </div>
+                                        <div class="item small round yellow" data-price="1000" data-star="3">
+                                            <img src="/assets/image/product/product-img-3.png" alt="product image"
+                                                class="elfriede-product-image  image-zoom effect-ajax"
+                                                data-dsn="parallax">
+                                        </div>
+                                        <div class="item small square red" data-price="3000" data-star="5">
+                                            <img src="/assets/image/product/product-img-4.png" alt="product image"
+                                                class="elfriede-product-image  image-zoom effect-ajax"
+                                                data-dsn="parallax">
+                                        </div>
 
-                            <div class="pintext-middle-add" data-dsn-animate="up">
-                                <img src="/assets/image/icon/local_shipping-small.png" alt="shipping icon"
-                                    class="shipping-icon">
-                                <p class="elfriede-add-text">
-                                    New! Our products are now shipped within 30 days all across the globe!
-                                </p>
-                            </div>
+                                    </div>
+                                    <div class="pintext-middle-add mb-55" data-dsn-animate="up">
+                                        <img src="/assets/image/icon/local_shipping-small.png" alt="shipping icon"
+                                            class="shipping-icon">
+                                        <p class="elfriede-add-text">
+                                            New! Our products are now shipped within 30 days all across the globe!
+                                        </p>
+                                    </div>
+                                    <div class="grid elfriede-shope-products-cont">
 
-                            <div class="elfriede-shope-products-cont pt-60 pb-140">
-                                <div class="elfriede-shope-products">
-                                    <img src="/assets/image/product/product-img-5.png" alt="product image"
-                                        class="elfriede-product-image  image-zoom effect-ajax" data-dsn="parallax">
-                                </div>
-                                <div class="elfriede-shope-products">
-                                    <img src="/assets/image/product/product-img-6.png" alt="product image"
-                                        class="elfriede-product-image  image-zoom effect-ajax" data-dsn="parallax">
-                                </div>
-                                <div class="elfriede-shope-products">
-                                    <img src="/assets/image/product/product-img-7.png" alt="product image"
-                                        class="elfriede-product-image  image-zoom effect-ajax" data-dsn="parallax">
-                                </div>
-                                <div class="elfriede-shope-products">
-                                    <img src="/assets/image/product/product-img-8.png" alt="product image"
-                                        class="elfriede-product-image  image-zoom effect-ajax" data-dsn="parallax">
-                                </div>
-                            </div>
+                                        <div class="item wide round yellow" data-price="9000" data-star="3">
+                                            <img src="/assets/image/product/product-img-5.png" alt="product image"
+                                                class="elfriede-product-image  image-zoom effect-ajax"
+                                                data-dsn="parallax">
+                                        </div>
+                                        <div class="item wide square red" data-price="1000" data-star="5">
+                                            <img src="/assets/image/product/product-img-6.png" alt="product image"
+                                                class="elfriede-product-image  image-zoom effect-ajax"
+                                                data-dsn="parallax">
+                                        </div>
+                                        <div class="item wide square blue" data-price="7000" data-star="1">
+                                            <img src="/assets/image/product/product-img-7.png" alt="product image"
+                                                class="elfriede-product-image  image-zoom effect-ajax"
+                                                data-dsn="parallax">
+                                        </div>
+                                        <div class="item wide square yellow" data-price="1000" data-star="5">
+                                            <img src="/assets/image/product/product-img-8.png" alt="product image"
+                                                class="elfriede-product-image  image-zoom effect-ajax"
+                                                data-dsn="parallax">
+                                        </div>
 
-                            <div class="elfriede-pagination-wrapper">
-                                <ul class="elfriede-pagination-list">
-                                    <li class="elfriede-pagination-list-item active">1</li>
-                                    <li class="elfriede-pagination-list-item">2</li>
-                                    <li class="elfriede-pagination-list-item">3</li>
-                                    <li class="elfriede-pagination-list-item">4</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        <!-- =========================================================
-             Footer section start 
-         ===============================================================-->
-        <footer class="elfriede-footer-section">
-            <!-- footer top content start -->
-            <div class="elfriede-top-footer">
-                <div class="elfriede-container">
-                    <div class="elfriede-footer-top-wrap">
-
-                        <a class="footer-brand-logo" href="/"><img width="170px"
-                                src="/assets/image/logo/Medium Logo.svg" alt="brand logo" class="brand-logo"></a>
-
-                        <ul class="elfriede-socials-widgets">
-                            <li class="elfriede-link-items"><a href="/" class="socials-link"><img
-                                        src="/assets/image/icon/socials/facebook.png" width="13px" height="25px"
-                                        alt="socials icon" class="socials-icons"></a></li>
-                            <li class="elfriede-link-items"><a href="/" class="socials-link"><img
-                                        src="/assets/image/icon/socials/instagrame.png" width="27.32px" height="27.32px"
-                                        alt="socials icon" class="socials-icons"></a></li>
-                            <li class="elfriede-link-items"><a href="/" class="socials-link"><img
-                                        src="/assets/image/icon/socials/twitter.png" width="25.52px" height="21.04px"
-                                        alt="socials icon" class="socials-icons"></a></li>
-                            <li class="elfriede-link-items"><a href="/" class="socials-link"><img
-                                        src="/assets/image/icon/socials/linkedine.png" width="27.32px" height="27.32px"
-                                        alt="socials icon" class="socials-icons"></a></li>
-                        </ul>
-
-                        <div class="elfriede-top-desbox d-lg-block d-none">
-                            <p class="elfriede-top-desc subtitle">We create the world of tomorrow.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- footer main content start -->
-            <div class="elfriede-footer-main-wrapper pt-80">
-
-                <div class="elfriede-container">
-                    <div class="elfriede-footer-main-wrap">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-12  col-sm-12">
-                                <div class="elfriede-footer-descbox">
-                                    <h6 class="elfriede--footer-title">ABOUT ELFRIEDE</h6>
-                                    <p class="subtitle">
-                                        Our works are a reflection of our philosophy, which is based on a deep
-                                        understanding of architecture
-                                        and
-                                        ecology. We believe that buildings should be designed to be in harmony with
-                                        their surroundings. Our
-                                        designs are informed by the natural world, using recycled materials whenever
-                                        possible.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 offset-lg-1 col-md-4 col-12  col-sm-12">
-                                <div class="elfriede-footer-link-wrap">
-                                    <h6 class="elfriede--footer-title">DISCOVER</h6>
-                                    <div class="elfriede-links-cont">
-                                        <ul class="elfriede-links-item">
-                                            <li class="elfriede-footer-links"><a href="/">Portfolio</a></li>
-                                            <li class="elfriede-footer-links"><a href="/">Blog</a></li>
-                                            <li class="elfriede-footer-links"><a href="/">Article Single</a></li>
-                                            <li class="elfriede-footer-links"><a href="/">Our Works</a></li>
-                                            <li class="elfriede-footer-links"><a href="/">Pricing</a></li>
-                                            <li class="elfriede-footer-links"><a href="/">Contact</a></li>
-                                            <li class="elfriede-footer-links"><a href="/">About us</a></li>
-                                            <li class="elfriede-footer-links"><a href="/">404</a></li>
-                                            <li class="elfriede-footer-links"><a href="/">Shop</a></li>
+                                    </div>
+                         
+                                    <!-- ================== -->
+                                    <div class="elfriede-pagination-wrapper">
+                                        <ul class="elfriede-pagination-list">
+                                            <li class="elfriede-pagination-list-item active">1</li>
+                                            <li class="elfriede-pagination-list-item">2</li>
+                                            <li class="elfriede-pagination-list-item">3</li>
+                                            <li class="elfriede-pagination-list-item">4</li>
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 offset-lg-2 col-md-4 col-12  col-sm-12">
-                                <div class="elfriedefooter-logobox">
-                                    <a href="/" class="elfriede-footer-brand"><img
-                                            src="/assets/image/logo/brand-logo.svg" alt="" class="brand-img"></a>
+                        </div>
+                    </section>
+
+                    <!-- =========================================================
+             Footer section start 
+         ===============================================================-->
+                    <footer class="elfriede-footer-section">
+                        <!-- footer top content start -->
+                        <div class="elfriede-top-footer">
+                            <div class="elfriede-container">
+                                <div class="elfriede-footer-top-wrap">
+
+                                    <a class="footer-brand-logo" href="/"><img width="170px"
+                                            src="/assets/image/logo/Medium Logo.svg" alt="brand logo"
+                                            class="brand-logo"></a>
+
+                                    <ul class="elfriede-socials-widgets">
+                                        <li class="elfriede-link-items"><a href="/" class="socials-link"><img
+                                                    src="/assets/image/icon/socials/facebook.png" width="13px"
+                                                    height="25px" alt="socials icon" class="socials-icons"></a></li>
+                                        <li class="elfriede-link-items"><a href="/" class="socials-link"><img
+                                                    src="/assets/image/icon/socials/instagrame.png" width="27.32px"
+                                                    height="27.32px" alt="socials icon" class="socials-icons"></a></li>
+                                        <li class="elfriede-link-items"><a href="/" class="socials-link"><img
+                                                    src="/assets/image/icon/socials/twitter.png" width="25.52px"
+                                                    height="21.04px" alt="socials icon" class="socials-icons"></a></li>
+                                        <li class="elfriede-link-items"><a href="/" class="socials-link"><img
+                                                    src="/assets/image/icon/socials/linkedine.png" width="27.32px"
+                                                    height="27.32px" alt="socials icon" class="socials-icons"></a></li>
+                                    </ul>
+
+                                    <div class="elfriede-top-desbox d-lg-block d-none">
+                                        <p class="elfriede-top-desc subtitle">We create the world of tomorrow.</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- site copyright start here -->
-                    <div class="elfriede-footer-copyright">
-                        <p class="overlin-copyright-text text-center">DESIGNED & DEVELOPED BY SOKKO STUDIO 2022 © ALL
-                            RIGHTS
-                            RESERVED</p>
-                    </div>
+                        <!-- footer main content start -->
+                        <div class="elfriede-footer-main-wrapper pt-80">
 
-                </div>
-            </div>
-        </footer>
-        <!-- =========================================================
+                            <div class="elfriede-container">
+                                <div class="elfriede-footer-main-wrap">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-12  col-sm-12">
+                                            <div class="elfriede-footer-descbox">
+                                                <h6 class="elfriede--footer-title">ABOUT ELFRIEDE</h6>
+                                                <p class="subtitle">
+                                                    Our works are a reflection of our philosophy, which is based on a
+                                                    deep
+                                                    understanding of architecture
+                                                    and
+                                                    ecology. We believe that buildings should be designed to be in
+                                                    harmony with
+                                                    their surroundings. Our
+                                                    designs are informed by the natural world, using recycled materials
+                                                    whenever
+                                                    possible.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 offset-lg-1 col-md-4 col-12  col-sm-12">
+                                            <div class="elfriede-footer-link-wrap">
+                                                <h6 class="elfriede--footer-title">DISCOVER</h6>
+                                                <div class="elfriede-links-cont">
+                                                    <ul class="elfriede-links-item">
+                                                        <li class="elfriede-footer-links"><a href="/">Portfolio</a></li>
+                                                        <li class="elfriede-footer-links"><a href="/">Blog</a></li>
+                                                        <li class="elfriede-footer-links"><a href="/">Article Single</a>
+                                                        </li>
+                                                        <li class="elfriede-footer-links"><a href="/">Our Works</a></li>
+                                                        <li class="elfriede-footer-links"><a href="/">Pricing</a></li>
+                                                        <li class="elfriede-footer-links"><a href="/">Contact</a></li>
+                                                        <li class="elfriede-footer-links"><a href="/">About us</a></li>
+                                                        <li class="elfriede-footer-links"><a href="/">404</a></li>
+                                                        <li class="elfriede-footer-links"><a href="/">Shop</a></li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 offset-lg-2 col-md-4 col-12  col-sm-12">
+                                            <div class="elfriedefooter-logobox">
+                                                <a href="/" class="elfriede-footer-brand"><img
+                                                        src="/assets/image/logo/brand-logo.svg" alt=""
+                                                        class="brand-img"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- site copyright start here -->
+                                <div class="elfriede-footer-copyright">
+                                    <p class="overlin-copyright-text text-center">DESIGNED & DEVELOPED BY SOKKO STUDIO
+                                        2022 © ALL
+                                        RIGHTS
+                                        RESERVED</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- =========================================================
               Footer section END
   ===============================================================-->
-        <!-- ===all css here=== -->
-    </main>
-</div>
-        <!-- ===all css here=== -->
-        <script src="/assets/js/jquery-3.6.1.min.js"></script>
-        <script src="/assets/js/bootstrap.min.js"></script>
-        <script src="/assets/js/gsap.min.js"></script>
-        <script src="/assets/js/plugins.js"></script>
-        <script src="/assets/js/dsn-grid.js"></script>
-        <script src="/assets/js/custom.js"></script>
+                    <!-- ===all css here=== -->
+                </main>
+            </div>
+            <!-- ===all css here=== -->
+            <script src="/assets/js/jquery-3.6.1.min.js"></script>
+            <script src="/assets/js/bootstrap.min.js"></script>
+            <script src="/assets/js/bootstrap-slider.js"></script>
+            <script src="/assets/js/gsap.min.js"></script>
+            <script src="/assets/js/plugins.js"></script>
+            <script src="/assets/js/dsn-grid.js"></script>
+            <script src="/assets/js/custom.js"></script>
 
     </body>
 

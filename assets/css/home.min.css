@@ -365,6 +365,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 46px;
   }
+  .elfriede-work-process-section .elfriede-work-process-contbox .elfriede-work-process-card img {
+    width: 100px;
+    height: 100px;
+  }
 }
 @media (max-width: 767px) {
   .elfriede-work-process-section .elfriede-work-process-contbox {
@@ -393,13 +397,13 @@
 }
 @media (max-width: 991px) {
   .elfriede-testimonials-section .elfriede-testimonials-wrapper {
-    max-width: 367px;
+    max-width: 450px;
     width: 100%;
   }
 }
 @media (max-width: 767px) {
   .elfriede-testimonials-section .elfriede-testimonials-wrapper {
-    max-width: 292px;
+    max-width: 330px;
     width: 100%;
   }
 }
@@ -441,4 +445,9 @@
   position: relative;
   margin-top: 45px;
   padding-right: 76px;
+}
+@media (max-width: 767px) {
+  .elfriede-testimonials-section .elfriede-testimonials-wrapper .elfriede-testi-slide-card {
+    padding-right: 20px;
+  }
 }

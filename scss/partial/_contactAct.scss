@@ -56,6 +56,9 @@
                 .elfriede-client-slides-box{
                     position: relative;
                     right: 700px;
+  @include media-breakpoint-up(md) {
+    right: 0;
+  }
                 }
 
             }

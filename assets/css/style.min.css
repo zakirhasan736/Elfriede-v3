@@ -2344,6 +2344,11 @@ figure figcaption {
   position: relative;
   right: 700px;
 }
+@media (max-width: 991px) {
+  .elfriede-contact-act-section .elfriede-act-brand-slidesbox .elfriede-client-section .elfriede-client-slider-box .elfriede-client-slides-box {
+    right: 0;
+  }
+}
 .elfriede-contact-act-section .elfriede-act-brand-slidesbox .elfriede-client-section .elfriede-gaving-text {
   margin-top: 50px;
 }

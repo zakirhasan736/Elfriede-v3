@@ -177,6 +177,10 @@
   list-style: disclosure-closed !important;
   color: #000000;
 }
+.elf-category-box .elf--list-items li:first-child {
+  position: absolute;
+  opacity: 0;
+}
 .elf-category-box .elf--list-items li:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -254,6 +258,10 @@
   list-style: disclosure-closed !important;
   color: #000000;
 }
+.elf-arrivel-box .new-arrivel-list li:first-child {
+  position: absolute;
+  opacity: 0;
+}
 .elf-arrivel-box .new-arrivel-list li:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -281,6 +289,10 @@
   letter-spacing: 0.5px;
   text-align: left;
   color: #000000;
+}
+.elf-updates-product .elf-product-availability-info li:first-child {
+  position: absolute;
+  opacity: 0;
 }
 .elf-updates-product .elf-product-availability-info li:not(:last-child) {
   margin-bottom: 20px;

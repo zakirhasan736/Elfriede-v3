@@ -1395,7 +1395,7 @@ figure figcaption {
 .elf-navigation-wrapper .elf-sidebar-nav-head {
   display: flex;
   justify-content: flex-end;
-  background-image: url('/assets/image/menubar-shape-img.png');
+  background-image: url('/assets/image/menubar-shape-img.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2108,7 +2108,7 @@ figure figcaption {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/image/home-banner-img.png");
+  background-image: url("/assets/image/home-banner-img.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

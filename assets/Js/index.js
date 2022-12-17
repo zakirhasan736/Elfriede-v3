@@ -251,6 +251,18 @@
         })
     })
 
+
+    
+$(document).ready(function() {
+    $('.elf-navigation-bar').on('click', function(){
+        $('.elf-navigation-wrapper').addClass('info-open');
+      })
+      $('.elf-trigger-close').on('click', function(){
+        $('.elf-navigation-wrapper').removeClass('info-open');
+      })
+
+  });
+  
     // testimonials slider
 
     $('.elf-testimonials-slide-box').slick({
@@ -474,14 +486,5 @@ $('.elf-product-slider').slick({
   });
 }(jQuery);
 
-$(document).ready(function() {
-    $('.elf-navigation-bar').on('click', function(){
-        $('.elf-navigation-wrapper').addClass('info-open');
-      })
-      $('.elf-trigger-close').on('click', function(){
-        $('.elf-navigation-wrapper').removeClass('info-open');
-      })
-
-  });
   
   

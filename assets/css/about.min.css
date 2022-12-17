@@ -178,7 +178,7 @@
   top: 0;
   width: 24px;
   height: 24px;
-  background: url("/assets/image/icon/arrow-down.png");
+  background: url("/assets/image/icon/arrow-down.webp");
   background-repeat: no-repeat;
 }
 @media (max-width: 991px) {

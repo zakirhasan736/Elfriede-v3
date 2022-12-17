@@ -1193,7 +1193,7 @@ span{
     transform: none !important;
   }
   
-  [data-elf-anim="up"] {
+  [data-elf-anim="fade-up"] {
     transform: translateY(30px);
     opacity: 0;
     visibility: hidden;
@@ -1204,7 +1204,7 @@ span{
     transition-timing-function: ease-in-out;
   }
   
-  .elf-active[data-elf-anim="up"] {
+  .elf-active[data-elf-anim="fade-up"] {
     transform: none;
     opacity: 1;
     visibility: visible;

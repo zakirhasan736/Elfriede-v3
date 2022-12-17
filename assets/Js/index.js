@@ -221,10 +221,10 @@
                 },
 
                 animateText: function () {
-                    e('[data-elf-anim="text"] , [data-elf-anim="up"]').each(function () {
+                    e('[data-elf-anim="anim-text"] , [data-elf-anim="fade-up"]').each(function () {
                         let n = e(this),
                             a = 1;
-                        "text" === n.data("elf-anim") ? (elfInt.convertTextWord(n, n), n.attr("data-elf-anim", "animate")) : a = .8;
+                        "anim-text" === n.data("elf-anim") ? (elfInt.convertTextWord(n, n), n.attr("data-elf-anim", "animate")) : a = .8;
                         var i = new ScrollMagic.Scene({
                             triggerElement: this,
                             reverse: !1,

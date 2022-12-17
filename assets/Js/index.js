@@ -14,7 +14,7 @@
             },
             isScroller: function (e) {
                 e && (a = document.querySelector("#elf-scrollbar"));
-                let t = !o.hasClass("elf-int-scroll") || this.isMobile() || null === a;
+                let t = !o.hasClass("elf-int-scroll") || null === a;
                 return t && e && o.addClass("elf-mobile"), !t
             },
             locked: function () {

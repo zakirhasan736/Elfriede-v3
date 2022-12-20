@@ -44,6 +44,13 @@
   width: 100%;
 }
 
+.elf-singleitem-slidebox .elf-singleitem-slideitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: nowrap;
+}
 .elf-singleitem-slidebox .elf-singleitem-slideitem li {
   margin: 0 12px 0 13px;
 }

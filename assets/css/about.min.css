@@ -39,8 +39,27 @@
   letter-spacing: 0.5px;
 }
 
+.elf-slides-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
 .elf-slides-item li {
   margin: 0 12px 0 13px;
+  width: 391px;
+  height: 416px;
+}
+@media (max-width: 991px) {
+  .elf-slides-item li {
+    width: 282px;
+    height: 424px;
+  }
+}
+@media (max-width: 767px) {
+  .elf-slides-item li {
+    width: 282px;
+    height: 300px;
+  }
 }
 .elf-slides-item li img {
   width: 100%;

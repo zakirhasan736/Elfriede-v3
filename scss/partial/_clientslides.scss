@@ -15,10 +15,19 @@
   @include media-breakpoint-up(sm) {
     margin-bottom: 35px;
   }
+  .elf-loop-slides{
+    gap: 93px;
+    @include media-breakpoint-up(md) {
+      gap: 66px;
+    }
+    @include media-breakpoint-up(md) {
+      gap: 30px;
+    }
+  }
         .elf-client-slides-box{
-            // display: flex;
-            // flex-wrap: nowrap;
-            // align-items: center;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
             gap: 93px;
   @include media-breakpoint-up(md) {
     gap: 66px;
@@ -28,10 +37,10 @@
         }
     }
   }
-  .elf-client-slide-items{
-    margin: 0 45px;
-    @include media-breakpoint-up(md) {margin: 0 33px;}
+  @include media-breakpoint-up(md) {
+    gap: 30px;
   }
+
         }
        
     }

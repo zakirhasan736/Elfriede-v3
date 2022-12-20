@@ -31,6 +31,7 @@
 @media (max-width: 991px) {
   .elf-main-visual-section .elf-main-visual-wrap .elf-main-contant .elf-banner-title {
     max-width: 612px;
+    color: #282C35 !important;
   }
 }
 

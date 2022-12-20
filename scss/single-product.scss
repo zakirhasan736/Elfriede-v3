@@ -29,6 +29,11 @@
   @include media-breakpoint-up(sm) {
     padding: 75px 30px 82px;
   }
+  .elfirede-contact-form {
+    .elf-input-title {
+      color: $primaryColor !important;
+    }
+  }
 }
 
 .elf-delivery-info-box {
@@ -119,6 +124,19 @@
       &:nth-child(2) {
         display: none;
       }
+    }
+  }
+  .elf-reviews-card {
+    .desc{
+      color: $primaryColor;
+    }
+    .user-name {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      color: #4e4a4a;
     }
   }
 }

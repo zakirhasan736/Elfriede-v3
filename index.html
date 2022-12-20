@@ -9,7 +9,7 @@
     <!--  Title -->
     <title>ELFRIEDE V3 - Theme in Development project</title>
 
-    <link rel="apple-touch-icon" href="icon.webp">
+    <link rel="apple-touch-icon" href="favicon.ico">
     <!-- Place favicon.ico in the root directory -->
     <!-- ===all css here=== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -561,20 +561,22 @@
           <section class="elf-client-section">
             <div class="elf-client-wrapper">
               <div class="elf-client-slider-box">
-                <ul class="elf-client-slides-box">
-                  <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo.webp"
-                      alt="client-img" class="elf-slide-img"></li>
-                  <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo2.webp"
-                      alt="client-img" class="elf-slide-img"></li>
-                  <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo3.webp"
-                      alt="client-img" class="elf-slide-img"></li>
-                  <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo4.webp"
-                      alt="client-img" class="elf-slide-img"></li>
-                  <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo5.webp"
-                      alt="client-img" class="elf-slide-img"></li>
-                      <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo3.webp"
+                <div class="elf-loop-slides" id="elfLoopSlides"  style="transform: translate(0%, 0%);">
+                  <ul class="elf-client-slides-box">
+                    <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo.webp"
                         alt="client-img" class="elf-slide-img"></li>
-                </ul>
+                    <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo2.webp"
+                        alt="client-img" class="elf-slide-img"></li>
+                    <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo3.webp"
+                        alt="client-img" class="elf-slide-img"></li>
+                    <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo4.webp"
+                        alt="client-img" class="elf-slide-img"></li>
+                    <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo5.webp"
+                        alt="client-img" class="elf-slide-img"></li>
+                        <li class="elf-client-slide-items"><img src="/assets/image/client/company-logo3.webp"
+                          alt="client-img" class="elf-slide-img"></li>
+                  </ul>
+                </div>
               </div>
               <div class="elf-container">
                 <div class="elf-gaving-text">
@@ -647,15 +649,15 @@
                       <h6 class="elf--footer-title">DISCOVER</h6>
                       <div class="elf-links-cont">
                         <ul class="elf-links-item">
-                          <li class="elf-footer-links"><a href="/">Portfolio</a></li>
-                          <li class="elf-footer-links"><a href="/">Blog</a></li>
-                          <li class="elf-footer-links"><a href="/">Article Single</a></li>
+                          <li class="elf-footer-links"><a href="/portfolio.html">Portfolio</a></li>
+                          <li class="elf-footer-links"><a href="/blogs.html">Blog</a></li>
+                          <li class="elf-footer-links"><a href="/singleitem.html">Article Single</a></li>
                           <li class="elf-footer-links"><a href="/">Our Works</a></li>
-                          <li class="elf-footer-links"><a href="/">Pricing</a></li>
-                          <li class="elf-footer-links"><a href="/">Contact</a></li>
-                          <li class="elf-footer-links"><a href="/">About us</a></li>
-                          <li class="elf-footer-links"><a href="/">404</a></li>
-                          <li class="elf-footer-links"><a href="/">Shop</a></li>
+                          <li class="elf-footer-links"><a href="/priching.html">Pricing</a></li>
+                          <li class="elf-footer-links"><a href="/contact.html">Contact</a></li>
+                          <li class="elf-footer-links"><a href="/about.html">About us</a></li>
+                          <li class="elf-footer-links"><a href="/404.html">404</a></li>
+                          <li class="elf-footer-links"><a href="/shope.html">Shop</a></li>
                         </ul>
 
                       </div>
@@ -694,6 +696,8 @@
     <script src="/assets/js/scroll-magic-anim.js"></script>
     <script src="/assets/js/elf-anim-int.js"></script>
     <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/slick-int,js"></script>
+    <script src="/assets/js/loop-slides.js"></script>
   </body>
 
 

@@ -2,24 +2,29 @@ a{
     &.elf-primary-button,
     &.elf-secondary-button{
         width: 100%;
-        padding: 12px 27px; 
+        padding: 12px 20px 12px 27px; 
         text-align: center;  
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 7px;
-        background-color: $grayColor; 
         border-radius: 49px;
-        border: 1px solid $mainGreen;
         font-family: $secondaryFont;
         font-style: $fontNormal;
         font-weight: $fontMedium; 
         font-size: $font-size-15;
          line-height: 120%;
+         letter-spacing: 1.25px;
          color: $mainGreen;
      } 
+     &.elf-secondary-button{
+        border: 1px solid $mainGreen;
+        background-color: $grayColor; 
+     }
      &.elf-primary-button{
-      background: transparent;
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        background: transparent;
    }
 }
 

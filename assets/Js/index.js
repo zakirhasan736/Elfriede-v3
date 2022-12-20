@@ -82,6 +82,12 @@
                                 t.addClass("hidden")
                             }
                         })
+                        TweenMax.to(l, 1, {
+                            autoAlpha: 0,
+                            onComplete: function () {
+                                t.addClass("hidden")
+                            }
+                        })
                     }
                 })
             })
@@ -255,10 +261,10 @@
     
 $(document).ready(function() {
     $('.elf-navigation-bar').on('click', function(){
-        $('.elf-navigation-wrapper').addClass('info-open');
+        $('.elf-navigation-wrapper, .elf-sidebar-overlyn').addClass('info-open');
       })
-      $('.elf-trigger-close').on('click', function(){
-        $('.elf-navigation-wrapper').removeClass('info-open');
+      $('.elf-trigger-close, .elf-sidebar-overlyn').on('click', function(){
+        $('.elf-navigation-wrapper, .elf-sidebar-overlyn').removeClass('info-open');
       })
 
   });
@@ -312,11 +318,10 @@ $('.elf-client-slides-box').slick({
     variableWidth: true,
     centerPadding: '130px',
     autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: "cubic-bezier(.9, .03, .41, .49)",
-    speed: 2000,
+    autoplaySpeed: 0,
+    speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 10,
     responsive: [
       {
         breakpoint: 1024,
@@ -402,9 +407,9 @@ $('.elf-slides-item').slick({
     variableWidth: false,
     centerPadding: '180px',
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 700,
     cssEase: "cubic-bezier(.9, .03, .41, .49)",
-    speed: 2000,
+    speed: 700,
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [
@@ -448,14 +453,13 @@ $('.elf-product-slider').slick({
     arrows: true,
     infinite:true,
     centerMode: true,
-    // variableWidth: true,
     centerPadding: '0px',
     autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: "cubic-bezier(.9, .03, .41, .49)",
+    autoplaySpeed: 1800,
+    cssEase: "cubic-bezier(.7, .03, .41, .49)",
     nextArrow: '<span class="icon-right"><i class="fa-solid fa-angle-right"></i></span>',
     prevArrow: '<span class="icon-left"><i class="fa-solid fa-angle-left"></i></span>' ,
-    speed: 2000,
+    speed: 1750,
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [

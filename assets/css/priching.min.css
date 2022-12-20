@@ -174,11 +174,14 @@
     width: 60px;
   }
 }
-.elf-priching-cardbox.priching-card-two .elf-priching-offer li {
+.elf-priching-cardbox.priching-card-two .elf-priching-head .elf-priching-title {
   color: #134302;
 }
+.elf-priching-cardbox.priching-card-two .elf-priching-offer li {
+  color: #A1A1A1;
+}
 .elf-priching-cardbox.priching-card-two .elf-priching-offer li:not(:last-child) {
-  color: #a1a1a1;
+  color: #134302;
 }
 .elf-priching-cardbox.priching-card-two .elf-priching-body {
   margin-bottom: 53px;
@@ -213,7 +216,7 @@
   }
 }
 .elf-priching-cardbox.priching-card-three .elf-priching-offer li {
-  color: #134302;
+  color: #282C35;
 }
 .elf-priching-cardbox.priching-card-three .elf-priching-body {
   margin-bottom: 39px;

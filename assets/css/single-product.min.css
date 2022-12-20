@@ -17,6 +17,12 @@
 .elf-main-visual-section .elf-main-visual-wrap .elf-main-contant .elf-banner-subtitle {
   width: 100%;
   max-width: 1093px;
+  color: #282C35;
+}
+@media (max-width: 991px) {
+  .elf-main-visual-section .elf-main-visual-wrap .elf-main-contant .subtitle {
+    font-weight: 400;
+  }
 }
 
 .elf-product-slides-section {
@@ -37,6 +43,16 @@
   bottom: 30px;
   right: 30px;
   max-width: 150px;
+}
+
+@media (max-width: 991px) {
+  .elf-product-details-box .elf-product-details-wrap .elf-details-title-wrap .subtitle {
+    font-weight: 400;
+  }
+}
+.elf-product-details-box .elf-product-details-wrap .elf-details-title-wrap .title {
+  color: #282C35;
+  font-weight: 500;
 }
 
 .elf-product-details-wrap {

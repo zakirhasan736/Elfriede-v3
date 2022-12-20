@@ -8,9 +8,9 @@
     right: 0;
     padding: 32px 0 0;
     background: #fff;
-    z-index: 99999;
+    z-index: 999999;
     &.hidden {
-      display: none !important;
+      display: none !important; 
     }
   }
   .preloader-block {
@@ -21,17 +21,43 @@
         font-weight: 500;
         margin-bottom: 0;
         color: #282C35;
+        @include media-breakpoint-up(md){
+          font-size: 220px;
+          line-height: 264px;
+      }
+      @include media-breakpoint-up(sm){
+        font-size: 150px;
+        line-height: 180px;
+    }
       }
   }
   .preloader-bar{
     width: 561px;
     position: relative;
+    @include media-breakpoint-up(md){
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -124px;
+        top: -132px;
+        width: 356px;
+    }
+    @include media-breakpoint-up(sm){
+      width: 280px;
+      left: -100px;
+      top: -118px;
+  }
     .preloader-progress {
         width: 0%;
         max-width: 561px;
         height: 6px;
         background: #282C35;
         margin-left: 25px;
+        @include media-breakpoint-up(md){
+          max-width: 356px;
+      }
+      @include media-breakpoint-up(sm){
+        max-width: 280px;
+    }
       } 
 }
 .preloader-wrapper{
@@ -41,5 +67,11 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  @include media-breakpoint-up(md){
+   bottom: -25px;
+}
+@include media-breakpoint-up(sm){
+  bottom: -25px;
+}
 }
  

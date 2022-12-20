@@ -12,4 +12,28 @@
 @import "partial/home/blog"; 
 @import "partial/home/workprocess"; 
 @import "partial/home/testimonials"; 
+.contact-details-titlebox{
+    .contact-title{
+        color: $primaryColor;
+        span{
+            span{
+        color: $primaryColor;
+            }
+        }
+    }
+    .contact-details{
+        color: $primaryColor;
+    }
 
+}
+.contact-detais-item{
+    .details-text-box{
+        .details-text{
+            @include media-breakpoint-up(md) {
+            &:nth-child(2){
+                color: $mainGreen !important;
+            }
+        }
+        }
+    }
+}

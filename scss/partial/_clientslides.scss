@@ -35,4 +35,12 @@
         }
        
     }
+    .elf-gaving-text{
+      .subtitle{
+        color: #545454;
+        @include media-breakpoint-up(md){
+          font-weight: 400 ;
+        }
+      }
+    }
 }

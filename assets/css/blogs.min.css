@@ -278,13 +278,18 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  color: #282C35;
+  color: #000000;
   margin-top: 0rem;
   font-style: normal;
   font-weight: 400;
   text-transform: normal;
 }
 
+@media screen and (max-width: 991px) {
+  h1 {
+    color: #282C35;
+  }
+}
 h1 a,
 h2 a,
 h3 a,
@@ -300,10 +305,22 @@ h1 {
   font-weight: 500;
 }
 
+h1 span span {
+  font-size: 6rem;
+  line-height: 7.2rem;
+  font-weight: 500;
+}
+
 h2 {
   font-size: 4rem;
   line-height: 4.82rem;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+h2 span span {
+  font-size: 4rem;
+  line-height: 4.82rem;
+  font-weight: 400;
 }
 
 h3 {
@@ -312,16 +329,34 @@ h3 {
   font-weight: 400;
 }
 
+h3 span span {
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  font-weight: 400;
+}
+
 h4 {
   font-size: 2.2rem;
   line-height: 2.6rem;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+h4 span span {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  font-weight: 400;
 }
 
 h5 {
   font-size: 1.8rem;
   line-height: 2.1rem;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+h5 span span {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 400;
 }
 
 .subtitle {
@@ -334,23 +369,54 @@ h5 {
   h1 {
     font-size: 9.6rem;
     line-height: 11.5rem;
+    font-weight: 500;
   }
   h2 {
     font-size: 6rem;
     line-height: 7.2rem;
+    font-weight: 500;
   }
   h3 {
     font-size: 4rem;
     line-height: 4.8rem;
     font-weight: 500;
+    font-weight: 500;
   }
   h4 {
     font-size: 3.4rem;
     line-height: 4.08rem;
+    font-weight: 500;
+    font-weight: 500;
   }
   h5 {
     font-size: 2.5rem;
     line-height: 3rem;
+    font-weight: 500;
+  }
+  h1 span span {
+    font-size: 9.6rem;
+    line-height: 11.5rem;
+    font-weight: 500;
+  }
+  h2 span span {
+    font-size: 6rem;
+    line-height: 7.2rem;
+    font-weight: 500;
+  }
+  h3 span span {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    font-weight: 500;
+  }
+  h4 span span {
+    font-size: 3.4rem;
+    line-height: 4.08rem;
+    font-weight: 500;
+  }
+  h5 span span {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
   }
 }
 ul {
@@ -364,6 +430,14 @@ li {
 }
 
 p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #000;
+  font-family: "Cabin", sans-serif;
+}
+
+p span span {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.1rem;
@@ -459,7 +533,12 @@ span {
 }
 
 .elf-active[data-elf-anim=animate] .elf-box {
-  margin-right: 7px;
+  margin-right: 11px;
+}
+@media screen and (max-width: 991px) {
+  .elf-active[data-elf-anim=animate] .elf-box {
+    margin-right: 7px;
+  }
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:last-child {
@@ -946,6 +1025,11 @@ span {
   padding: 0;
   background: #F6F6F6;
 }
+@media (max-width: 991px) {
+  .elf-main-visual-section .elf-main-visual-wrap .elf-main-contant .subtitle {
+    font-weight: 400;
+  }
+}
 .elf-main-visual-section .elf-main-visual-wrap .elf-main-contant .elf-banner-title {
   width: 100%;
   max-width: 1093px;
@@ -960,9 +1044,23 @@ span {
   width: 100%;
   margin-bottom: 36px;
 }
+.elf-blogs-itembox .elf-blogs-textbox .subtitle {
+  color: #282C35;
+}
+@media (max-width: 991px) {
+  .elf-blogs-itembox .elf-blogs-textbox .subtitle {
+    font-weight: 400;
+  }
+}
 .elf-blogs-itembox .elf-blogs-title {
   font-weight: 500;
   margin-bottom: 22px;
+  color: #282C35;
+}
+@media (max-width: 991px) {
+  .elf-blogs-itembox .elf-blogs-title {
+    font-weight: 400;
+  }
 }
 .elf-blogs-itembox .elf-blogs-desc {
   margin-bottom: 22px;

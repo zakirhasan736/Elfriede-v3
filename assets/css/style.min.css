@@ -2416,6 +2416,7 @@ figure figcaption {
 .elf-client-section {
   position: relative;
   padding: 234px 0 160px;
+  overflow: hidden !important;
 }
 @media (max-width: 991px) {
   .elf-client-section {

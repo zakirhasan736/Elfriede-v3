@@ -1,6 +1,7 @@
 .elf-client-section{
     position: relative;
     padding: 234px 0 160px;
+    overflow: hidden !important;
   @include media-breakpoint-up(md) {
     padding: 164px 0 109px;
   }

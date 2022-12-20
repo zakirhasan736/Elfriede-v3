@@ -93,6 +93,10 @@
     margin-top: 65px !important;
   }
 }
+.elf-about-slide-section {
+  overflow: hidden !important;
+}
+
 .elf-our-team-section {
   position: relative;
   background: #EEEEEE;

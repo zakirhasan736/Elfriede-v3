@@ -273,6 +273,11 @@
   }
 }
 
+.elf-singleitem-section {
+  overflow: hidden !important;
+  position: relative;
+}
+
 @media (max-width: 991px) {
   .elf-single-thread-section {
     padding-top: 0;

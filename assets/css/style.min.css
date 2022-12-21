@@ -2189,7 +2189,7 @@ figure figcaption {
 .elf-navigation-wrapper .elf-sidebar-nav-head {
   display: flex;
   justify-content: flex-end;
-  background-image: url("/assets/image/menubar-shape-img.webp");
+  background-image: url("../image/menubar-shape-img.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -1,0 +1,86 @@
+.elf-feature-section{
+    background: $gray-alt;
+    position: relative;
+    @include media-breakpoint-up(md) {
+        padding-top: 120px !important;
+        padding-bottom: 100px !important;
+    }
+    @include media-breakpoint-up(sm) {
+        padding-top: 90px !important;
+        padding-bottom: 177px !important;
+    }
+    .elf-features-card{
+
+        .elf-feature-icons{
+            background: $primaryColor;
+            width: 150px;
+            height: 150px;
+            padding: 25px;
+            border-radius: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 16px !important;
+    }
+        }
+        .elf-feature-title{
+            @include media-breakpoint-up(md) {
+                margin-bottom: 16px !important;
+            }
+        }
+    }
+    .elf-feature-wrapper{
+        .row{>
+            div{
+            &:not(:last-child){
+                padding-right: 35px;
+            @include media-breakpoint-up(md) {
+                margin-bottom: 95px;
+            }
+                @include media-breakpoint-up(sm) {
+              margin-bottom: 130px;
+            }
+            }
+            &:not(:fast-child){
+                padding-right: 35px;
+            @include media-breakpoint-up(md) {
+                margin-bottom: 95px;
+            }
+                @include media-breakpoint-up(sm) {
+              margin-bottom: 130px;
+            }
+            }
+            @include media-breakpoint-up(md) {
+            &:nth-child(1){
+                padding-right: 65px;
+            }
+            &:nth-child(2){
+                padding-left: 65px;
+                padding-right: 0;
+            }
+            &:nth-child(3){
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        @include media-breakpoint-up(sm) {
+            &:nth-child(1){
+                padding-right: 0px;
+            }
+            &:nth-child(2){
+                padding-left: 0px;
+                padding-right: 0;
+            }
+            &:nth-child(3){
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        }
+            
+           
+        }
+    }
+}

@@ -10,7 +10,7 @@ var $ = jQuery,
                     s = e.pageY - i.top,
                     r = window.pageYOffset || document.documentElement.scrollTop;
                 o = this.getUndefinedVal(o, .3), t = this.getUndefinedVal(t, -1), TweenMax.to(n, o, {
-                    x: (a - i.width / 2) / i.width * t,
+                    x: (a - i.width / 1) / i.width * t,
                     y: (s - i.height / 2 - r) / i.width * t,
                     ease: Power0.easeOut
                 })
@@ -146,9 +146,9 @@ var $ = jQuery,
                     var n = {
                         transformOrigin: "0 0"
                     };
-                    i && (n.scale = "1.03"), TweenMax.to([s, r], .3, n)
+                    i && (n.scale = "1.01"), TweenMax.to([s, r], .3, n)
                 }).on("mousemove", function (e) {
-                    elfInt.parallaxIt(e, s, n), elfInt.parallaxIt(e, r, 2 * n), void 0 !== o && elfInt.parallaxIt(e, o, -5, .5)
+                    elfInt.parallaxIt(e, s, n), elfInt.parallaxIt(e, r, 2 * n), void 0 !== o && elfInt.parallaxIt(e, o, -20, .5)
                 })
             }
         },

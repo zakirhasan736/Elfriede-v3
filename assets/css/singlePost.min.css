@@ -343,13 +343,20 @@
   max-width: 1013px;
   width: 100%;
   color: transparent;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 5px;
+  text-transform: capitalize;
   -webkit-text-stroke: 1px #282C35;
-  transition: all 350ms ease-in 0s;
+  transition: all 650ms ease-in 0s;
+  outline: 0;
 }
 @media (max-width: 991px) {
   .elf-next-blogs-section .elf-next-blogs-wrap .elf-next-blog-title {
     font-weight: 400;
   }
+}
+.elf-next-blogs-section .elf-next-blogs-wrap .subtitle {
+  font-family: "Cabin", sans-serif;
 }
 .elf-next-blogs-section .elf-next-blogs-wrap:hover::before {
   width: 0%;

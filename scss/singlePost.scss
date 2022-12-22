@@ -326,11 +326,18 @@
       max-width: 1013px;
       width: 100%;
       color: transparent;
+      font-family: $secondaryFont;
+      letter-spacing: 5px;
+      text-transform: capitalize;
       -webkit-text-stroke: 1px $primaryColor;
-      transition: all 350ms ease-in 0s;
+      transition: all 650ms ease-in 0s;
+      outline: 0;
     @include media-breakpoint-up(md) {
       font-weight: 400;
     }
+    }
+    .subtitle{
+      font-family: $secondaryFont;
     }
     &:hover{
       &::before{

@@ -1,0 +1,53 @@
+// elfriede banner style css
+.elf-main-visual-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url('../image/home-banner-img.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include media-breakpoint-up(md) {
+    height: 1170px;
+  }
+  @include media-breakpoint-up(sm) {
+    height: 806px;
+  }
+  .elf-container {
+    height: 100%;
+    .elf-main-visual-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      .elf-main-contant {
+        padding-bottom: 58px;
+        @include media-breakpoint-up(md) {
+          padding-bottom: 105px;
+        }
+        @include media-breakpoint-up(sm) {
+          padding-bottom: 81px;
+        }
+
+        .elf-banner-title {
+          max-width: 1073px;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+        .elf-banner-button {
+          .elf-primary-button {
+            color: $primaryColor;
+          }
+        }
+        .elf-banner-button {
+          .elf-primary-button {
+            max-width: 257px;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}

@@ -62,7 +62,7 @@
 
   }
   .elf-footer-main-wrap {
-    padding-bottom: 69px;
+    padding-bottom: 199px;
     border-bottom: 1px solid;
   @include media-breakpoint-up(md) {
     padding-bottom: 45px;
@@ -108,9 +108,13 @@
       }
     }
     .elfriedefooter-logobox {
-      padding-top: 90px;
-      padding-bottom: 59px;
+      padding-top: 38px;
+      padding-bottom: 0px;
       text-align: center;
+      @include media-breakpoint-up(sm){
+        padding-top: 90px;
+        margin-bottom: 70px;
+      }
     }
   }
   .elf-footer-copyright {

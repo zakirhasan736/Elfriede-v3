@@ -2268,8 +2268,18 @@ figure figcaption {
     padding-bottom: 20px;
   }
 }
+@media screen and (max-width: 320px) {
+  .elf-navigation-wrapper .elf-sidebar-nav {
+    padding-top: 15px;
+  }
+}
 .elf-navigation-wrapper .elf-sidebar-nav .elf-navigation-nav ul li {
   margin-bottom: 18px;
+}
+@media screen and (max-width: 320px) {
+  .elf-navigation-wrapper .elf-sidebar-nav .elf-navigation-nav ul li {
+    margin-bottom: 10px;
+  }
 }
 .elf-navigation-wrapper .elf-sidebar-nav .elf-navigation-nav ul li:last-child {
   margin-bottom: 0;

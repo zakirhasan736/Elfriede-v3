@@ -2259,7 +2259,7 @@ figure figcaption {
 }
 @media screen and (min-width: 992px) and (max-height: 700px) {
   .elf-navigation-wrapper .elf-sidebar-nav {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 991px) {

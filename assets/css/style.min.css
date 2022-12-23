@@ -2321,11 +2321,11 @@ figure figcaption {
 }
 @media (max-width: 767px) {
   .elf-header-section.single-product {
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   }
   .elf-header-section.single-product .elf-header-button .elf-secondary-button {
     background: #FFFFFF;
-    border-color: #FFFFFF;
+    border-color: #ffffff;
   }
 }
 
@@ -2339,7 +2339,8 @@ figure figcaption {
 }
 .elf-top-header .elf-header-button .elf-secondary-button {
   max-width: 203px;
-  padding-top: 14px;
+  display: flex !important;
+  align-items: center;
 }
 
 .elf-sidebar-overlyn {
@@ -2362,7 +2363,7 @@ figure figcaption {
 .elf-navigation-wrapper {
   max-width: 347px;
   width: 100%;
-  background: #F6F6F6;
+  background: #f6f6f6;
   box-shadow: 155px 370px 161px rgba(0, 0, 0, 0.03), 87px 208px 135px rgba(0, 0, 0, 0.09), 39px 92px 100px rgba(0, 0, 0, 0.15), 10px 23px 55px rgba(0, 0, 0, 0.17), 0px 0px 0px rgba(0, 0, 0, 0.17);
   padding-bottom: 90px;
   position: fixed;

@@ -2307,7 +2307,7 @@ figure figcaption {
 }
 @media (max-width: 767px) {
   .preloader-wrapper {
-    bottom: -25px;
+    bottom: -20px;
   }
 }
 

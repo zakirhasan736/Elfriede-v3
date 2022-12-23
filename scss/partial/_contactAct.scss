@@ -21,6 +21,11 @@
             top: 120px;
             right: 96px;
             z-index: 9;
+                  // [for safari browser absolute position item disepeareing issue solved]
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      perspective: 1000;
+      -webkit-perspective: 1000;
   @include media-breakpoint-up(md) {
     top: 95px;
     right: 0px;

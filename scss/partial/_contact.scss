@@ -84,7 +84,9 @@
       }
       #elfirede-input-descfilde,
       #elf-input-mailfilde,
-      #elf-input-textfilde {
+      .elf-input-textfilde ,
+      #elf-input-textfilde 
+      {
         width: 100%;
         height: 64px;
         background: #ffffff;

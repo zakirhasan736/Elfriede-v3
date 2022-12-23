@@ -2596,6 +2596,7 @@ figure figcaption {
 }
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elfirede-input-descfilde,
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-mailfilde,
+.elf-contact-form .elfirede-contact-form .elf-contact-form-box .elf-input-textfilde,
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-textfilde {
   width: 100%;
   height: 64px;
@@ -2613,6 +2614,7 @@ figure figcaption {
 }
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elfirede-input-descfilde:focus,
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-mailfilde:focus,
+.elf-contact-form .elfirede-contact-form .elf-contact-form-box .elf-input-textfilde:focus,
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-textfilde:focus {
   box-shadow: none;
   outline: 0;
@@ -2620,6 +2622,7 @@ figure figcaption {
 }
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elfirede-input-descfilde::placeholder,
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-mailfilde::placeholder,
+.elf-contact-form .elfirede-contact-form .elf-contact-form-box .elf-input-textfilde::placeholder,
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-textfilde::placeholder {
   font-size: 13px;
   font-weight: 400;

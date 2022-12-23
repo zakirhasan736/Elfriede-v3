@@ -310,6 +310,10 @@
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   z-index: 999;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  perspective: 1000;
+  -webkit-perspective: 1000;
 }
 @media (max-width: 991px) {
   .elf-single-thread-section .elf-single-thread-wrap .elf-single-thread-contbox {

@@ -50,8 +50,7 @@
   .elf-location-wrapper .elf-location-map img {
     width: 100%;
     height: 457px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .elf-location-wrapper .elf-location-details-box .location-details-box {

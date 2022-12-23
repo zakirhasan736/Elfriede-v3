@@ -64,15 +64,13 @@
 .elf-slides-item li img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 991px) {
   .elf-slides-item .elf-slides-item .elf-slides-imglist img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -146,8 +144,7 @@
   .elf-our-team-section .elf-team-member-box .elf-team-member-card .elf-team-member-img {
     width: 100%;
     height: 424px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 

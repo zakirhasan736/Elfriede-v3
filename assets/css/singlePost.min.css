@@ -144,8 +144,7 @@
 .elf-singlepost-wrap-cont .elf-post-right-wrap .elf-post-tags-box .elf-post-tags-list {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
   row-gap: 5px;
 }
 @media (max-width: 991px) {

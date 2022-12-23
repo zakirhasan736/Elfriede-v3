@@ -215,7 +215,6 @@ body {
   overflow-x: hidden;
   color: #000;
   background-color: #FFFFFF;
-  overflow: hidden;
 }
 
 .img {
@@ -237,6 +236,8 @@ body {
 
 a,
 .button {
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 
@@ -497,12 +498,6 @@ label {
   opacity: 1;
 }
 
-*:-ms-input-placeholder {
-  color: #EFEFEF;
-  font-size: 1.4rem;
-  opacity: 1;
-}
-
 *::placeholder {
   color: #EFEFEF;
   font-size: 1.4rem;
@@ -525,6 +520,7 @@ span {
   visibility: hidden;
   will-change: transform;
   transform: translateY(50%) rotate(15deg) scale(0.8);
+  -webkit-transform-origin: top left;
   transform-origin: top left;
 }
 
@@ -554,411 +550,615 @@ span {
   opacity: 1;
   visibility: visible;
   transform: none;
+  transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(0) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms, visibility 0.3s 0ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms, visibility 0.3s 0ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms, visibility 0.3s 0ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(1) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 236ms, visibility 0.3s 45ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 236ms, visibility 0.3s 45ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 236ms, visibility 0.3s 45ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 36ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(2) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 272ms, visibility 0.3s 90ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 272ms, visibility 0.3s 90ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 272ms, visibility 0.3s 90ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 72ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(3) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 308ms, visibility 0.3s 135ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 308ms, visibility 0.3s 135ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 308ms, visibility 0.3s 135ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 108ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(4) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 344ms, visibility 0.3s 180ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 344ms, visibility 0.3s 180ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 344ms, visibility 0.3s 180ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 144ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(5) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 380ms, visibility 0.3s 225ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 380ms, visibility 0.3s 225ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 380ms, visibility 0.3s 225ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 180ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(6) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 416ms, visibility 0.3s 270ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 416ms, visibility 0.3s 270ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 416ms, visibility 0.3s 270ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 216ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(7) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 452ms, visibility 0.3s 315ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 452ms, visibility 0.3s 315ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 452ms, visibility 0.3s 315ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 252ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(8) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 488ms, visibility 0.3s 360ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 488ms, visibility 0.3s 360ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 488ms, visibility 0.3s 360ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 288ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(9) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 524ms, visibility 0.3s 405ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 524ms, visibility 0.3s 405ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 524ms, visibility 0.3s 405ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 324ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(10) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 560ms, visibility 0.3s 450ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 560ms, visibility 0.3s 450ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 560ms, visibility 0.3s 450ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 360ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(11) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 596ms, visibility 0.3s 495ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 596ms, visibility 0.3s 495ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 596ms, visibility 0.3s 495ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 396ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(12) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 632ms, visibility 0.3s 540ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 632ms, visibility 0.3s 540ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 632ms, visibility 0.3s 540ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 432ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(13) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 668ms, visibility 0.3s 585ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 668ms, visibility 0.3s 585ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 668ms, visibility 0.3s 585ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 468ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(14) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 704ms, visibility 0.3s 630ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 704ms, visibility 0.3s 630ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 704ms, visibility 0.3s 630ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 504ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(15) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 740ms, visibility 0.3s 675ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 740ms, visibility 0.3s 675ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 740ms, visibility 0.3s 675ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 540ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(16) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 776ms, visibility 0.3s 720ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 776ms, visibility 0.3s 720ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 776ms, visibility 0.3s 720ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 576ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(17) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 812ms, visibility 0.3s 765ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 812ms, visibility 0.3s 765ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 812ms, visibility 0.3s 765ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 612ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(18) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 848ms, visibility 0.3s 810ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 848ms, visibility 0.3s 810ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 848ms, visibility 0.3s 810ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 648ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(19) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 884ms, visibility 0.3s 855ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 884ms, visibility 0.3s 855ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 884ms, visibility 0.3s 855ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 684ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(20) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 920ms, visibility 0.3s 900ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 920ms, visibility 0.3s 900ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 920ms, visibility 0.3s 900ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 720ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(21) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 956ms, visibility 0.3s 945ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 956ms, visibility 0.3s 945ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 956ms, visibility 0.3s 945ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 756ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(22) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 992ms, visibility 0.3s 990ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 992ms, visibility 0.3s 990ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 992ms, visibility 0.3s 990ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 792ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(23) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1028ms, visibility 0.3s 1035ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1028ms, visibility 0.3s 1035ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1028ms, visibility 0.3s 1035ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 828ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(24) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1064ms, visibility 0.3s 1080ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1064ms, visibility 0.3s 1080ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1064ms, visibility 0.3s 1080ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 864ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(25) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1100ms, visibility 0.3s 1125ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1100ms, visibility 0.3s 1125ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1100ms, visibility 0.3s 1125ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 900ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(26) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1136ms, visibility 0.3s 1170ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1136ms, visibility 0.3s 1170ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1136ms, visibility 0.3s 1170ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 936ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(27) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1172ms, visibility 0.3s 1215ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1172ms, visibility 0.3s 1215ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1172ms, visibility 0.3s 1215ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 972ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(28) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1208ms, visibility 0.3s 1260ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1208ms, visibility 0.3s 1260ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1208ms, visibility 0.3s 1260ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1008ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(29) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1244ms, visibility 0.3s 1305ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1244ms, visibility 0.3s 1305ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1244ms, visibility 0.3s 1305ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1044ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(30) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1280ms, visibility 0.3s 1350ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1280ms, visibility 0.3s 1350ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1280ms, visibility 0.3s 1350ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1080ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(31) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1316ms, visibility 0.3s 1395ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1316ms, visibility 0.3s 1395ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1316ms, visibility 0.3s 1395ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1116ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(32) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1352ms, visibility 0.3s 1440ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1352ms, visibility 0.3s 1440ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1352ms, visibility 0.3s 1440ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1152ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(33) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1388ms, visibility 0.3s 1485ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1388ms, visibility 0.3s 1485ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1388ms, visibility 0.3s 1485ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1188ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(34) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1424ms, visibility 0.3s 1530ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1424ms, visibility 0.3s 1530ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1424ms, visibility 0.3s 1530ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1224ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(35) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1460ms, visibility 0.3s 1575ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1460ms, visibility 0.3s 1575ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1460ms, visibility 0.3s 1575ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1260ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(36) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1496ms, visibility 0.3s 1620ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1496ms, visibility 0.3s 1620ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1496ms, visibility 0.3s 1620ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1296ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(37) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1532ms, visibility 0.3s 1665ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1532ms, visibility 0.3s 1665ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1532ms, visibility 0.3s 1665ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1332ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(38) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1568ms, visibility 0.3s 1710ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1568ms, visibility 0.3s 1710ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1568ms, visibility 0.3s 1710ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1368ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(39) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1604ms, visibility 0.3s 1755ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1604ms, visibility 0.3s 1755ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1604ms, visibility 0.3s 1755ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1404ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(40) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1640ms, visibility 0.3s 1800ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1640ms, visibility 0.3s 1800ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1640ms, visibility 0.3s 1800ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1440ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(41) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1676ms, visibility 0.3s 1845ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1676ms, visibility 0.3s 1845ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1676ms, visibility 0.3s 1845ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1476ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(42) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1712ms, visibility 0.3s 1890ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1712ms, visibility 0.3s 1890ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1712ms, visibility 0.3s 1890ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1512ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(43) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1748ms, visibility 0.3s 1935ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1748ms, visibility 0.3s 1935ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1748ms, visibility 0.3s 1935ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1548ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(44) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1784ms, visibility 0.3s 1980ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1784ms, visibility 0.3s 1980ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1784ms, visibility 0.3s 1980ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1584ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(45) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1820ms, visibility 0.3s 2025ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1820ms, visibility 0.3s 2025ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1820ms, visibility 0.3s 2025ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1620ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(46) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1856ms, visibility 0.3s 2070ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1856ms, visibility 0.3s 2070ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1856ms, visibility 0.3s 2070ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1656ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(47) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1892ms, visibility 0.3s 2115ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1892ms, visibility 0.3s 2115ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1892ms, visibility 0.3s 2115ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1692ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(48) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1928ms, visibility 0.3s 2160ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1928ms, visibility 0.3s 2160ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1928ms, visibility 0.3s 2160ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1728ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(49) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1964ms, visibility 0.3s 2205ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1964ms, visibility 0.3s 2205ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1964ms, visibility 0.3s 2205ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1764ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(50) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2000ms, visibility 0.3s 2250ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2000ms, visibility 0.3s 2250ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2000ms, visibility 0.3s 2250ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1800ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(51) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2036ms, visibility 0.3s 2295ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2036ms, visibility 0.3s 2295ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2036ms, visibility 0.3s 2295ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1836ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(52) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2072ms, visibility 0.3s 2340ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2072ms, visibility 0.3s 2340ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2072ms, visibility 0.3s 2340ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1872ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(53) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2108ms, visibility 0.3s 2385ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2108ms, visibility 0.3s 2385ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2108ms, visibility 0.3s 2385ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1908ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(54) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2144ms, visibility 0.3s 2430ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2144ms, visibility 0.3s 2430ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2144ms, visibility 0.3s 2430ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1944ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(55) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2180ms, visibility 0.3s 2475ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2180ms, visibility 0.3s 2475ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2180ms, visibility 0.3s 2475ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1980ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(56) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2216ms, visibility 0.3s 2520ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2216ms, visibility 0.3s 2520ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2216ms, visibility 0.3s 2520ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2016ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(57) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2252ms, visibility 0.3s 2565ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2252ms, visibility 0.3s 2565ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2252ms, visibility 0.3s 2565ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2052ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(58) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2288ms, visibility 0.3s 2610ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2288ms, visibility 0.3s 2610ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2288ms, visibility 0.3s 2610ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2088ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(59) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2324ms, visibility 0.3s 2655ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2324ms, visibility 0.3s 2655ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2324ms, visibility 0.3s 2655ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2124ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(60) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2360ms, visibility 0.3s 2700ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2360ms, visibility 0.3s 2700ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2360ms, visibility 0.3s 2700ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2160ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(61) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2396ms, visibility 0.3s 2745ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2396ms, visibility 0.3s 2745ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2396ms, visibility 0.3s 2745ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2196ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(62) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2432ms, visibility 0.3s 2790ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2432ms, visibility 0.3s 2790ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2432ms, visibility 0.3s 2790ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2232ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(63) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2468ms, visibility 0.3s 2835ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2468ms, visibility 0.3s 2835ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2468ms, visibility 0.3s 2835ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2268ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(64) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2504ms, visibility 0.3s 2880ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2504ms, visibility 0.3s 2880ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2504ms, visibility 0.3s 2880ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2304ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(65) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2540ms, visibility 0.3s 2925ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2540ms, visibility 0.3s 2925ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2540ms, visibility 0.3s 2925ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2340ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(66) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2576ms, visibility 0.3s 2970ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2576ms, visibility 0.3s 2970ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2576ms, visibility 0.3s 2970ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2376ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(67) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2612ms, visibility 0.3s 3015ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2612ms, visibility 0.3s 3015ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2612ms, visibility 0.3s 3015ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2412ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(68) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2648ms, visibility 0.3s 3060ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2648ms, visibility 0.3s 3060ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2648ms, visibility 0.3s 3060ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2448ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(69) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2684ms, visibility 0.3s 3105ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2684ms, visibility 0.3s 3105ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2684ms, visibility 0.3s 3105ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2484ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(70) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2720ms, visibility 0.3s 3150ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2720ms, visibility 0.3s 3150ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2720ms, visibility 0.3s 3150ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2520ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(71) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2756ms, visibility 0.3s 3195ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2756ms, visibility 0.3s 3195ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2756ms, visibility 0.3s 3195ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2556ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(72) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2792ms, visibility 0.3s 3240ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2792ms, visibility 0.3s 3240ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2792ms, visibility 0.3s 3240ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2592ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(73) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2828ms, visibility 0.3s 3285ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2828ms, visibility 0.3s 3285ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2828ms, visibility 0.3s 3285ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2628ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(74) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2864ms, visibility 0.3s 3330ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2864ms, visibility 0.3s 3330ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2864ms, visibility 0.3s 3330ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2664ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(75) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2900ms, visibility 0.3s 3375ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2900ms, visibility 0.3s 3375ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2900ms, visibility 0.3s 3375ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2700ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(76) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2936ms, visibility 0.3s 3420ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2936ms, visibility 0.3s 3420ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2936ms, visibility 0.3s 3420ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2736ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(77) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2972ms, visibility 0.3s 3465ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2972ms, visibility 0.3s 3465ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2972ms, visibility 0.3s 3465ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2772ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(78) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3008ms, visibility 0.3s 3510ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3008ms, visibility 0.3s 3510ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3008ms, visibility 0.3s 3510ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2808ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(79) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3044ms, visibility 0.3s 3555ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3044ms, visibility 0.3s 3555ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3044ms, visibility 0.3s 3555ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2844ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(80) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3080ms, visibility 0.3s 3600ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3080ms, visibility 0.3s 3600ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3080ms, visibility 0.3s 3600ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2880ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(81) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3116ms, visibility 0.3s 3645ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3116ms, visibility 0.3s 3645ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3116ms, visibility 0.3s 3645ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2916ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(82) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3152ms, visibility 0.3s 3690ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3152ms, visibility 0.3s 3690ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3152ms, visibility 0.3s 3690ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2952ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(83) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3188ms, visibility 0.3s 3735ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3188ms, visibility 0.3s 3735ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3188ms, visibility 0.3s 3735ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2988ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(84) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3224ms, visibility 0.3s 3780ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3224ms, visibility 0.3s 3780ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3224ms, visibility 0.3s 3780ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3024ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(85) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3260ms, visibility 0.3s 3825ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3260ms, visibility 0.3s 3825ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3260ms, visibility 0.3s 3825ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3060ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(86) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3296ms, visibility 0.3s 3870ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3296ms, visibility 0.3s 3870ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3296ms, visibility 0.3s 3870ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3096ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(87) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3332ms, visibility 0.3s 3915ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3332ms, visibility 0.3s 3915ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3332ms, visibility 0.3s 3915ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3132ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(88) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3368ms, visibility 0.3s 3960ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3368ms, visibility 0.3s 3960ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3368ms, visibility 0.3s 3960ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3168ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(89) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3404ms, visibility 0.3s 4005ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3404ms, visibility 0.3s 4005ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3404ms, visibility 0.3s 4005ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3204ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(90) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3440ms, visibility 0.3s 4050ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3440ms, visibility 0.3s 4050ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3440ms, visibility 0.3s 4050ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3240ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(91) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3476ms, visibility 0.3s 4095ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3476ms, visibility 0.3s 4095ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3476ms, visibility 0.3s 4095ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3276ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(92) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3512ms, visibility 0.3s 4140ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3512ms, visibility 0.3s 4140ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3512ms, visibility 0.3s 4140ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3312ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(93) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3548ms, visibility 0.3s 4185ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3548ms, visibility 0.3s 4185ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3548ms, visibility 0.3s 4185ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3348ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(94) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3584ms, visibility 0.3s 4230ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3584ms, visibility 0.3s 4230ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3584ms, visibility 0.3s 4230ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3384ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(95) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3620ms, visibility 0.3s 4275ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3620ms, visibility 0.3s 4275ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3620ms, visibility 0.3s 4275ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3420ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(96) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3656ms, visibility 0.3s 4320ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3656ms, visibility 0.3s 4320ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3656ms, visibility 0.3s 4320ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3456ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(97) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3692ms, visibility 0.3s 4365ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3692ms, visibility 0.3s 4365ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3692ms, visibility 0.3s 4365ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3492ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(98) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3728ms, visibility 0.3s 4410ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3728ms, visibility 0.3s 4410ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3728ms, visibility 0.3s 4410ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3528ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(99) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3764ms, visibility 0.3s 4455ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3764ms, visibility 0.3s 4455ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3764ms, visibility 0.3s 4455ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3564ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-box:nth-of-type(100) .elf-word-box {
+  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3800ms, visibility 0.3s 4500ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms;
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3800ms, visibility 0.3s 4500ms;
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms, opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3800ms, visibility 0.3s 4500ms, -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3600ms;
 }
 
 .elf-active[data-elf-anim=animate] .elf-word-box {
@@ -971,7 +1171,9 @@ span {
   transform: translateY(30px);
   opacity: 0;
   visibility: hidden;
+  transition-property: opacity, -webkit-transform;
   transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
   transition-duration: 0.8s;
   transition-timing-function: ease-in-out;
 }
@@ -2416,22 +2618,6 @@ figure figcaption {
   outline: 0;
   border-bottom: 1px solid #134302;
 }
-.elf-contact-form .elfirede-contact-form .elf-contact-form-box #elfirede-input-descfilde::-moz-placeholder, .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-mailfilde::-moz-placeholder, .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-textfilde::-moz-placeholder {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.400000006px;
-  text-align: left;
-  color: rgba(40, 44, 53, 0.5019607843);
-}
-.elf-contact-form .elfirede-contact-form .elf-contact-form-box #elfirede-input-descfilde:-ms-input-placeholder, .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-mailfilde:-ms-input-placeholder, .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-textfilde:-ms-input-placeholder {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.400000006px;
-  text-align: left;
-  color: rgba(40, 44, 53, 0.5019607843);
-}
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elfirede-input-descfilde::placeholder,
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-mailfilde::placeholder,
 .elf-contact-form .elfirede-contact-form .elf-contact-form-box #elf-input-textfilde::placeholder {
@@ -2533,8 +2719,7 @@ figure figcaption {
 }
 @media (max-width: 767px) {
   .elf-contact-act-section .elf-act-contant-box .elf-act-modal-img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .elf-contact-act-section .elf-act-contant-box .elf-act-form-box {

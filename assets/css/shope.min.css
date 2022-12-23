@@ -57,8 +57,7 @@
   .elf-product-wrapper .elf-feature-product-card .elf-product-img {
     width: 100%;
     height: 267px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .elf-product-wrapper .elf-feature-product-card .elf-product-seal-text {
@@ -184,8 +183,7 @@
 .elf-shope-product-section .elf-shope-wrapper-box .elf-shope-right-wrap .elf-shope-products-cont .elf-shope-products .elf-product-image {
   width: 100%;
   height: 547px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 991px) {
   .elf-shope-product-section .elf-shope-wrapper-box .elf-shope-right-wrap .elf-shope-products-cont .elf-shope-products .elf-product-image {
@@ -486,8 +484,7 @@
 .grid .item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* Create a custom checkbox */
@@ -533,6 +530,8 @@
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 

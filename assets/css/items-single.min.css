@@ -309,6 +309,17 @@
   right: 80px;
   bottom: 0;
   background: #fff;
+  z-index: 999;
+}
+.elf-single-thread-section .elf-single-thread-wrap .elf-single-thread-contbox::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
 @media (max-width: 991px) {
   .elf-single-thread-section .elf-single-thread-wrap .elf-single-thread-contbox {

@@ -309,6 +309,8 @@
   right: 80px;
   bottom: 0;
   background: rgb(255, 255, 255) !important;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   z-index: 999;
 }
 .elf-single-thread-section .elf-single-thread-wrap .elf-single-thread-contbox::after {

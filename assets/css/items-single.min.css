@@ -307,23 +307,9 @@
   position: absolute;
   right: 80px;
   bottom: 0;
-  background: rgb(255, 255, 255) !important;
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   z-index: 999;
-}
-.elf-single-thread-section .elf-single-thread-wrap .elf-single-thread-contbox::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: rgb(255, 255, 255) !important;
-  -webkit-background-color: rgb(255, 255, 255) !important;
-  -o-background-color: rgb(255, 255, 255) !important;
-  -moz-background-color: rgb(255, 255, 255) !important;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
 }
 @media (max-width: 991px) {
   .elf-single-thread-section .elf-single-thread-wrap .elf-single-thread-contbox {
